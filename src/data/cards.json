@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "question": "Most Famous Artists of All Time",
+    "answers": [
+      "Leonardo da Vinci",
+      "Pablo Picasso",
+      "Vincent van Gogh",
+      "Michelangelo",
+      "Claude Monet"
+    ],
+    "foxPosition": 3
+  },
+  {
+    "id": 2,
+    "question": "Best-Selling Video Games of All Time",
+    "answers": [
+      "Minecraft",
+      "Grand Theft Auto V",
+      "Tetris",
+      "Wii Sports",
+      "PUBG"
+    ],
+    "foxPosition": 4
+  },
+  {
+    "id": 3,
+    "question": "Most Popular Pizza Toppings",
+    "answers": [
+      "Pepperoni",
+      "Mushrooms",
+      "Sausage",
+      "Bacon",
+      "Extra Cheese"
+    ],
+    "foxPosition": 2
+  },
+  {
+    "id": 4,
+    "question": "Highest-Grossing Movies of All Time",
+    "answers": [
+      "Avatar",
+      "Avengers: Endgame",
+      "Titanic",
+      "Star Wars: The Force Awakens",
+      "Avengers: Infinity War"
+    ],
+    "foxPosition": 5
+  },
+  {
+    "id": 5,
+    "question": "Most Visited Tourist Attractions in the World",
+    "answers": [
+      "Eiffel Tower",
+      "Great Wall of China",
+      "Statue of Liberty",
+      "Machu Picchu",
+      "Colosseum"
+    ],
+    "foxPosition": 1
+  },
+  {
+    "id": 6,
+    "question": "Best James Bond Movies",
+    "answers": [
+      "Goldfinger",
+      "Skyfall",
+      "Casino Royale",
+      "GoldenEye",
+      "From Russia with Love"
+    ],
+    "foxPosition": 3
+  },
+  {
+    "id": 7,
+    "question": "Most Popular Dog Breeds",
+    "answers": [
+      "Labrador Retriever",
+      "German Shepherd",
+      "Golden Retriever",
+      "French Bulldog",
+      "Bulldog"
+    ],
+    "foxPosition": 4
+  },
+  {
+    "id": 8,
+    "question": "Best-Selling Books of All Time",
+    "answers": [
+      "A Tale of Two Cities",
+      "The Lord of the Rings",
+      "The Little Prince",
+      "Harry Potter and the Philosopher's Stone",
+      "The Hobbit"
+    ],
+    "foxPosition": 2
+  },
+  {
+    "id": 9,
+    "question": "Most Spoken Languages in the World",
+    "answers": [
+      "English",
+      "Mandarin Chinese",
+      "Hindi",
+      "Spanish",
+      "French"
+    ],
+    "foxPosition": 5
+  },
+  {
+    "id": 10,
+    "question": "Best-Selling Condiments",
+    "answers": [
+      "Ketchup",
+      "Mayonnaise",
+      "Mustard",
+      "Soy Sauce",
+      "Hot Sauce"
+    ],
+    "foxPosition": 1
+  }
+]
