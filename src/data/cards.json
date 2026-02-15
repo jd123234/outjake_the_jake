@@ -1398,5 +1398,1825 @@
     ],
     "snakePosition": 5,
     "source": "Basketball Reference (2024)"
+  },
+  {
+    "id": 221,
+    "category": "Business",
+    "question": "Most Popular U.S. Supermarket Brands",
+    "answers": [
+      "Walmart",
+      "Kroger",
+      "Costco",
+      "Aldi",
+      "Publix"
+    ],
+    "snakePosition": 3,
+    "source": "National Retail Federation Retail Rankings (2024)"
+  },
+  {
+    "id": 222,
+    "category": "Health",
+    "question": "Most Popular U.S. Pharmacies",
+    "answers": [
+      "CVS",
+      "Walgreens",
+      "Rite Aid",
+      "Walmart Pharmacy",
+      "Costco Pharmacy"
+    ],
+    "snakePosition": 1,
+    "source": "J D Power Pharmacy Study (2024)"
+  },
+  {
+    "id": 223,
+    "category": "Food",
+    "question": "Most Popular Coffee Drinks (U.S.)",
+    "answers": [
+      "Iced Coffee",
+      "Latte",
+      "Cappuccino",
+      "Cold Brew",
+      "Americano"
+    ],
+    "snakePosition": 4,
+    "source": "National Coffee Association Report (2024)"
+  },
+  {
+    "id": 224,
+    "category": "Food",
+    "question": "Most Popular U.S. Beer Styles",
+    "answers": [
+      "Lager",
+      "IPA",
+      "Pale Ale",
+      "Pilsner",
+      "Stout"
+    ],
+    "snakePosition": 2,
+    "source": "Brewers Association Industry Data (2024)"
+  },
+  {
+    "id": 225,
+    "category": "Food",
+    "question": "Most Popular Pizza Styles (U.S.)",
+    "answers": [
+      "New York Style",
+      "Chicago Deep Dish",
+      "Neapolitan",
+      "Detroit Style",
+      "Sicilian"
+    ],
+    "snakePosition": 5,
+    "source": "YouGov Food Preferences (2024)"
+  },
+  {
+    "id": 226,
+    "category": "Food",
+    "question": "Most Popular Ice Cream Cone Types",
+    "answers": [
+      "Waffle Cone",
+      "Sugar Cone",
+      "Cake Cone",
+      "Bowl",
+      "Wafer Cone"
+    ],
+    "snakePosition": 3,
+    "source": "International Dairy Foods Association Consumer Trends (2024)"
+  },
+  {
+    "id": 227,
+    "category": "Travel",
+    "question": "Most Popular U.S. Holiday Destinations",
+    "answers": [
+      "Orlando",
+      "Las Vegas",
+      "New York City",
+      "Los Angeles",
+      "Miami"
+    ],
+    "snakePosition": 1,
+    "source": "AAA Travel Forecast Report (2024)"
+  },
+  {
+    "id": 228,
+    "category": "Travel",
+    "question": "Most Popular National Park Activities (U.S.)",
+    "answers": [
+      "Hiking",
+      "Scenic Driving",
+      "Wildlife Viewing",
+      "Camping",
+      "Photography"
+    ],
+    "snakePosition": 4,
+    "source": "National Park Service Visitor Use Data (2024)"
+  },
+  {
+    "id": 229,
+    "category": "Travel",
+    "question": "Most Popular U.S. Airline Brands",
+    "answers": [
+      "Delta",
+      "American",
+      "United",
+      "Southwest",
+      "JetBlue"
+    ],
+    "snakePosition": 2,
+    "source": "U S Department of Transportation Air Travel Consumer Report (2024)"
+  },
+  {
+    "id": 230,
+    "category": "Travel",
+    "question": "Largest U.S. Airlines by Passengers",
+    "answers": [
+      "American",
+      "Delta",
+      "United",
+      "Southwest",
+      "Alaska"
+    ],
+    "snakePosition": 5,
+    "source": "Bureau of Transportation Statistics (2023)"
+  },
+  {
+    "id": 231,
+    "category": "Music",
+    "question": "Most Popular Streaming Music Artists (Monthly Listeners)",
+    "answers": [
+      "Taylor Swift",
+      "The Weeknd",
+      "Bad Bunny",
+      "Drake",
+      "Ed Sheeran"
+    ],
+    "snakePosition": 3,
+    "source": "Spotify Charts and Artist Pages (2024)"
+  },
+  {
+    "id": 232,
+    "category": "Entertainment",
+    "question": "Most Popular Podcast Genres (U.S.)",
+    "answers": [
+      "Comedy",
+      "News",
+      "True Crime",
+      "Sports",
+      "Society and Culture"
+    ],
+    "snakePosition": 1,
+    "source": "Edison Research Infinite Dial (2024)"
+  },
+  {
+    "id": 233,
+    "category": "Entertainment",
+    "question": "Most Popular U.S. TV News Networks",
+    "answers": [
+      "Fox News",
+      "MSNBC",
+      "CNN",
+      "ABC News",
+      "NBC News"
+    ],
+    "snakePosition": 4,
+    "source": "Nielsen Cable News Ratings (2024)"
+  },
+  {
+    "id": 234,
+    "category": "Entertainment",
+    "question": "Most Popular U.S. Streaming Services by Subscribers",
+    "answers": [
+      "Netflix",
+      "Amazon Prime Video",
+      "Disney+",
+      "Hulu",
+      "Max"
+    ],
+    "snakePosition": 2,
+    "source": "Company Earnings Reports (2024)"
+  },
+  {
+    "id": 235,
+    "category": "Entertainment",
+    "question": "Most Popular U.S. Movie Theater Chains",
+    "answers": [
+      "AMC",
+      "Regal",
+      "Cinemark",
+      "Marcus Theatres",
+      "Harkins"
+    ],
+    "snakePosition": 5,
+    "source": "National Association of Theatre Owners Data (2024)"
+  },
+  {
+    "id": 236,
+    "category": "Food",
+    "question": "Most Popular Candy Types (U.S.)",
+    "answers": [
+      "Chocolate",
+      "Gummies",
+      "Hard Candy",
+      "Sour Candy",
+      "Caramel"
+    ],
+    "snakePosition": 3,
+    "source": "National Confectioners Association (2024)"
+  },
+  {
+    "id": 237,
+    "category": "Food",
+    "question": "Most Popular Cookie Brands (U.S.)",
+    "answers": [
+      "Oreo",
+      "Chips Ahoy",
+      "Pepperidge Farm",
+      "Keebler",
+      "Famous Amos"
+    ],
+    "snakePosition": 1,
+    "source": "Statista Consumer Packaged Goods (2024)"
+  },
+  {
+    "id": 238,
+    "category": "Food",
+    "question": "Most Popular Soda Categories (U.S.)",
+    "answers": [
+      "Cola",
+      "Lemon Lime",
+      "Root Beer",
+      "Orange",
+      "Ginger Ale"
+    ],
+    "snakePosition": 4,
+    "source": "Beverage Marketing Corporation (2024)"
+  },
+  {
+    "id": 239,
+    "category": "Food",
+    "question": "Most Popular Snack Crackers (U.S.)",
+    "answers": [
+      "Ritz",
+      "Goldfish",
+      "Cheez It",
+      "Saltines",
+      "Wheat Thins"
+    ],
+    "snakePosition": 2,
+    "source": "Statista U S Snack Market (2024)"
+  },
+  {
+    "id": 240,
+    "category": "Food",
+    "question": "Most Popular Fast Food Drinks",
+    "answers": [
+      "Soda",
+      "Iced Tea",
+      "Lemonade",
+      "Milkshake",
+      "Coffee"
+    ],
+    "snakePosition": 5,
+    "source": "QSR Consumer Trends (2024)"
+  },
+  {
+    "id": 241,
+    "category": "Food",
+    "question": "Most Popular U.S. Breakfast Foods",
+    "answers": [
+      "Eggs",
+      "Pancakes",
+      "Bacon",
+      "Cereal",
+      "Oatmeal"
+    ],
+    "snakePosition": 3,
+    "source": "YouGov Food Rankings (2024)"
+  },
+  {
+    "id": 242,
+    "category": "Food",
+    "question": "Most Popular U.S. Comfort Foods",
+    "answers": [
+      "Mac and Cheese",
+      "Pizza",
+      "Burgers",
+      "Fried Chicken",
+      "Mashed Potatoes"
+    ],
+    "snakePosition": 1,
+    "source": "YouGov Food Rankings (2024)"
+  },
+  {
+    "id": 243,
+    "category": "Food",
+    "question": "Most Popular Pasta Dishes (U.S.)",
+    "answers": [
+      "Spaghetti and Meatballs",
+      "Fettuccine Alfredo",
+      "Lasagna",
+      "Mac and Cheese",
+      "Ravioli"
+    ],
+    "snakePosition": 4,
+    "source": "YouGov Food Rankings (2024)"
+  },
+  {
+    "id": 244,
+    "category": "Food",
+    "question": "Most Popular Sandwich Types (U.S.)",
+    "answers": [
+      "Turkey",
+      "Ham",
+      "BLT",
+      "Grilled Cheese",
+      "Tuna"
+    ],
+    "snakePosition": 2,
+    "source": "YouGov Food Rankings (2024)"
+  },
+  {
+    "id": 245,
+    "category": "Food",
+    "question": "Most Popular U.S. Pizza Toppings",
+    "answers": [
+      "Pepperoni",
+      "Sausage",
+      "Mushrooms",
+      "Onions",
+      "Extra Cheese"
+    ],
+    "snakePosition": 5,
+    "source": "YouGov Food Data (2024)"
+  },
+  {
+    "id": 246,
+    "category": "Food",
+    "question": "Most Popular U.S. Fast Food Chains by Locations",
+    "answers": [
+      "Subway",
+      "McDonald's",
+      "Starbucks",
+      "Dunkin'",
+      "Taco Bell"
+    ],
+    "snakePosition": 3,
+    "source": "QSR Magazine Top Chains (2024)"
+  },
+  {
+    "id": 247,
+    "category": "Food",
+    "question": "Most Popular U.S. Coffee Chains by Locations",
+    "answers": [
+      "Starbucks",
+      "Dunkin'",
+      "Tim Hortons",
+      "Dutch Bros",
+      "Peet's Coffee"
+    ],
+    "snakePosition": 1,
+    "source": "Company Store Counts and QSR (2024)"
+  },
+  {
+    "id": 248,
+    "category": "Food",
+    "question": "Most Popular U.S. Casual Dining Chains",
+    "answers": [
+      "Olive Garden",
+      "Applebee's",
+      "Chili's",
+      "Texas Roadhouse",
+      "Outback Steakhouse"
+    ],
+    "snakePosition": 4,
+    "source": "Technomic Top 500 Chain Restaurant Report (2024)"
+  },
+  {
+    "id": 249,
+    "category": "Food",
+    "question": "Most Popular U.S. Fast Casual Chains",
+    "answers": [
+      "Chipotle",
+      "Panera Bread",
+      "Chick-fil-A",
+      "Panda Express",
+      "Five Guys"
+    ],
+    "snakePosition": 2,
+    "source": "Technomic Fast Casual Rankings (2024)"
+  },
+  {
+    "id": 250,
+    "category": "Food",
+    "question": "Most Popular Ice Cream Flavors (U.S.)",
+    "answers": [
+      "Vanilla",
+      "Chocolate",
+      "Cookies and Cream",
+      "Strawberry",
+      "Mint Chocolate Chip"
+    ],
+    "snakePosition": 5,
+    "source": "International Dairy Foods Association (2024)"
+  },
+  {
+    "id": 251,
+    "category": "Food",
+    "question": "Most Popular U.S. Candy Bars",
+    "answers": [
+      "Reese's",
+      "Snickers",
+      "Kit Kat",
+      "Hershey's",
+      "Twix"
+    ],
+    "snakePosition": 3,
+    "source": "Candy Industry Report (2024)"
+  },
+  {
+    "id": 252,
+    "category": "Food",
+    "question": "Most Popular U.S. Chocolate Brands",
+    "answers": [
+      "Hershey's",
+      "Reese's",
+      "M&M's",
+      "Snickers",
+      "Kit Kat"
+    ],
+    "snakePosition": 1,
+    "source": "Candy Industry Brand Rankings (2024)"
+  },
+  {
+    "id": 253,
+    "category": "Food",
+    "question": "Most Popular U.S. Chip Brands",
+    "answers": [
+      "Lay's",
+      "Doritos",
+      "Cheetos",
+      "Pringles",
+      "Ruffles"
+    ],
+    "snakePosition": 4,
+    "source": "Statista Snack Rankings (2024)"
+  },
+  {
+    "id": 254,
+    "category": "Food",
+    "question": "Most Popular U.S. Soft Drinks",
+    "answers": [
+      "Coca-Cola",
+      "Pepsi",
+      "Dr Pepper",
+      "Sprite",
+      "Mountain Dew"
+    ],
+    "snakePosition": 2,
+    "source": "Beverage Digest Report (2024)"
+  },
+  {
+    "id": 255,
+    "category": "Food",
+    "question": "Most Popular U.S. Bottled Waters",
+    "answers": [
+      "Aquafina",
+      "Dasani",
+      "Poland Spring",
+      "Deer Park",
+      "Smartwater"
+    ],
+    "snakePosition": 5,
+    "source": "Beverage Marketing Corporation (2024)"
+  },
+  {
+    "id": 256,
+    "category": "Food",
+    "question": "Most Popular U.S. Sports Drinks",
+    "answers": [
+      "Gatorade",
+      "Powerade",
+      "BodyArmor",
+      "Vitaminwater",
+      "Propel"
+    ],
+    "snakePosition": 3,
+    "source": "Beverage Industry Market Share (2024)"
+  },
+  {
+    "id": 257,
+    "category": "Food",
+    "question": "Most Popular U.S. Energy Drinks",
+    "answers": [
+      "Red Bull",
+      "Monster",
+      "Celsius",
+      "Rockstar",
+      "Bang"
+    ],
+    "snakePosition": 1,
+    "source": "Beverage Industry Market Report (2024)"
+  },
+  {
+    "id": 258,
+    "category": "Food",
+    "question": "Most Popular U.S. Fast Food Breakfast Items",
+    "answers": [
+      "Breakfast Sandwich",
+      "Hash Browns",
+      "Breakfast Burrito",
+      "Pancakes",
+      "Biscuit Sandwich"
+    ],
+    "snakePosition": 4,
+    "source": "QSR Breakfast Report (2024)"
+  },
+  {
+    "id": 259,
+    "category": "Food",
+    "question": "Most Popular U.S. Frozen Foods",
+    "answers": [
+      "Pizza",
+      "Ice Cream",
+      "Frozen Vegetables",
+      "Chicken Nuggets",
+      "French Fries"
+    ],
+    "snakePosition": 2,
+    "source": "NielsenIQ Grocery Data (2024)"
+  },
+  {
+    "id": 260,
+    "category": "Food",
+    "question": "Most Popular U.S. Snack Foods",
+    "answers": [
+      "Chips",
+      "Cookies",
+      "Crackers",
+      "Popcorn",
+      "Candy"
+    ],
+    "snakePosition": 5,
+    "source": "Statista Consumer Insights (2024)"
+  },
+  {
+    "id": 261,
+    "category": "Business",
+    "question": "Most Popular U.S. Retail Stores",
+    "answers": [
+      "Walmart",
+      "Target",
+      "Costco",
+      "Home Depot",
+      "Lowe's"
+    ],
+    "snakePosition": 3,
+    "source": "National Retail Federation (2024)"
+  },
+  {
+    "id": 262,
+    "category": "Business",
+    "question": "Most Popular U.S. Online Retailers",
+    "answers": [
+      "Amazon",
+      "Walmart",
+      "eBay",
+      "Target",
+      "Best Buy"
+    ],
+    "snakePosition": 1,
+    "source": "Digital Commerce 360 Top Retailers (2024)"
+  },
+  {
+    "id": 263,
+    "category": "Business",
+    "question": "Most Popular U.S. Clothing Retailers",
+    "answers": [
+      "Walmart",
+      "Target",
+      "Amazon",
+      "TJ Maxx",
+      "Ross"
+    ],
+    "snakePosition": 4,
+    "source": "Statista U S Apparel Retail (2024)"
+  },
+  {
+    "id": 264,
+    "category": "Business",
+    "question": "Most Popular Shoe Brands (U.S.)",
+    "answers": [
+      "Nike",
+      "Adidas",
+      "Skechers",
+      "New Balance",
+      "Converse"
+    ],
+    "snakePosition": 2,
+    "source": "YouGov Brand Rankings (2024)"
+  },
+  {
+    "id": 265,
+    "category": "Business",
+    "question": "Most Popular Athletic Brands (U.S.)",
+    "answers": [
+      "Nike",
+      "Adidas",
+      "Under Armour",
+      "Puma",
+      "Reebok"
+    ],
+    "snakePosition": 5,
+    "source": "YouGov Brand Rankings (2024)"
+  },
+  {
+    "id": 266,
+    "category": "Business",
+    "question": "Most Popular Luxury Brands (Global Awareness)",
+    "answers": [
+      "Louis Vuitton",
+      "Gucci",
+      "Chanel",
+      "Rolex",
+      "Dior"
+    ],
+    "snakePosition": 3,
+    "source": "Brand Finance Global 500 and Luxury (2024)"
+  },
+  {
+    "id": 267,
+    "category": "Business",
+    "question": "Most Popular Cosmetics Brands (U.S.)",
+    "answers": [
+      "Maybelline",
+      "L'Oréal",
+      "MAC",
+      "Clinique",
+      "Fenty Beauty"
+    ],
+    "snakePosition": 1,
+    "source": "Statista Beauty Market (2024)"
+  },
+  {
+    "id": 268,
+    "category": "Health",
+    "question": "Most Popular Skincare Brands (U.S.)",
+    "answers": [
+      "CeraVe",
+      "Neutrogena",
+      "La Roche-Posay",
+      "The Ordinary",
+      "Olay"
+    ],
+    "snakePosition": 4,
+    "source": "Statista Beauty Market (2024)"
+  },
+  {
+    "id": 269,
+    "category": "Health",
+    "question": "Most Popular Shampoo Brands (U.S.)",
+    "answers": [
+      "Pantene",
+      "Head and Shoulders",
+      "Dove",
+      "Tresemmé",
+      "Herbal Essences"
+    ],
+    "snakePosition": 2,
+    "source": "Statista Personal Care (2024)"
+  },
+  {
+    "id": 270,
+    "category": "Health",
+    "question": "Most Popular Toothpaste Brands (U.S.)",
+    "answers": [
+      "Colgate",
+      "Crest",
+      "Sensodyne",
+      "Arm and Hammer",
+      "Tom's of Maine"
+    ],
+    "snakePosition": 5,
+    "source": "Statista Personal Care (2024)"
+  },
+  {
+    "id": 271,
+    "category": "Business",
+    "question": "Most Popular Car Brands (U.S. Sales)",
+    "answers": [
+      "Ford",
+      "Toyota",
+      "Chevrolet",
+      "Honda",
+      "Nissan"
+    ],
+    "snakePosition": 3,
+    "source": "Cox Automotive U S Sales Report (2024)"
+  },
+  {
+    "id": 272,
+    "category": "Business",
+    "question": "Most Popular Pickup Trucks (U.S. Sales)",
+    "answers": [
+      "Ford F-Series",
+      "Chevrolet Silverado",
+      "Ram Pickup",
+      "GMC Sierra",
+      "Toyota Tacoma"
+    ],
+    "snakePosition": 1,
+    "source": "Cox Automotive (2024)"
+  },
+  {
+    "id": 273,
+    "category": "Business",
+    "question": "Most Popular SUVs (U.S. Sales)",
+    "answers": [
+      "Toyota RAV4",
+      "Honda CR-V",
+      "Tesla Model Y",
+      "Nissan Rogue",
+      "Chevrolet Equinox"
+    ],
+    "snakePosition": 4,
+    "source": "Kelley Blue Book Sales Report (2024)"
+  },
+  {
+    "id": 274,
+    "category": "Technology",
+    "question": "Most Popular Electric Vehicles (U.S. Sales)",
+    "answers": [
+      "Tesla Model Y",
+      "Tesla Model 3",
+      "Ford Mustang Mach-E",
+      "Hyundai Ioniq 5",
+      "Chevrolet Bolt EV"
+    ],
+    "snakePosition": 2,
+    "source": "Kelley Blue Book EV Sales (2024)"
+  },
+  {
+    "id": 275,
+    "category": "Business",
+    "question": "Most Valuable Car Companies (Market Cap)",
+    "answers": [
+      "Tesla",
+      "Toyota",
+      "BYD",
+      "Ferrari",
+      "Mercedes-Benz Group"
+    ],
+    "snakePosition": 5,
+    "source": "CompaniesMarketCap (2024)"
+  },
+  {
+    "id": 276,
+    "category": "Technology",
+    "question": "Most Popular Smartphone Operating Systems",
+    "answers": [
+      "Android",
+      "iOS",
+      "Samsung One UI",
+      "HarmonyOS",
+      "KaiOS"
+    ],
+    "snakePosition": 3,
+    "source": "StatCounter Global Stats (2024)"
+  },
+  {
+    "id": 277,
+    "category": "Technology",
+    "question": "Most Popular Web Browsers",
+    "answers": [
+      "Chrome",
+      "Safari",
+      "Edge",
+      "Firefox",
+      "Samsung Internet"
+    ],
+    "snakePosition": 1,
+    "source": "StatCounter Global Stats (2024)"
+  },
+  {
+    "id": 278,
+    "category": "Technology",
+    "question": "Most Popular Search Engines (Global)",
+    "answers": [
+      "Google",
+      "Bing",
+      "Yahoo",
+      "Baidu",
+      "DuckDuckGo"
+    ],
+    "snakePosition": 4,
+    "source": "StatCounter Global Stats (2024)"
+  },
+  {
+    "id": 279,
+    "category": "Technology",
+    "question": "Most Visited Websites (Global)",
+    "answers": [
+      "Google",
+      "YouTube",
+      "Facebook",
+      "Instagram",
+      "Wikipedia"
+    ],
+    "snakePosition": 2,
+    "source": "Similarweb Rankings (2024)"
+  },
+  {
+    "id": 280,
+    "category": "Social Media",
+    "question": "Most Popular Messaging Apps (Global Users)",
+    "answers": [
+      "WhatsApp",
+      "WeChat",
+      "Telegram",
+      "Facebook Messenger",
+      "Snapchat"
+    ],
+    "snakePosition": 5,
+    "source": "DataReportal Digital Report (2024)"
+  },
+  {
+    "id": 281,
+    "category": "Technology",
+    "question": "Most Popular Email Providers",
+    "answers": [
+      "Gmail",
+      "Apple Mail",
+      "Outlook",
+      "Yahoo Mail",
+      "Proton Mail"
+    ],
+    "snakePosition": 3,
+    "source": "Litmus Email Client Market Share (2024)"
+  },
+  {
+    "id": 282,
+    "category": "Entertainment",
+    "question": "Most Popular Video Streaming Platforms",
+    "answers": [
+      "YouTube",
+      "Netflix",
+      "Disney+",
+      "Prime Video",
+      "Hulu"
+    ],
+    "snakePosition": 1,
+    "source": "Nielsen Streaming Platform Reports (2024)"
+  },
+  {
+    "id": 283,
+    "category": "Social Media",
+    "question": "Most Popular Social Platforms for News (U.S.)",
+    "answers": [
+      "Facebook",
+      "YouTube",
+      "X",
+      "Instagram",
+      "TikTok"
+    ],
+    "snakePosition": 4,
+    "source": "Pew Research Center News and Social Media (2024)"
+  },
+  {
+    "id": 284,
+    "category": "Social Media",
+    "question": "Most Popular Photo Apps (U.S.)",
+    "answers": [
+      "Instagram",
+      "Snapchat",
+      "TikTok",
+      "VSCO",
+      "Pinterest"
+    ],
+    "snakePosition": 2,
+    "source": "DataReportal (2024)"
+  },
+  {
+    "id": 285,
+    "category": "Business",
+    "question": "Most Popular Online Marketplaces",
+    "answers": [
+      "Amazon",
+      "eBay",
+      "Etsy",
+      "Facebook Marketplace",
+      "Walmart Marketplace"
+    ],
+    "snakePosition": 5,
+    "source": "Digital Commerce 360 (2024)"
+  },
+  {
+    "id": 286,
+    "category": "Business",
+    "question": "Most Popular Credit Cards (U.S. Issuers by Market Share)",
+    "answers": [
+      "Chase",
+      "American Express",
+      "Citi",
+      "Bank of America",
+      "Capital One"
+    ],
+    "snakePosition": 3,
+    "source": "Nilson Report (2024)"
+  },
+  {
+    "id": 287,
+    "category": "Technology",
+    "question": "Most Popular Payment Apps (U.S.)",
+    "answers": [
+      "PayPal",
+      "Apple Pay",
+      "Venmo",
+      "Cash App",
+      "Google Pay"
+    ],
+    "snakePosition": 1,
+    "source": "Pew Research Center Payments Data (2024)"
+  },
+  {
+    "id": 288,
+    "category": "Business",
+    "question": "Most Popular Ride Share Apps (U.S.)",
+    "answers": [
+      "Uber",
+      "Lyft",
+      "Via",
+      "Curb",
+      "Wingz"
+    ],
+    "snakePosition": 4,
+    "source": "Company Reports and Market Data (2024)"
+  },
+  {
+    "id": 289,
+    "category": "Travel",
+    "question": "Most Popular Hotel Brands (U.S. Awareness)",
+    "answers": [
+      "Marriott",
+      "Hilton",
+      "Holiday Inn",
+      "Hyatt",
+      "Best Western"
+    ],
+    "snakePosition": 2,
+    "source": "YouGov Brand Rankings (2024)"
+  },
+  {
+    "id": 290,
+    "category": "Travel",
+    "question": "Largest Hotel Companies (Rooms)",
+    "answers": [
+      "Marriott International",
+      "Jin Jiang",
+      "Hilton",
+      "IHG",
+      "Wyndham"
+    ],
+    "snakePosition": 5,
+    "source": "STR Global Hotel Data (2024)"
+  },
+  {
+    "id": 291,
+    "category": "Entertainment",
+    "question": "Most Popular Theme Park Resorts (U.S.)",
+    "answers": [
+      "Walt Disney World",
+      "Disneyland Resort",
+      "Universal Orlando",
+      "Universal Hollywood",
+      "SeaWorld Orlando"
+    ],
+    "snakePosition": 3,
+    "source": "TEA AECOM Theme Index (2023)"
+  },
+  {
+    "id": 292,
+    "category": "Travel",
+    "question": "Most Popular U.S. Tourist Attractions",
+    "answers": [
+      "Times Square",
+      "Central Park",
+      "Las Vegas Strip",
+      "National Mall",
+      "Disneyland"
+    ],
+    "snakePosition": 1,
+    "source": "NYC and National Tourism Boards Summaries (2024)"
+  },
+  {
+    "id": 293,
+    "category": "Travel",
+    "question": "Most Popular U.S. Vacation States",
+    "answers": [
+      "Florida",
+      "California",
+      "New York",
+      "Nevada",
+      "Texas"
+    ],
+    "snakePosition": 4,
+    "source": "U S Travel Association (2024)"
+  },
+  {
+    "id": 294,
+    "category": "Travel",
+    "question": "Most Popular U.S. Beach Destinations",
+    "answers": [
+      "Miami Beach",
+      "Myrtle Beach",
+      "Waikiki",
+      "Clearwater Beach",
+      "Santa Monica"
+    ],
+    "snakePosition": 2,
+    "source": "TripAdvisor Travelers' Choice (2024)"
+  },
+  {
+    "id": 295,
+    "category": "Travel",
+    "question": "Most Popular U.S. Ski Resorts",
+    "answers": [
+      "Vail",
+      "Breckenridge",
+      "Park City",
+      "Heavenly",
+      "Whistler Blackcomb"
+    ],
+    "snakePosition": 5,
+    "source": "National Ski Areas Association Industry Data (2024)"
+  },
+  {
+    "id": 296,
+    "category": "Entertainment",
+    "question": "Most Popular Movie Awards Shows",
+    "answers": [
+      "Oscars",
+      "Golden Globes",
+      "Grammys",
+      "Emmys",
+      "SAG Awards"
+    ],
+    "snakePosition": 3,
+    "source": "Nielsen TV Ratings (2024)"
+  },
+  {
+    "id": 297,
+    "category": "Entertainment",
+    "question": "Most Popular U.S. Game Shows (All Time)",
+    "answers": [
+      "Jeopardy",
+      "Wheel of Fortune",
+      "The Price Is Right",
+      "Family Feud",
+      "Who Wants to Be a Millionaire"
+    ],
+    "snakePosition": 1,
+    "source": "Nielsen Syndication Ratings Archives (2024)"
+  },
+  {
+    "id": 298,
+    "category": "Entertainment",
+    "question": "Most Popular Talent Shows (U.S.)",
+    "answers": [
+      "America's Got Talent",
+      "The Voice",
+      "American Idol",
+      "Dancing with the Stars",
+      "So You Think You Can Dance"
+    ],
+    "snakePosition": 4,
+    "source": "Nielsen Ratings (2024)"
+  },
+  {
+    "id": 299,
+    "category": "Entertainment",
+    "question": "Most Popular Reality Dating Shows (Streaming Era)",
+    "answers": [
+      "Love Is Blind",
+      "The Bachelor",
+      "Too Hot to Handle",
+      "Love Island",
+      "The Ultimatum"
+    ],
+    "snakePosition": 2,
+    "source": "Nielsen Streaming Ratings (2024)"
+  },
+  {
+    "id": 300,
+    "category": "Entertainment",
+    "question": "Most Popular True Crime Series (Streaming)",
+    "answers": [
+      "Dahmer",
+      "Making a Murderer",
+      "Tiger King",
+      "The Jinx",
+      "Mindhunter"
+    ],
+    "snakePosition": 5,
+    "source": "Netflix Top 10 and Nielsen Streaming (2024)"
+  },
+  {
+    "id": 301,
+    "category": "Entertainment",
+    "question": "Most Popular Superhero Characters (Merchandise and Polls)",
+    "answers": [
+      "Spider-Man",
+      "Batman",
+      "Iron Man",
+      "Superman",
+      "Captain America"
+    ],
+    "snakePosition": 3,
+    "source": "NPD Merchandising and YouGov Polls (2024)"
+  },
+  {
+    "id": 302,
+    "category": "Entertainment",
+    "question": "Most Popular Disney Characters",
+    "answers": [
+      "Mickey Mouse",
+      "Minnie Mouse",
+      "Donald Duck",
+      "Goofy",
+      "Winnie the Pooh"
+    ],
+    "snakePosition": 1,
+    "source": "Disney Brand Archives and Licensing Summaries (2024)"
+  },
+  {
+    "id": 303,
+    "category": "Entertainment",
+    "question": "Most Popular Cartoon Characters (Global Recognition)",
+    "answers": [
+      "Mickey Mouse",
+      "Bugs Bunny",
+      "SpongeBob",
+      "Homer Simpson",
+      "Tom and Jerry"
+    ],
+    "snakePosition": 4,
+    "source": "Britannica and Licensing Summaries (2024)"
+  },
+  {
+    "id": 304,
+    "category": "Food",
+    "question": "Most Popular Super Bowl Foods (U.S.)",
+    "answers": [
+      "Chicken Wings",
+      "Pizza",
+      "Chips and Dip",
+      "Nachos",
+      "Sliders"
+    ],
+    "snakePosition": 2,
+    "source": "National Chicken Council and NielsenIQ (2024)"
+  },
+  {
+    "id": 305,
+    "category": "Games",
+    "question": "Most Popular Party Games (Modern)",
+    "answers": [
+      "Cards Against Humanity",
+      "Codenames",
+      "Exploding Kittens",
+      "Uno",
+      "Ticket to Ride"
+    ],
+    "snakePosition": 5,
+    "source": "BoardGameGeek Rankings and Sales Signals (2024)"
+  },
+  {
+    "id": 306,
+    "category": "Games",
+    "question": "Most Popular Family Board Games",
+    "answers": [
+      "Monopoly",
+      "Uno",
+      "Scrabble",
+      "Clue",
+      "Sorry"
+    ],
+    "snakePosition": 3,
+    "source": "Guinness World Records (2024)"
+  },
+  {
+    "id": 307,
+    "category": "Games",
+    "question": "Most Popular Word Games",
+    "answers": [
+      "Scrabble",
+      "Boggle",
+      "Scattergories",
+      "Bananagrams",
+      "Words With Friends"
+    ],
+    "snakePosition": 1,
+    "source": "BoardGameGeek and Publisher Data (2024)"
+  },
+  {
+    "id": 308,
+    "category": "Games",
+    "question": "Most Popular Trivia Games",
+    "answers": [
+      "Trivial Pursuit",
+      "Jeopardy Board Game",
+      "Scene It",
+      "Wits and Wagers",
+      "Smart Ass"
+    ],
+    "snakePosition": 4,
+    "source": "BoardGameGeek and Publisher Data (2024)"
+  },
+  {
+    "id": 309,
+    "category": "Games",
+    "question": "Most Popular Party Card Games",
+    "answers": [
+      "Uno",
+      "Exploding Kittens",
+      "Cards Against Humanity",
+      "Phase 10",
+      "Skip-Bo"
+    ],
+    "snakePosition": 2,
+    "source": "Publisher Sales Reports (2024)"
+  },
+  {
+    "id": 310,
+    "category": "Movies",
+    "question": "Most Popular Family Movies (All Time Box Office)",
+    "answers": [
+      "Frozen II",
+      "The Lion King (2019)",
+      "Incredibles 2",
+      "Beauty and the Beast (2017)",
+      "Finding Dory"
+    ],
+    "snakePosition": 5,
+    "source": "Box Office Mojo (2024)"
+  },
+  {
+    "id": 311,
+    "category": "Entertainment",
+    "question": "Most Popular Animated TV Shows",
+    "answers": [
+      "The Simpsons",
+      "SpongeBob SquarePants",
+      "Family Guy",
+      "South Park",
+      "Rick and Morty"
+    ],
+    "snakePosition": 3,
+    "source": "IMDb Popularity and Network Metrics (2024)"
+  },
+  {
+    "id": 312,
+    "category": "Entertainment",
+    "question": "Most Popular Sitcoms (Streaming Demand)",
+    "answers": [
+      "The Office",
+      "Friends",
+      "Big Bang Theory",
+      "Modern Family",
+      "Parks and Recreation"
+    ],
+    "snakePosition": 1,
+    "source": "Nielsen Streaming (2024)"
+  },
+  {
+    "id": 313,
+    "category": "Entertainment",
+    "question": "Most Popular Crime Shows (U.S.)",
+    "answers": [
+      "NCIS",
+      "Law and Order SVU",
+      "CSI",
+      "Blue Bloods",
+      "Criminal Minds"
+    ],
+    "snakePosition": 4,
+    "source": "Nielsen TV Ratings Archives (2024)"
+  },
+  {
+    "id": 314,
+    "category": "Entertainment",
+    "question": "Most Popular Medical TV Shows",
+    "answers": [
+      "Grey's Anatomy",
+      "ER",
+      "House",
+      "The Good Doctor",
+      "Scrubs"
+    ],
+    "snakePosition": 2,
+    "source": "Nielsen and Streaming Demand (2024)"
+  },
+  {
+    "id": 315,
+    "category": "Movies",
+    "question": "Most Popular Superhero Movies (Worldwide Box Office)",
+    "answers": [
+      "Avengers Endgame",
+      "Avengers Infinity War",
+      "Spider-Man No Way Home",
+      "The Avengers",
+      "Black Panther"
+    ],
+    "snakePosition": 5,
+    "source": "Box Office Mojo (2024)"
+  },
+  {
+    "id": 316,
+    "category": "Movies",
+    "question": "Most Popular Movie Franchises (Worldwide Gross)",
+    "answers": [
+      "Marvel Cinematic Universe",
+      "Star Wars",
+      "Harry Potter",
+      "James Bond",
+      "Fast and Furious"
+    ],
+    "snakePosition": 3,
+    "source": "Box Office Mojo (2024)"
+  },
+  {
+    "id": 317,
+    "category": "Movies",
+    "question": "Most Popular Disney Movies (Worldwide Gross)",
+    "answers": [
+      "The Lion King (2019)",
+      "Frozen II",
+      "Frozen",
+      "Beauty and the Beast (2017)",
+      "Incredibles 2"
+    ],
+    "snakePosition": 1,
+    "source": "Box Office Mojo (2024)"
+  },
+  {
+    "id": 318,
+    "category": "Movies",
+    "question": "Most Popular Pixar Movies (Worldwide Gross)",
+    "answers": [
+      "Incredibles 2",
+      "Toy Story 4",
+      "Toy Story 3",
+      "Finding Dory",
+      "Finding Nemo"
+    ],
+    "snakePosition": 4,
+    "source": "Box Office Mojo (2024)"
+  },
+  {
+    "id": 319,
+    "category": "Movies",
+    "question": "Most Popular DreamWorks Movies (Worldwide Gross)",
+    "answers": [
+      "Shrek 2",
+      "Madagascar 3",
+      "Shrek the Third",
+      "Kung Fu Panda",
+      "How to Train Your Dragon 2"
+    ],
+    "snakePosition": 2,
+    "source": "Box Office Mojo (2024)"
+  },
+  {
+    "id": 320,
+    "category": "Gaming",
+    "question": "Most Popular Video Game Consoles (Lifetime Sales)",
+    "answers": [
+      "PlayStation 2",
+      "Nintendo DS",
+      "Nintendo Switch",
+      "Game Boy and Color",
+      "PlayStation 4"
+    ],
+    "snakePosition": 5,
+    "source": "Sony and Nintendo Investor Reports (2024)"
+  },
+  {
+    "id": 321,
+    "category": "Gaming",
+    "question": "Most Popular Video Games (Lifetime Sales)",
+    "answers": [
+      "Minecraft",
+      "Grand Theft Auto V",
+      "Tetris",
+      "Wii Sports",
+      "PUBG"
+    ],
+    "snakePosition": 3,
+    "source": "Company Sales Disclosures and Statista (2024)"
+  },
+  {
+    "id": 322,
+    "category": "Gaming",
+    "question": "Most Popular Mobile Games (All Time Downloads)",
+    "answers": [
+      "Subway Surfers",
+      "Candy Crush Saga",
+      "Temple Run",
+      "Free Fire",
+      "Among Us"
+    ],
+    "snakePosition": 1,
+    "source": "Data.ai (2024)"
+  },
+  {
+    "id": 323,
+    "category": "Gaming",
+    "question": "Most Popular Console Sports Games",
+    "answers": [
+      "FIFA",
+      "Madden NFL",
+      "NBA 2K",
+      "MLB The Show",
+      "NHL"
+    ],
+    "snakePosition": 4,
+    "source": "VGChartz (2024)"
+  },
+  {
+    "id": 324,
+    "category": "Gaming",
+    "question": "Most Popular Game Genres (Global)",
+    "answers": [
+      "Action",
+      "Shooter",
+      "Sports",
+      "RPG",
+      "Adventure"
+    ],
+    "snakePosition": 2,
+    "source": "Newzoo Global Games Market (2024)"
+  },
+  {
+    "id": 325,
+    "category": "Technology",
+    "question": "Most Popular Streaming Devices (U.S.)",
+    "answers": [
+      "Roku",
+      "Amazon Fire TV",
+      "Apple TV",
+      "Chromecast",
+      "Android TV"
+    ],
+    "snakePosition": 5,
+    "source": "Parks Associates (2024)"
+  },
+  {
+    "id": 326,
+    "category": "Technology",
+    "question": "Most Popular Smart Speaker Brands (U.S.)",
+    "answers": [
+      "Amazon Echo",
+      "Google Nest",
+      "Apple HomePod",
+      "Sonos",
+      "Bose"
+    ],
+    "snakePosition": 3,
+    "source": "Canalys Smart Speaker Report (2024)"
+  },
+  {
+    "id": 327,
+    "category": "Technology",
+    "question": "Most Popular Home Appliances (U.S.)",
+    "answers": [
+      "Microwave",
+      "Coffee Maker",
+      "Air Fryer",
+      "Dishwasher",
+      "Blender"
+    ],
+    "snakePosition": 1,
+    "source": "Statista Consumer Appliances (2024)"
+  },
+  {
+    "id": 328,
+    "category": "Technology",
+    "question": "Most Popular Kitchen Gadgets (U.S.)",
+    "answers": [
+      "Air Fryer",
+      "Instant Pot",
+      "Keurig",
+      "Ninja Blender",
+      "Toaster Oven"
+    ],
+    "snakePosition": 4,
+    "source": "Consumer Reports Trends (2024)"
+  },
+  {
+    "id": 329,
+    "category": "Health",
+    "question": "Most Popular Household Cleaning Brands",
+    "answers": [
+      "Clorox",
+      "Lysol",
+      "Tide",
+      "Swiffer",
+      "Dawn"
+    ],
+    "snakePosition": 2,
+    "source": "Statista Household Products (2024)"
+  },
+  {
+    "id": 330,
+    "category": "Health",
+    "question": "Most Popular Laundry Detergent Brands (U.S.)",
+    "answers": [
+      "Tide",
+      "Gain",
+      "Arm and Hammer",
+      "Persil",
+      "All"
+    ],
+    "snakePosition": 5,
+    "source": "Statista Household Products (2024)"
+  },
+  {
+    "id": 331,
+    "category": "Health",
+    "question": "Most Popular Paper Towel Brands (U.S.)",
+    "answers": [
+      "Bounty",
+      "Scott",
+      "Viva",
+      "Sparkle",
+      "Brawny"
+    ],
+    "snakePosition": 3,
+    "source": "Statista Household Products (2024)"
+  },
+  {
+    "id": 332,
+    "category": "Health",
+    "question": "Most Popular Toilet Paper Brands (U.S.)",
+    "answers": [
+      "Charmin",
+      "Cottonelle",
+      "Scott",
+      "Quilted Northern",
+      "Angel Soft"
+    ],
+    "snakePosition": 1,
+    "source": "Statista Household Products (2024)"
+  },
+  {
+    "id": 333,
+    "category": "Food",
+    "question": "Most Popular Soda Fountain Chains (U.S.)",
+    "answers": [
+      "McDonald's",
+      "Taco Bell",
+      "Wendy's",
+      "Burger King",
+      "KFC"
+    ],
+    "snakePosition": 4,
+    "source": "QSR Beverage Sales Data (2024)"
+  },
+  {
+    "id": 334,
+    "category": "Business",
+    "question": "Most Popular U.S. Gas Station Brands",
+    "answers": [
+      "Shell",
+      "Exxon",
+      "Chevron",
+      "BP",
+      "Mobil"
+    ],
+    "snakePosition": 2,
+    "source": "Brand Finance Oil and Gas (2024)"
+  },
+  {
+    "id": 335,
+    "category": "Business",
+    "question": "Most Popular Credit Card Networks",
+    "answers": [
+      "Visa",
+      "Mastercard",
+      "American Express",
+      "Discover",
+      "UnionPay"
+    ],
+    "snakePosition": 5,
+    "source": "Nilson Report (2024)"
+  },
+  {
+    "id": 336,
+    "category": "Business",
+    "question": "Most Popular U.S. Banks by Assets",
+    "answers": [
+      "JPMorgan Chase",
+      "Bank of America",
+      "Citibank",
+      "Wells Fargo",
+      "Goldman Sachs"
+    ],
+    "snakePosition": 3,
+    "source": "FDIC Quarterly Banking Profile (2024)"
+  },
+  {
+    "id": 337,
+    "category": "Business",
+    "question": "Largest Global Banks by Assets",
+    "answers": [
+      "ICBC",
+      "China Construction Bank",
+      "Agricultural Bank of China",
+      "Bank of China",
+      "JPMorgan Chase"
+    ],
+    "snakePosition": 1,
+    "source": "S&P Global Market Intelligence (2024)"
+  },
+  {
+    "id": 338,
+    "category": "Business",
+    "question": "Most Popular Credit Unions (U.S. Assets)",
+    "answers": [
+      "Navy Federal",
+      "State Employees'",
+      "PenFed",
+      "SchoolsFirst",
+      "Boeing Employees"
+    ],
+    "snakePosition": 4,
+    "source": "NCUA Data (2024)"
+  },
+  {
+    "id": 339,
+    "category": "Business",
+    "question": "Most Popular U.S. Insurance Companies",
+    "answers": [
+      "State Farm",
+      "GEICO",
+      "Progressive",
+      "Allstate",
+      "USAA"
+    ],
+    "snakePosition": 2,
+    "source": "NAIC Market Share Report (2024)"
+  },
+  {
+    "id": 340,
+    "category": "Technology",
+    "question": "Most Popular U.S. Cell Phone Plans (Carrier Share)",
+    "answers": [
+      "Verizon",
+      "AT&T",
+      "T-Mobile",
+      "Xfinity Mobile",
+      "Spectrum Mobile"
+    ],
+    "snakePosition": 5,
+    "source": "FCC Communications Marketplace Report (2024)"
+  },
+  {
+    "id": 341,
+    "category": "Technology",
+    "question": "Most Popular U.S. Internet Providers",
+    "answers": [
+      "Xfinity",
+      "Spectrum",
+      "AT&T",
+      "Verizon Fios",
+      "Cox"
+    ],
+    "snakePosition": 3,
+    "source": "FCC Broadband Data (2024)"
+  },
+  {
+    "id": 342,
+    "category": "Business",
+    "question": "Most Popular U.S. Home Improvement Retailers",
+    "answers": [
+      "Home Depot",
+      "Lowe's",
+      "Menards",
+      "Ace Hardware",
+      "True Value"
+    ],
+    "snakePosition": 1,
+    "source": "National Retail Federation (2024)"
+  },
+  {
+    "id": 343,
+    "category": "Business",
+    "question": "Most Popular U.S. Electronics Retailers",
+    "answers": [
+      "Best Buy",
+      "Amazon",
+      "Walmart",
+      "Target",
+      "Costco"
+    ],
+    "snakePosition": 4,
+    "source": "Digital Commerce 360 (2024)"
+  },
+  {
+    "id": 344,
+    "category": "Business",
+    "question": "Most Popular U.S. Department Stores",
+    "answers": [
+      "Macy's",
+      "Kohl's",
+      "Nordstrom",
+      "JCPenney",
+      "Bloomingdale's"
+    ],
+    "snakePosition": 2,
+    "source": "National Retail Federation (2024)"
+  },
+  {
+    "id": 345,
+    "category": "Business",
+    "question": "Most Popular U.S. Discount Stores",
+    "answers": [
+      "Walmart",
+      "Target",
+      "TJ Maxx",
+      "Marshalls",
+      "Ross"
+    ],
+    "snakePosition": 5,
+    "source": "National Retail Federation (2024)"
+  },
+  {
+    "id": 346,
+    "category": "Business",
+    "question": "Most Popular Warehouse Clubs (U.S.)",
+    "answers": [
+      "Costco",
+      "Sam's Club",
+      "BJ's",
+      "PriceSmart",
+      "Metro AG Cash and Carry"
+    ],
+    "snakePosition": 3,
+    "source": "IBISWorld Warehouse Clubs (2024)"
+  },
+  {
+    "id": 347,
+    "category": "Food",
+    "question": "Most Popular U.S. Fast Food Breakfast Beverages",
+    "answers": [
+      "Coffee",
+      "Orange Juice",
+      "Iced Coffee",
+      "Soft Drinks",
+      "Smoothies"
+    ],
+    "snakePosition": 1,
+    "source": "QSR Beverage Report (2024)"
+  },
+  {
+    "id": 348,
+    "category": "Food",
+    "question": "Most Popular U.S. Road Trip Snacks",
+    "answers": [
+      "Chips",
+      "Candy",
+      "Beef Jerky",
+      "Trail Mix",
+      "Soda"
+    ],
+    "snakePosition": 4,
+    "source": "YouGov Consumer Polling (2024)"
+  },
+  {
+    "id": 349,
+    "category": "Food",
+    "question": "Most Popular U.S. Movie Snacks",
+    "answers": [
+      "Popcorn",
+      "Candy",
+      "Soda",
+      "Nachos",
+      "Pretzels"
+    ],
+    "snakePosition": 2,
+    "source": "National Association of Theatre Owners Survey (2024)"
+  },
+  {
+    "id": 350,
+    "category": "Food",
+    "question": "Most Popular U.S. Ice Cream Shops",
+    "answers": [
+      "Baskin-Robbins",
+      "Dairy Queen",
+      "Cold Stone Creamery",
+      "Ben & Jerry's",
+      "Rita's Italian Ice"
+    ],
+    "snakePosition": 5,
+    "source": "Technomic Chain Restaurant Report (2024)"
   }
 ]
