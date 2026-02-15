@@ -4,12 +4,13 @@ import { useState } from "react";
 import { Player, PLAYER_COLORS } from "@/types/game";
 
 interface GameSetupProps {
-  onStart: (players: Player[]) => void;
+  onStart: (players: Player[], winningScore?: number) => void;
 }
 
 const GameSetup: React.FC<GameSetupProps> = ({ onStart }) => {
   const [playerCount, setPlayerCount] = useState(2);
   const [playerNames, setPlayerNames] = useState<string[]>(["", ""]);
+  const [winningScore, setWinningScore] = useState(10);
 
   const handlePlayerCountChange = (count: number) => {
     setPlayerCount(count);
@@ -29,15 +30,15 @@ const GameSetup: React.FC<GameSetupProps> = ({ onStart }) => {
       color: PLAYER_COLORS[index].name,
       score: 0,
     }));
-    onStart(players);
+    onStart(players, winningScore);
   };
 
   const canStart = playerNames.filter((n) => n.trim()).length >= 2;
 
   return (
-    <div className="w-full h-full flex flex-col justify-center overflow-y-auto">
-      <div className="clean-card w-full mx-2 my-4 p-6 space-y-6 max-w-md">
-        <div className="text-center">
+    <div className="flex flex-col h-full mobile-container">
+      <div className="clean-card mx-2 my-4 p-6 space-y-6 flex-1 overflow-y-auto">
+        <div className="text-center max-w-2xl mx-auto">
           <div className="flex items-center justify-center gap-3 mb-4">
             <span className="text-5xl">🐍</span>
             <div className="text-left">
@@ -47,7 +48,7 @@ const GameSetup: React.FC<GameSetupProps> = ({ onStart }) => {
           </div>
         </div>
 
-        <div className="space-y-6">
+        <div className="space-y-6 max-w-2xl mx-auto">
           <section>
             <h2 className="title mb-4">How to Play</h2>
             <div className="space-y-3 body text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
@@ -77,6 +78,31 @@ const GameSetup: React.FC<GameSetupProps> = ({ onStart }) => {
                     }}
                   >
                     {count}
+                  </button>
+                );
+              })}
+            </div>
+          </section>
+
+          <section>
+            <label className="title block mb-4 text-lg font-semibold">
+              Winning Score
+            </label>
+            <div className="grid grid-cols-4 gap-3">
+              {[10, 20, 30, 40].map((score) => {
+                const isActive = winningScore === score;
+                return (
+                  <button
+                    key={score}
+                    type="button"
+                    onClick={() => setWinningScore(score)}
+                    className={"btn-secondary text-center touch-target" + (isActive ? " bg-[color:var(--accent-soft)]" : "")}
+                    style={{
+                      color: isActive ? "var(--accent)" : "var(--text-secondary)",
+                      fontWeight: isActive ? 600 : 500,
+                    }}
+                  >
+                    {score}
                   </button>
                 );
               })}

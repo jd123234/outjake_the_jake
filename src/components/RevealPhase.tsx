@@ -10,6 +10,7 @@ interface RevealPhaseProps {
 
 const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
   const [revealedPositions, setRevealedPositions] = useState<boolean[]>([false, false, false, false, false, false]);
+  const [snakeRevealed, setSnakeRevealed] = useState(false);
   const [autoRevealing, setAutoRevealing] = useState(false);
   const [currentRevealIndex, setCurrentRevealIndex] = useState(0);
 
@@ -67,6 +68,14 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
     if (!autoRevealing) return;
     
     if (currentRevealIndex >= 6) {
+      // After all positions are revealed, reveal the snake
+      if (!snakeRevealed) {
+        const timer = setTimeout(() => {
+          setSnakeRevealed(true);
+          setAutoRevealing(false);
+        }, 2000);
+        return () => clearTimeout(timer);
+      }
       setAutoRevealing(false);
       return;
     }
@@ -81,13 +90,13 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
     }, 2000); // 2 second delay between reveals
 
     return () => clearTimeout(timer);
-  }, [autoRevealing, currentRevealIndex]);
+  }, [autoRevealing, currentRevealIndex, snakeRevealed]);
 
   const handleNext = () => {
     onComplete();
   };
 
-  const allRevealed = revealedPositions.every(Boolean);
+  const allRevealed = revealedPositions.every(Boolean) && snakeRevealed;
   const doubleDownResults = getDoubleDownResults();
 
   return (
@@ -179,9 +188,7 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
                 {/* Position badge */}
                 <div
                   className={`w-10 h-10 flex items-center justify-center rounded-full text-sm font-bold text-white ${
-                    isSnakeAnswer
-                      ? "bg-orange-500"
-                      : isRevealed
+                    isRevealed
                       ? isCorrect
                         ? "bg-[var(--success)]"
                         : "bg-[var(--danger)]"
@@ -192,9 +199,6 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
                 </div>
                 
                 {/* Snake indicator if this is the snake answer */}
-                {isSnakeAnswer && (
-                  <div className="text-xl">🐍</div>
-                )}
                 
                 {/* Answer text */}
                 <div className="flex-1 body leading-snug">
@@ -213,7 +217,7 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
                 {isRevealed && (
                   <div className="flex items-center gap-2">
                     {isSnakeAnswer ? (
-                      <span className="text-sm font-semibold text-green-600">
+                      <span className="text-lg font-bold text-green-600">
                         THE SNAKE!
                       </span>
                     ) : (
@@ -222,7 +226,7 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
                           {isCorrect ? "✅" : "❌"}
                         </span>
                         {correctRank && (
-                          <span className="caption font-semibold" style={{ color: "var(--text-secondary)" }}>
+                          <span className="body font-bold" style={{ color: "var(--text-primary)" }}>
                             (#{correctRank})
                           </span>
                         )}

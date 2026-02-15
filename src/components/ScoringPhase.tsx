@@ -184,16 +184,6 @@ export default function ScoringPhase({ gameState, onNextRound }: ScoringPhasePro
                   />
                   <div>
                     <div className="body font-semibold">{player.name}</div>
-                    <div className="caption space-y-1">
-                      {regularPoints > 0 && (
-                        <div>🎯 Rankings: {regularPoints} pts</div>
-                      )}
-                      {hadDoubleDown && (
-                        <div className={doubleDownPoints > 0 ? "text-green-600 font-semibold" : "text-gray-500"}>
-                          💎 Double Down #{doubleDownPosition! + 1}: {doubleDownPoints > 0 ? `+${doubleDownPoints} pts!` : "0 pts"}
-                        </div>
-                      )}
-                    </div>
                   </div>
                 </div>
                 <div className="text-right">
@@ -245,9 +235,9 @@ export default function ScoringPhase({ gameState, onNextRound }: ScoringPhasePro
             onClick={() => onNextRound(updatedPlayers)}
             className="btn-primary w-full touch-target text-lg font-semibold"
           >
-            {gameState.round < gameState.totalRounds
-              ? "Next Round →"
-              : "See Final Results 🏆"}
+            {updatedPlayers.some(player => player.score >= (gameState.winningScore || 10))
+              ? "See Final Results 🏆"
+              : "Next Round →"}
           </button>
         </div>
       </div>

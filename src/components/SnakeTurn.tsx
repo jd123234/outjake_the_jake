@@ -35,17 +35,6 @@ export default function SnakeTurn({ snake, onSubmit, drawCards }: SnakeTurnProps
 
   return (
     <div className="flex flex-col h-full">
-      {/* Compact header/instructions */}
-      <div className="clean-card px-4 py-3 mb-2 space-y-1">
-        <div className="text-center max-w-2xl mx-auto space-y-2">
-          <div className="text-5xl">🐍</div>
-          <div className="space-y-2">
-            <h2 className="title">{snake.name}, you're the Snake</h2>
-            <p className="caption">Create a fake answer that blends in.</p>
-          </div>
-        </div>
-      </div>
-
       <div className="flex-1 flex flex-col gap-2 overflow-hidden">
         {/* Step: choose card */}
         {showInstructions ? (

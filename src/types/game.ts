@@ -28,6 +28,7 @@ export interface GameState {
   round: number;
   totalRounds: number;
   timeRemaining: number;
+  winningScore?: number;
 }
 
 export const PLAYER_COLORS = [

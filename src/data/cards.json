@@ -1400,6 +1400,1406 @@
     "source": "Basketball Reference (2024)"
   },
   {
+    "id": 101,
+    "category": "Entertainment",
+    "question": "Most Watched Netflix Series (All Time Hours Viewed)",
+    "answers": [
+      "Wednesday",
+      "Stranger Things Season 4",
+      "Dahmer",
+      "Bridgerton Season 1",
+      "The Night Agent"
+    ],
+    "snakePosition": 3,
+    "source": "Netflix Top 10 Data (2024)"
+  },
+  {
+    "id": 102,
+    "category": "Sports",
+    "question": "Most Successful NBA Players (Championship Rings)",
+    "answers": [
+      "Bill Russell",
+      "Sam Jones",
+      "John Havlicek",
+      "Tom Heinsohn",
+      "K.C. Jones"
+    ],
+    "snakePosition": 4,
+    "source": "NBA Official Records (2024)"
+  },
+  {
+    "id": 103,
+    "category": "Sports",
+    "question": "Most Successful NFL Franchises (Playoff Wins)",
+    "answers": [
+      "New England Patriots",
+      "Green Bay Packers",
+      "Pittsburgh Steelers",
+      "Dallas Cowboys",
+      "San Francisco 49ers"
+    ],
+    "snakePosition": 2,
+    "source": "Pro Football Reference (2024)"
+  },
+  {
+    "id": 104,
+    "category": "Entertainment",
+    "question": "Highest Grossing Animated Films",
+    "answers": [
+      "Frozen II",
+      "The Super Mario Bros Movie",
+      "Frozen",
+      "Incredibles 2",
+      "Minions"
+    ],
+    "snakePosition": 1,
+    "source": "Box Office Mojo (2024)"
+  },
+  {
+    "id": 105,
+    "category": "Sports",
+    "question": "Most Played Sports in U.S. High Schools (Girls)",
+    "answers": [
+      "Track and Field",
+      "Volleyball",
+      "Basketball",
+      "Soccer",
+      "Softball"
+    ],
+    "snakePosition": 5,
+    "source": "NFHS Participation Survey (2023)"
+  },
+  {
+    "id": 106,
+    "category": "Sports",
+    "question": "Most Valuable MLB Players Contracts (Total Value)",
+    "answers": [
+      "Shohei Ohtani",
+      "Mike Trout",
+      "Mookie Betts",
+      "Aaron Judge",
+      "Francisco Lindor"
+    ],
+    "snakePosition": 3,
+    "source": "Spotrac (2024)"
+  },
+  {
+    "id": 107,
+    "category": "Sports",
+    "question": "Most Successful Premier League Clubs (Titles)",
+    "answers": [
+      "Manchester United",
+      "Manchester City",
+      "Chelsea",
+      "Arsenal",
+      "Liverpool"
+    ],
+    "snakePosition": 2,
+    "source": "Premier League Records (2024)"
+  },
+  {
+    "id": 108,
+    "category": "Food",
+    "question": "Most Popular Coffee Chains (Global Locations)",
+    "answers": [
+      "Starbucks",
+      "Costa Coffee",
+      "Tim Hortons",
+      "Dunkin'",
+      "McCafé"
+    ],
+    "snakePosition": 4,
+    "source": "Company Reports (2024)"
+  },
+  {
+    "id": 109,
+    "category": "Technology",
+    "question": "Most Followed Twitter/X Accounts",
+    "answers": [
+      "Elon Musk",
+      "Barack Obama",
+      "Cristiano Ronaldo",
+      "Justin Bieber",
+      "Rihanna"
+    ],
+    "snakePosition": 1,
+    "source": "X Platform Data (2024)"
+  },
+  {
+    "id": 110,
+    "category": "Sports",
+    "question": "Most Successful WNBA Players (MVP Awards)",
+    "answers": [
+      "Sheryl Swoopes",
+      "Lisa Leslie",
+      "Diana Taurasi",
+      "Lauren Jackson",
+      "A'ja Wilson"
+    ],
+    "snakePosition": 5,
+    "source": "WNBA Records (2024)"
+  },
+  {
+    "id": 111,
+    "category": "Entertainment",
+    "question": "Most Popular Movie Genres (U.S. Box Office Share)",
+    "answers": [
+      "Action",
+      "Comedy",
+      "Drama",
+      "Adventure",
+      "Horror"
+    ],
+    "snakePosition": 3,
+    "source": "MPAA Annual Report (2024)"
+  },
+  {
+    "id": 112,
+    "category": "Entertainment",
+    "question": "Highest Grossing Pixar Movies",
+    "answers": [
+      "Incredibles 2",
+      "Toy Story 4",
+      "Toy Story 3",
+      "Finding Dory",
+      "Finding Nemo"
+    ],
+    "snakePosition": 2,
+    "source": "Box Office Mojo (2024)"
+  },
+  {
+    "id": 113,
+    "category": "Food",
+    "question": "Most Popular Sandwiches (U.S.)",
+    "answers": [
+      "Grilled Cheese",
+      "Turkey",
+      "Ham",
+      "BLT",
+      "Roast Beef"
+    ],
+    "snakePosition": 4,
+    "source": "YouGov Food Rankings (2024)"
+  },
+  {
+    "id": 114,
+    "category": "Food",
+    "question": "Most Popular Candy Bars (U.S.)",
+    "answers": [
+      "Reese's",
+      "Snickers",
+      "Kit Kat",
+      "Hershey's",
+      "Twix"
+    ],
+    "snakePosition": 1,
+    "source": "Candy Industry Report (2024)"
+  },
+  {
+    "id": 115,
+    "category": "Food",
+    "question": "Most Popular Fast Food Breakfast Items",
+    "answers": [
+      "Egg McMuffin",
+      "Breakfast Burrito",
+      "Hash Browns",
+      "Chicken Biscuit",
+      "Sausage Biscuit"
+    ],
+    "snakePosition": 5,
+    "source": "QSR Magazine (2024)"
+  },
+  {
+    "id": 116,
+    "category": "Entertainment",
+    "question": "Most Watched Super Bowl Halftime Performances (Viewership)",
+    "answers": [
+      "Rihanna",
+      "Katy Perry",
+      "Lady Gaga",
+      "Beyoncé",
+      "Bruno Mars"
+    ],
+    "snakePosition": 3,
+    "source": "Nielsen Ratings (2024)"
+  },
+  {
+    "id": 117,
+    "category": "Technology",
+    "question": "Most Popular Video Game Franchises (Units Sold)",
+    "answers": [
+      "Mario",
+      "Pokémon",
+      "Call of Duty",
+      "Grand Theft Auto",
+      "FIFA"
+    ],
+    "snakePosition": 2,
+    "source": "VGChartz (2024)"
+  },
+  {
+    "id": 118,
+    "category": "Food",
+    "question": "Most Popular Soda Brands in U.S.",
+    "answers": [
+      "Coca-Cola",
+      "Pepsi",
+      "Dr Pepper",
+      "Sprite",
+      "Mountain Dew"
+    ],
+    "snakePosition": 4,
+    "source": "Beverage Industry (2024)"
+  },
+  {
+    "id": 119,
+    "category": "Food",
+    "question": "Most Popular Restaurant Chains (U.S. Locations)",
+    "answers": [
+      "Subway",
+      "McDonald's",
+      "Starbucks",
+      "Dunkin'",
+      "Taco Bell"
+    ],
+    "snakePosition": 1,
+    "source": "QSR Top 50 (2024)"
+  },
+  {
+    "id": 120,
+    "category": "Entertainment",
+    "question": "Highest Grossing Actors (Lead Roles Only)",
+    "answers": [
+      "Robert Downey Jr.",
+      "Tom Cruise",
+      "Scarlett Johansson",
+      "Leonardo DiCaprio",
+      "Chris Hemsworth"
+    ],
+    "snakePosition": 5,
+    "source": "The Numbers (2024)"
+  },
+  {
+    "id": 121,
+    "category": "Food",
+    "question": "Most Popular Pizza Chains (U.S.)",
+    "answers": [
+      "Domino's",
+      "Pizza Hut",
+      "Little Caesars",
+      "Papa John's",
+      "Marco's"
+    ],
+    "snakePosition": 3,
+    "source": "QSR Rankings (2024)"
+  },
+  {
+    "id": 122,
+    "category": "Technology",
+    "question": "Most Popular Smartphone Apps (Daily Use)",
+    "answers": [
+      "TikTok",
+      "Instagram",
+      "YouTube",
+      "WhatsApp",
+      "Snapchat"
+    ],
+    "snakePosition": 2,
+    "source": "DataReportal (2024)"
+  },
+  {
+    "id": 123,
+    "category": "Entertainment",
+    "question": "Highest Grossing Superhero Movies",
+    "answers": [
+      "Avengers Endgame",
+      "Avengers Infinity War",
+      "Spider-Man No Way Home",
+      "The Avengers",
+      "Black Panther"
+    ],
+    "snakePosition": 4,
+    "source": "Box Office Mojo (2024)"
+  },
+  {
+    "id": 124,
+    "category": "Entertainment",
+    "question": "Most Popular Streaming TV Shows (U.S.)",
+    "answers": [
+      "Yellowstone",
+      "Stranger Things",
+      "The Office",
+      "Grey's Anatomy",
+      "NCIS"
+    ],
+    "snakePosition": 1,
+    "source": "Nielsen Streaming Ratings (2024)"
+  },
+  {
+    "id": 125,
+    "category": "Entertainment",
+    "question": "Most Popular Board Game Franchises",
+    "answers": [
+      "Monopoly",
+      "Uno",
+      "Scrabble",
+      "Risk",
+      "Clue"
+    ],
+    "snakePosition": 5,
+    "source": "Hasbro / Mattel Reports (2024)"
+  },
+  {
+    "id": 126,
+    "category": "Technology",
+    "question": "Most Popular Social Media Influencers (Followers Combined Platforms)",
+    "answers": [
+      "MrBeast",
+      "Cristiano Ronaldo",
+      "Selena Gomez",
+      "Kylie Jenner",
+      "Khaby Lame"
+    ],
+    "snakePosition": 3,
+    "source": "Social Blade Aggregated Data (2024)"
+  },
+  {
+    "id": 127,
+    "category": "Food",
+    "question": "Most Popular Condiments Worldwide",
+    "answers": [
+      "Ketchup",
+      "Mayonnaise",
+      "Soy Sauce",
+      "Mustard",
+      "Hot Sauce"
+    ],
+    "snakePosition": 2,
+    "source": "Statista Consumer Survey (2024)"
+  },
+  {
+    "id": 128,
+    "category": "Food",
+    "question": "Most Popular Frozen Foods (U.S.)",
+    "answers": [
+      "Pizza",
+      "Ice Cream",
+      "Vegetables",
+      "Chicken Nuggets",
+      "French Fries"
+    ],
+    "snakePosition": 4,
+    "source": "Nielsen Grocery Data (2024)"
+  },
+  {
+    "id": 129,
+    "category": "Technology",
+    "question": "Most Popular Ride Share Apps",
+    "answers": [
+      "Uber",
+      "Lyft",
+      "Grab",
+      "DiDi",
+      "Bolt"
+    ],
+    "snakePosition": 1,
+    "source": "Company Reports (2024)"
+  },
+  {
+    "id": 130,
+    "category": "Entertainment",
+    "question": "Highest Grossing Fantasy Films",
+    "answers": [
+      "Avatar",
+      "The Lord of the Rings The Return of the King",
+      "Frozen II",
+      "Harry Potter and the Deathly Hallows Part 2",
+      "The Hobbit An Unexpected Journey"
+    ],
+    "snakePosition": 5,
+    "source": "Box Office Mojo (2024)"
+  },
+  {
+    "id": 131,
+    "category": "Food",
+    "question": "Most Popular Fast Food Chicken Chains (U.S.)",
+    "answers": [
+      "Chick-fil-A",
+      "KFC",
+      "Popeyes",
+      "Raising Cane's",
+      "Zaxby's"
+    ],
+    "snakePosition": 3,
+    "source": "QSR Magazine (2024)"
+  },
+  {
+    "id": 132,
+    "category": "Entertainment",
+    "question": "Highest Grossing Romance Films",
+    "answers": [
+      "Titanic",
+      "Beauty and the Beast (2017)",
+      "The Twilight Saga Breaking Dawn Part 2",
+      "Fifty Shades of Grey",
+      "Pretty Woman"
+    ],
+    "snakePosition": 2,
+    "source": "Box Office Mojo (2024)"
+  },
+  {
+    "id": 133,
+    "category": "Food",
+    "question": "Most Popular Fast Food Burgers (Signature Items)",
+    "answers": [
+      "Big Mac",
+      "Whopper",
+      "Baconator",
+      "Double-Double",
+      "Quarter Pounder"
+    ],
+    "snakePosition": 4,
+    "source": "QSR Industry Reports (2024)"
+  },
+  {
+    "id": 134,
+    "category": "Food",
+    "question": "Most Popular Energy Drink Brands (Global)",
+    "answers": [
+      "Red Bull",
+      "Monster",
+      "Rockstar",
+      "Celsius",
+      "Bang"
+    ],
+    "snakePosition": 1,
+    "source": "Beverage Industry Market Report (2024)"
+  },
+  {
+    "id": 135,
+    "category": "Food",
+    "question": "Most Popular Fast Food Mexican Chains",
+    "answers": [
+      "Taco Bell",
+      "Chipotle",
+      "Qdoba",
+      "Del Taco",
+      "Moe's"
+    ],
+    "snakePosition": 5,
+    "source": "QSR Rankings (2024)"
+  },
+  {
+    "id": 136,
+    "category": "Entertainment",
+    "question": "Most Popular TV Sitcoms (All Time U.S. Viewership)",
+    "answers": [
+      "Friends",
+      "Seinfeld",
+      "The Big Bang Theory",
+      "Cheers",
+      "The Office"
+    ],
+    "snakePosition": 3,
+    "source": "Nielsen Historical Ratings (2024)"
+  },
+  {
+    "id": 137,
+    "category": "Technology",
+    "question": "Most Popular Smartphone Brands (Global Market Share)",
+    "answers": [
+      "Samsung",
+      "Apple",
+      "Xiaomi",
+      "Oppo",
+      "Vivo"
+    ],
+    "snakePosition": 2,
+    "source": "IDC Worldwide Smartphone Report (2024)"
+  },
+  {
+    "id": 138,
+    "category": "Business",
+    "question": "Most Popular Shoe Brands (Global)",
+    "answers": [
+      "Nike",
+      "Adidas",
+      "Puma",
+      "Skechers",
+      "New Balance"
+    ],
+    "snakePosition": 4,
+    "source": "Brand Finance Report (2024)"
+  },
+  {
+    "id": 139,
+    "category": "Entertainment",
+    "question": "Highest Grossing Live Action Remakes",
+    "answers": [
+      "The Lion King (2019)",
+      "Beauty and the Beast (2017)",
+      "Aladdin (2019)",
+      "The Jungle Book (2016)",
+      "Alice in Wonderland (2010)"
+    ],
+    "snakePosition": 1,
+    "source": "Box Office Mojo (2024)"
+  },
+  {
+    "id": 140,
+    "category": "Business",
+    "question": "Most Popular Sportswear Brands",
+    "answers": [
+      "Nike",
+      "Adidas",
+      "Under Armour",
+      "Puma",
+      "Reebok"
+    ],
+    "snakePosition": 5,
+    "source": "Brand Finance (2024)"
+  },
+  {
+    "id": 141,
+    "category": "Food",
+    "question": "Most Popular U.S. Pizza Toppings (By Sales)",
+    "answers": [
+      "Pepperoni",
+      "Sausage",
+      "Mushrooms",
+      "Onions",
+      "Extra Cheese"
+    ],
+    "snakePosition": 3,
+    "source": "YouGov Food Data (2024)"
+  },
+  {
+    "id": 142,
+    "category": "Food",
+    "question": "Most Popular Beer Brands (U.S.)",
+    "answers": [
+      "Bud Light",
+      "Coors Light",
+      "Miller Lite",
+      "Budweiser",
+      "Michelob Ultra"
+    ],
+    "snakePosition": 2,
+    "source": "Beverage Industry Report (2024)"
+  },
+  {
+    "id": 143,
+    "category": "Entertainment",
+    "question": "Most Popular Streaming Movies (Netflix All Time Hours)",
+    "answers": [
+      "Red Notice",
+      "Don't Look Up",
+      "The Adam Project",
+      "Bird Box",
+      "Extraction"
+    ],
+    "snakePosition": 4,
+    "source": "Netflix Top 10 Data (2024)"
+  },
+  {
+    "id": 144,
+    "category": "Food",
+    "question": "Most Popular Fast Food Desserts",
+    "answers": [
+      "McFlurry",
+      "Frosty",
+      "Apple Pie",
+      "Blizzard",
+      "Churros"
+    ],
+    "snakePosition": 1,
+    "source": "QSR Industry Reports (2024)"
+  },
+  {
+    "id": 145,
+    "category": "Food",
+    "question": "Most Popular U.S. Snack Brands",
+    "answers": [
+      "Lay's",
+      "Doritos",
+      "Cheetos",
+      "Ritz",
+      "Oreos"
+    ],
+    "snakePosition": 5,
+    "source": "Statista Consumer Insights (2024)"
+  },
+  {
+    "id": 146,
+    "category": "Entertainment",
+    "question": "Highest Grossing Disney Animated Films",
+    "answers": [
+      "Frozen II",
+      "Frozen",
+      "The Lion King (1994)",
+      "Zootopia",
+      "Moana"
+    ],
+    "snakePosition": 3,
+    "source": "Box Office Mojo (2024)"
+  },
+  {
+    "id": 147,
+    "category": "Technology",
+    "question": "Most Popular Sports Video Game Franchises",
+    "answers": [
+      "Madden NFL",
+      "FIFA",
+      "NBA 2K",
+      "MLB The Show",
+      "NHL"
+    ],
+    "snakePosition": 2,
+    "source": "VGChartz (2024)"
+  },
+  {
+    "id": 148,
+    "category": "Business",
+    "question": "Most Popular Car Brands (Global Sales)",
+    "answers": [
+      "Toyota",
+      "Volkswagen",
+      "Hyundai",
+      "Ford",
+      "Honda"
+    ],
+    "snakePosition": 4,
+    "source": "Statista Global Sales Report (2024)"
+  },
+  {
+    "id": 149,
+    "category": "Food",
+    "question": "Most Popular Candy Brands (Global)",
+    "answers": [
+      "M&M's",
+      "Snickers",
+      "Kit Kat",
+      "Reese's",
+      "Kinder"
+    ],
+    "snakePosition": 1,
+    "source": "Candy Industry Global Rankings (2024)"
+  },
+  {
+    "id": 150,
+    "category": "Entertainment",
+    "question": "Most Popular Theme Parks (U.S. Attendance)",
+    "answers": [
+      "Magic Kingdom",
+      "Disneyland",
+      "Universal Studios Hollywood",
+      "EPCOT",
+      "Hollywood Studios"
+    ],
+    "snakePosition": 5,
+    "source": "TEA Global Attractions Report (2023)"
+  },
+  {
+    "id": 151,
+    "category": "Entertainment",
+    "question": "Highest Grossing Thriller Films",
+    "answers": [
+      "The Sixth Sense",
+      "The Passion of the Christ",
+      "Jaws",
+      "The Hunger Games",
+      "The Da Vinci Code"
+    ],
+    "snakePosition": 3,
+    "source": "Box Office Mojo (2024)"
+  },
+  {
+    "id": 152,
+    "category": "Food",
+    "question": "Most Popular Fast Food Fries",
+    "answers": [
+      "McDonald's Fries",
+      "Five Guys Fries",
+      "Chick-fil-A Waffle Fries",
+      "Arby's Curly Fries",
+      "In-N-Out Fries"
+    ],
+    "snakePosition": 2,
+    "source": "QSR Consumer Surveys (2024)"
+  },
+  {
+    "id": 153,
+    "category": "Technology",
+    "question": "Most Popular Music Streaming Platforms",
+    "answers": [
+      "Spotify",
+      "Apple Music",
+      "Amazon Music",
+      "YouTube Music",
+      "Pandora"
+    ],
+    "snakePosition": 4,
+    "source": "Company Reports (2024)"
+  },
+  {
+    "id": 154,
+    "category": "Food",
+    "question": "Most Popular Soft Drink Flavors",
+    "answers": [
+      "Cola",
+      "Lemon-Lime",
+      "Orange",
+      "Root Beer",
+      "Cherry"
+    ],
+    "snakePosition": 1,
+    "source": "Beverage Industry Data (2024)"
+  },
+  {
+    "id": 155,
+    "category": "Entertainment",
+    "question": "Highest Grossing Christmas Movies",
+    "answers": [
+      "Home Alone",
+      "The Grinch (2018)",
+      "How the Grinch Stole Christmas (2000)",
+      "Elf",
+      "The Polar Express"
+    ],
+    "snakePosition": 5,
+    "source": "Box Office Mojo (2024)"
+  },
+  {
+    "id": 156,
+    "category": "Food",
+    "question": "Most Popular Fast Food Coffee Drinks",
+    "answers": [
+      "Iced Coffee",
+      "Latte",
+      "Frappuccino",
+      "Cold Brew",
+      "Cappuccino"
+    ],
+    "snakePosition": 3,
+    "source": "QSR Beverage Reports (2024)"
+  },
+  {
+    "id": 157,
+    "category": "Technology",
+    "question": "Most Popular Laptop Brands",
+    "answers": [
+      "Apple",
+      "HP",
+      "Dell",
+      "Lenovo",
+      "Asus"
+    ],
+    "snakePosition": 2,
+    "source": "IDC PC Market Report (2024)"
+  },
+  {
+    "id": 158,
+    "category": "Food",
+    "question": "Most Popular U.S. Sandwich Chains",
+    "answers": [
+      "Subway",
+      "Jimmy John's",
+      "Jersey Mike's",
+      "Firehouse Subs",
+      "Potbelly"
+    ],
+    "snakePosition": 4,
+    "source": "QSR Magazine (2024)"
+  },
+  {
+    "id": 159,
+    "category": "Food",
+    "question": "Most Popular Soda Brands Worldwide",
+    "answers": [
+      "Coca-Cola",
+      "Pepsi",
+      "Sprite",
+      "Fanta",
+      "7Up"
+    ],
+    "snakePosition": 1,
+    "source": "Beverage Industry Global Report (2024)"
+  },
+  {
+    "id": 160,
+    "category": "Entertainment",
+    "question": "Highest Grossing Sci-Fi Films",
+    "answers": [
+      "Avatar",
+      "Avengers Endgame",
+      "Star Wars The Force Awakens",
+      "Jurassic World",
+      "The Avengers"
+    ],
+    "snakePosition": 5,
+    "source": "Box Office Mojo (2024)"
+  },
+  {
+    "id": 161,
+    "category": "Food",
+    "question": "Most Popular Breakfast Chains (U.S.)",
+    "answers": [
+      "McDonald's",
+      "Starbucks",
+      "Dunkin'",
+      "IHOP",
+      "Panera Bread"
+    ],
+    "snakePosition": 3,
+    "source": "QSR Magazine (2024)"
+  },
+  {
+    "id": 162,
+    "category": "Entertainment",
+    "question": "Highest Grossing Movie Trilogies (Total Box Office)",
+    "answers": [
+      "The Lord of the Rings",
+      "Star Wars Original Trilogy",
+      "The Hobbit",
+      "The Dark Knight",
+      "Jurassic World"
+    ],
+    "snakePosition": 2,
+    "source": "Box Office Mojo (2024)"
+  },
+  {
+    "id": 163,
+    "category": "Business",
+    "question": "Most Popular Clothing Brands (U.S.)",
+    "answers": [
+      "Nike",
+      "Levi's",
+      "Adidas",
+      "Zara",
+      "H&M"
+    ],
+    "snakePosition": 4,
+    "source": "YouGov Brand Rankings (2024)"
+  },
+  {
+    "id": 164,
+    "category": "Food",
+    "question": "Most Popular Bottled Water Brands (U.S.)",
+    "answers": [
+      "Aquafina",
+      "Dasani",
+      "Poland Spring",
+      "Evian",
+      "Smartwater"
+    ],
+    "snakePosition": 1,
+    "source": "Beverage Industry Report (2024)"
+  },
+  {
+    "id": 165,
+    "category": "Food",
+    "question": "Most Popular Fast Food Breakfast Sandwiches",
+    "answers": [
+      "Egg McMuffin",
+      "Sausage McMuffin",
+      "Bacon Egg & Cheese Biscuit",
+      "Chick-fil-A Chicken Biscuit",
+      "Dunkin' Wake-Up Wrap"
+    ],
+    "snakePosition": 5,
+    "source": "QSR Consumer Rankings (2024)"
+  },
+  {
+    "id": 166,
+    "category": "Entertainment",
+    "question": "Most Popular Movie Villains (Fan Polls)",
+    "answers": [
+      "Darth Vader",
+      "Joker",
+      "Thanos",
+      "Voldemort",
+      "Scar"
+    ],
+    "snakePosition": 3,
+    "source": "Empire Magazine Polls (2024)"
+  },
+  {
+    "id": 167,
+    "category": "Technology",
+    "question": "Most Popular Smartphone Apps (Time Spent)",
+    "answers": [
+      "TikTok",
+      "YouTube",
+      "Instagram",
+      "Facebook",
+      "Snapchat"
+    ],
+    "snakePosition": 2,
+    "source": "DataReportal (2024)"
+  },
+  {
+    "id": 168,
+    "category": "Food",
+    "question": "Most Popular Pizza Chains (Global)",
+    "answers": [
+      "Domino's",
+      "Pizza Hut",
+      "Little Caesars",
+      "Papa John's",
+      "Papa Murphy's"
+    ],
+    "snakePosition": 4,
+    "source": "QSR Global Report (2024)"
+  },
+  {
+    "id": 169,
+    "category": "Entertainment",
+    "question": "Most Popular Streaming Movie Genres",
+    "answers": [
+      "Action",
+      "Comedy",
+      "Drama",
+      "Thriller",
+      "Horror"
+    ],
+    "snakePosition": 1,
+    "source": "Netflix Viewing Data (2024)"
+  },
+  {
+    "id": 170,
+    "category": "Entertainment",
+    "question": "Highest Grossing Sports Movies",
+    "answers": [
+      "The Blind Side",
+      "Rocky IV",
+      "The Karate Kid (2010)",
+      "Creed III",
+      "Space Jam"
+    ],
+    "snakePosition": 5,
+    "source": "Box Office Mojo (2024)"
+  },
+  {
+    "id": 171,
+    "category": "Food",
+    "question": "Most Popular Salad Chains",
+    "answers": [
+      "Sweetgreen",
+      "Panera Bread",
+      "Chopt",
+      "Just Salad",
+      "Saladworks"
+    ],
+    "snakePosition": 3,
+    "source": "QSR Fast Casual Report (2024)"
+  },
+  {
+    "id": 172,
+    "category": "Food",
+    "question": "Most Popular Fast Food Chicken Sandwiches",
+    "answers": [
+      "Chick-fil-A Original",
+      "Popeyes Chicken Sandwich",
+      "McChicken",
+      "Spicy Chicken Deluxe",
+      "KFC Chicken Sandwich"
+    ],
+    "snakePosition": 2,
+    "source": "QSR Consumer Survey (2024)"
+  },
+  {
+    "id": 173,
+    "category": "Food",
+    "question": "Most Popular Candy Types (U.S.)",
+    "answers": [
+      "Chocolate",
+      "Gummies",
+      "Hard Candy",
+      "Caramel",
+      "Sour Candy"
+    ],
+    "snakePosition": 4,
+    "source": "National Confectioners Association (2024)"
+  },
+  {
+    "id": 174,
+    "category": "Entertainment",
+    "question": "Highest Grossing DreamWorks Films",
+    "answers": [
+      "Shrek 2",
+      "Shrek the Third",
+      "Madagascar 3",
+      "Kung Fu Panda 2",
+      "Puss in Boots The Last Wish"
+    ],
+    "snakePosition": 1,
+    "source": "Box Office Mojo (2024)"
+  },
+  {
+    "id": 175,
+    "category": "Business",
+    "question": "Most Popular Car Rental Companies",
+    "answers": [
+      "Enterprise",
+      "Hertz",
+      "Avis",
+      "Budget",
+      "National"
+    ],
+    "snakePosition": 5,
+    "source": "IBISWorld (2024)"
+  },
+  {
+    "id": 176,
+    "category": "Business",
+    "question": "Most Popular Watch Brands",
+    "answers": [
+      "Rolex",
+      "Apple Watch",
+      "Casio",
+      "Omega",
+      "Seiko"
+    ],
+    "snakePosition": 3,
+    "source": "Brand Finance (2024)"
+  },
+  {
+    "id": 177,
+    "category": "Food",
+    "question": "Most Popular Fast Food Taco Items",
+    "answers": [
+      "Crunchy Taco",
+      "Soft Taco",
+      "Doritos Locos Taco",
+      "Quesadilla",
+      "Crunchwrap Supreme"
+    ],
+    "snakePosition": 2,
+    "source": "Taco Bell Sales Data (2024)"
+  },
+  {
+    "id": 178,
+    "category": "Food",
+    "question": "Most Popular Fast Food Nuggets",
+    "answers": [
+      "Chicken McNuggets",
+      "Chick-fil-A Nuggets",
+      "Wendy's Nuggets",
+      "Burger King Nuggets",
+      "Popeyes Nuggets"
+    ],
+    "snakePosition": 4,
+    "source": "QSR Rankings (2024)"
+  },
+  {
+    "id": 179,
+    "category": "Technology",
+    "question": "Most Popular Social Media Platforms (Teens U.S.)",
+    "answers": [
+      "YouTube",
+      "TikTok",
+      "Instagram",
+      "Snapchat",
+      "Facebook"
+    ],
+    "snakePosition": 1,
+    "source": "Pew Research Center (2024)"
+  },
+  {
+    "id": 180,
+    "category": "Entertainment",
+    "question": "Highest Grossing Illumination Films",
+    "answers": [
+      "Minions",
+      "Minions The Rise of Gru",
+      "Despicable Me 3",
+      "Despicable Me 2",
+      "The Super Mario Bros Movie"
+    ],
+    "snakePosition": 5,
+    "source": "Box Office Mojo (2024)"
+  },
+  {
+    "id": 181,
+    "category": "Food",
+    "question": "Most Popular Fast Food Coffee Chains",
+    "answers": [
+      "Starbucks",
+      "Dunkin'",
+      "McCafé",
+      "Tim Hortons",
+      "Peet's Coffee"
+    ],
+    "snakePosition": 3,
+    "source": "QSR Rankings (2024)"
+  },
+  {
+    "id": 182,
+    "category": "Business",
+    "question": "Most Popular Hotel Chains",
+    "answers": [
+      "Marriott",
+      "Hilton",
+      "Holiday Inn",
+      "Hyatt",
+      "Best Western"
+    ],
+    "snakePosition": 2,
+    "source": "STR Global Hotel Report (2024)"
+  },
+  {
+    "id": 183,
+    "category": "Technology",
+    "question": "Most Popular Phone Carriers (U.S.)",
+    "answers": [
+      "Verizon",
+      "AT&T",
+      "T-Mobile",
+      "Xfinity Mobile",
+      "Spectrum Mobile"
+    ],
+    "snakePosition": 4,
+    "source": "FCC Market Data (2024)"
+  },
+  {
+    "id": 184,
+    "category": "Entertainment",
+    "question": "Most Popular Movie Franchises (By Installments)",
+    "answers": [
+      "Marvel",
+      "James Bond",
+      "Fast & Furious",
+      "Star Wars",
+      "Harry Potter"
+    ],
+    "snakePosition": 1,
+    "source": "Box Office Mojo (2024)"
+  },
+  {
+    "id": 185,
+    "category": "Food",
+    "question": "Most Popular Fast Food Milkshakes",
+    "answers": [
+      "McDonald's Shake",
+      "Chick-fil-A Shake",
+      "Wendy's Frosty",
+      "Sonic Shake",
+      "Shake Shack Shake"
+    ],
+    "snakePosition": 5,
+    "source": "QSR Consumer Reports (2024)"
+  },
+  {
+    "id": 186,
+    "category": "Food",
+    "question": "Most Popular Pasta Dishes (U.S.)",
+    "answers": [
+      "Spaghetti",
+      "Fettuccine Alfredo",
+      "Lasagna",
+      "Mac & Cheese",
+      "Ravioli"
+    ],
+    "snakePosition": 3,
+    "source": "YouGov Food Rankings (2024)"
+  },
+  {
+    "id": 187,
+    "category": "Entertainment",
+    "question": "Highest Grossing DC Films",
+    "answers": [
+      "Aquaman",
+      "The Dark Knight Rises",
+      "Joker",
+      "The Dark Knight",
+      "Wonder Woman"
+    ],
+    "snakePosition": 2,
+    "source": "Box Office Mojo (2024)"
+  },
+  {
+    "id": 188,
+    "category": "Entertainment",
+    "question": "Most Popular Music Genres (U.S.)",
+    "answers": [
+      "Hip-Hop/Rap",
+      "Pop",
+      "Rock",
+      "Country",
+      "R&B"
+    ],
+    "snakePosition": 4,
+    "source": "Billboard Industry Report (2024)"
+  },
+  {
+    "id": 189,
+    "category": "Technology",
+    "question": "Most Popular Dating Apps",
+    "answers": [
+      "Tinder",
+      "Bumble",
+      "Hinge",
+      "Match",
+      "OkCupid"
+    ],
+    "snakePosition": 1,
+    "source": "Business of Apps Report (2024)"
+  },
+  {
+    "id": 190,
+    "category": "Culture",
+    "question": "Most Popular Dog Names (U.S.)",
+    "answers": [
+      "Max",
+      "Bella",
+      "Luna",
+      "Charlie",
+      "Daisy"
+    ],
+    "snakePosition": 5,
+    "source": "Rover Pet Report (2024)"
+  },
+  {
+    "id": 191,
+    "category": "Entertainment",
+    "question": "Most Popular Board Game Mechanics (Modern Games)",
+    "answers": [
+      "Card Drafting",
+      "Worker Placement",
+      "Cooperative Play",
+      "Deck Building",
+      "Area Control"
+    ],
+    "snakePosition": 3,
+    "source": "BoardGameGeek Trends (2024)"
+  },
+  {
+    "id": 192,
+    "category": "Food",
+    "question": "Most Popular Ice Cream Flavors Worldwide",
+    "answers": [
+      "Vanilla",
+      "Chocolate",
+      "Strawberry",
+      "Mango",
+      "Matcha"
+    ],
+    "snakePosition": 2,
+    "source": "Global Food Trends Report (2024)"
+  },
+  {
+    "id": 193,
+    "category": "Entertainment",
+    "question": "Highest Grossing Action Films",
+    "answers": [
+      "Avengers Endgame",
+      "Avengers Infinity War",
+      "Furious 7",
+      "Top Gun Maverick",
+      "Jurassic World"
+    ],
+    "snakePosition": 4,
+    "source": "Box Office Mojo (2024)"
+  },
+  {
+    "id": 194,
+    "category": "Food",
+    "question": "Most Popular Fast Food Desserts (Global Chains)",
+    "answers": [
+      "McFlurry",
+      "Blizzard",
+      "Frosty",
+      "Apple Pie",
+      "Sundae"
+    ],
+    "snakePosition": 1,
+    "source": "QSR Global Data (2024)"
+  },
+  {
+    "id": 195,
+    "category": "Technology",
+    "question": "Most Popular Console Game Franchises",
+    "answers": [
+      "Call of Duty",
+      "Grand Theft Auto",
+      "FIFA",
+      "Madden NFL",
+      "Assassin's Creed"
+    ],
+    "snakePosition": 5,
+    "source": "VGChartz (2024)"
+  },
+  {
+    "id": 196,
+    "category": "Food",
+    "question": "Most Popular Fast Food Breakfast Drinks",
+    "answers": [
+      "Coffee",
+      "Iced Coffee",
+      "Orange Juice",
+      "Smoothies",
+      "Soft Drinks"
+    ],
+    "snakePosition": 3,
+    "source": "QSR Beverage Report (2024)"
+  },
+  {
+    "id": 197,
+    "category": "Business",
+    "question": "Most Popular Kitchen Appliances (U.S.)",
+    "answers": [
+      "Air Fryer",
+      "Microwave",
+      "Coffee Maker",
+      "Toaster",
+      "Blender"
+    ],
+    "snakePosition": 2,
+    "source": "Statista Consumer Insights (2024)"
+  },
+  {
+    "id": 198,
+    "category": "Technology",
+    "question": "Most Popular Social Media Platforms (Global Users)",
+    "answers": [
+      "Facebook",
+      "YouTube",
+      "WhatsApp",
+      "Instagram",
+      "TikTok"
+    ],
+    "snakePosition": 4,
+    "source": "DataReportal (2024)"
+  },
+  {
+    "id": 199,
+    "category": "Entertainment",
+    "question": "Highest Grossing Romantic Comedies",
+    "answers": [
+      "My Big Fat Greek Wedding",
+      "What Women Want",
+      "Hitch",
+      "Pretty Woman",
+      "There's Something About Mary"
+    ],
+    "snakePosition": 1,
+    "source": "Box Office Mojo (2024)"
+  },
+  {
+    "id": 200,
+    "category": "Entertainment",
+    "question": "Most Popular Holiday Movies (TV + Streaming Popularity)",
+    "answers": [
+      "Home Alone",
+      "Elf",
+      "The Grinch",
+      "A Christmas Story",
+      "The Polar Express"
+    ],
+    "snakePosition": 5,
+    "source": "Nielsen Streaming Data (2024)"
+  },
+  {
     "id": 221,
     "category": "Business",
     "question": "Most Popular U.S. Supermarket Brands",

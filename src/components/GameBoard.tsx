@@ -7,14 +7,16 @@ import RankingPhase from "./RankingPhase";
 import RevealPhase from "./RevealPhase";
 import ScoringPhase from "./ScoringPhase";
 import GameOver from "./GameOver";
+import Logo from "./Logo";
 import cardsData from "@/data/cards.json";
 
 interface GameBoardProps {
   players: Player[];
+  winningScore?: number;
   onRestart: () => void;
 }
 
-export default function GameBoard({ players, onRestart }: GameBoardProps) {
+export default function GameBoard({ players, winningScore = 10, onRestart }: GameBoardProps) {
   const [gameState, setGameState] = useState<GameState>({
     phase: "snake-turn",
     players: players,
@@ -28,6 +30,7 @@ export default function GameBoard({ players, onRestart }: GameBoardProps) {
     round: 1,
     totalRounds: players.length,
     timeRemaining: 120,
+    winningScore: winningScore,
   });
 
   const [availableCards, setAvailableCards] = useState<Card[]>([...(cardsData as Card[])]);
@@ -88,16 +91,19 @@ export default function GameBoard({ players, onRestart }: GameBoardProps) {
   };
 
   const handleNextRound = (updatedPlayers: Player[]) => {
-    const nextRound = gameState.round + 1;
-    const nextSnakeIndex = gameState.currentSnakeIndex + 1;
-
-    if (nextRound > gameState.totalRounds) {
+    // Check if anyone has reached the winning score
+    const winner = updatedPlayers.find(player => player.score >= (gameState.winningScore || 10));
+    
+    if (winner) {
       setGameState({
         ...gameState,
         phase: "game-over",
         players: updatedPlayers,
       });
     } else {
+      const nextRound = gameState.round + 1;
+      const nextSnakeIndex = (gameState.currentSnakeIndex + 1) % gameState.players.length;
+
       setGameState({
         ...gameState,
         phase: "snake-turn",
@@ -120,11 +126,11 @@ export default function GameBoard({ players, onRestart }: GameBoardProps) {
       {/* Header */}
       <header className="clean-card mx-2 mt-2 mb-2 px-4 py-3 flex items-center justify-between gap-3 flex-shrink-0">
         <div className="flex items-center gap-3">
-          <span className="text-3xl">🐍</span>
+          <Logo size={40} />
           <div>
             <div className="title text-lg leading-tight font-bold">Out Snake the Jake</div>
             <p className="caption mt-1 text-sm">
-              Round {gameState.round} of {gameState.totalRounds}
+              First to {gameState.winningScore || 10} points wins!
             </p>
           </div>
         </div>

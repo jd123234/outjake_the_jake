@@ -8,9 +8,11 @@ import { Player } from "@/types/game";
 export default function Home() {
   const [gameStarted, setGameStarted] = useState(false);
   const [players, setPlayers] = useState<Player[]>([]);
+  const [winningScore, setWinningScore] = useState(15);
 
-  const handleStartGame = (selectedPlayers: Player[]) => {
+  const handleStartGame = (selectedPlayers: Player[], selectedWinningScore = 15) => {
     setPlayers(selectedPlayers);
+    setWinningScore(selectedWinningScore);
     setGameStarted(true);
   };
 
@@ -23,7 +25,7 @@ export default function Home() {
     <div className="w-full h-full flex flex-col bg-[var(--background)] overflow-hidden">
       <div className="flex-1 flex items-center justify-center">
         {gameStarted ? (
-          <GameBoard players={players} onRestart={handleRestart} />
+          <GameBoard players={players} winningScore={winningScore} onRestart={handleRestart} />
         ) : (
           <GameSetup onStart={handleStartGame} />
         )}

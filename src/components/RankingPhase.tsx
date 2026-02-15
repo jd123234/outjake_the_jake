@@ -30,8 +30,37 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
   const [touchCurrentY, setTouchCurrentY] = useState<number | null>(null);
   const [step, setStep] = useState<'ranking' | 'double-down'>('ranking');
   const [selectedDoubleDown, setSelectedDoubleDown] = useState<number | null>(null);
+  const [timeRemaining, setTimeRemaining] = useState(120); // 2 minutes
+  const [shouldAutoComplete, setShouldAutoComplete] = useState(false);
   const dragElementRef = useRef<HTMLDivElement | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
+
+  // Timer countdown effect
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeRemaining(prev => {
+        if (prev <= 1) {
+          // Time's up - trigger auto-complete
+          setShouldAutoComplete(true);
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  // Handle auto-complete in a separate effect
+  useEffect(() => {
+    if (shouldAutoComplete) {
+      // Auto-complete with current rankings and no double-down
+      const rankings = [...orderedAnswers];
+      const snakeChoice = gameState.snakeAnswer;
+      const doubleDowns: Record<string, number> = {};
+      onComplete(rankings, snakeChoice, doubleDowns);
+    }
+  }, [shouldAutoComplete, orderedAnswers, gameState.snakeAnswer, onComplete]);
 
   // Get current snake player (the one NOT ranking)
   const currentSnake = gameState.players[gameState.currentSnakeIndex];
@@ -174,11 +203,11 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
                 <div
                   className="body font-bold text-lg"
                   style={{
-                    color: gameState.timeRemaining <= 30 ? "var(--danger)" : "var(--accent)",
-                    animation: gameState.timeRemaining <= 30 ? "pulse 1s infinite" : "none",
+                    color: timeRemaining <= 30 ? "var(--danger)" : "var(--accent)",
+                    animation: timeRemaining <= 30 ? "pulse 1s infinite" : "none",
                   }}
                 >
-                  {Math.floor(gameState.timeRemaining / 60)}:{(gameState.timeRemaining % 60).toString().padStart(2, "0")}
+                  {Math.floor(timeRemaining / 60)}:{(timeRemaining % 60).toString().padStart(2, "0")}
                 </div>
               </div>
               
