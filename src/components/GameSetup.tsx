@@ -35,13 +35,13 @@ const GameSetup: React.FC<GameSetupProps> = ({ onStart }) => {
   const canStart = playerNames.filter((n) => n.trim()).length >= 2;
 
   return (
-    <div className="w-full h-full flex items-center justify-center">
-      <div className="clean-card w-full mx-4 p-4 space-y-4">
-        <div className="mb-6">
-          <div className="flex items-center gap-3 mb-3">
-            <span className="text-4xl">🦊</span>
-            <div>
-              <h1 className="title-large">Outfox the Fox</h1>
+    <div className="w-full h-full flex flex-col justify-center overflow-y-auto">
+      <div className="clean-card w-full mx-2 my-4 p-6 space-y-6 max-w-md">
+        <div className="text-center">
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <span className="text-5xl">🐍</span>
+            <div className="text-left">
+              <h1 className="title-large">Out Snake the Jake</h1>
               <p className="caption">Bluff your way to victory</p>
             </div>
           </div>
@@ -49,20 +49,20 @@ const GameSetup: React.FC<GameSetupProps> = ({ onStart }) => {
 
         <div className="space-y-6">
           <section>
-            <h2 className="title mb-3">How to Play</h2>
-            <div className="space-y-2 body" style={{ color: "var(--text-secondary)" }}>
-              <p>• One player is the Fox and creates a fake answer.</p>
+            <h2 className="title mb-4">How to Play</h2>
+            <div className="space-y-3 body text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+              <p>• One player is the Snake and creates a fake answer.</p>
               <p>• Everyone ranks the answers from #1 to #5.</p>
-              <p>• Guess which answer belongs to the Fox.</p>
+              <p>• Guess which answer belongs to the Snake.</p>
               <p>• Double down on one answer for bonus points.</p>
             </div>
           </section>
 
           <section>
-            <label className="title block mb-3 text-[17px] font-semibold">
+            <label className="title block mb-4 text-lg font-semibold">
               Number of Players
             </label>
-            <div className="grid grid-cols-5 gap-2">
+            <div className="grid grid-cols-5 gap-3">
               {[2, 3, 4, 5, 6].map((count) => {
                 const isActive = playerCount === count;
                 return (
@@ -70,7 +70,7 @@ const GameSetup: React.FC<GameSetupProps> = ({ onStart }) => {
                     key={count}
                     type="button"
                     onClick={() => handlePlayerCountChange(count)}
-                    className={"btn-secondary text-center" + (isActive ? " bg-[color:var(--accent-soft)]" : "")}
+                    className={"btn-secondary text-center touch-target" + (isActive ? " bg-[color:var(--accent-soft)]" : "")}
                     style={{
                       color: isActive ? "var(--accent)" : "var(--text-secondary)",
                       fontWeight: isActive ? 600 : 500,
@@ -84,20 +84,21 @@ const GameSetup: React.FC<GameSetupProps> = ({ onStart }) => {
           </section>
 
           <section>
-            <label className="title block mb-3 text-[17px] font-semibold">
+            <label className="title block mb-4 text-lg font-semibold">
               Player Names
             </label>
-            <div className="space-y-3">
+            <div className="space-y-4">
               {Array.from({ length: playerCount }).map((_, index) => (
-                <div key={index} className="flex items-center gap-3">
+                <div key={index} className="flex items-center gap-4">
                   <div
-                    className={`w-9 h-9 rounded-full flex-shrink-0 ${PLAYER_COLORS[index].bg}`}
+                    className={`w-12 h-12 rounded-full flex-shrink-0 ${PLAYER_COLORS[index].bg}`}
                   />
                   <input
                     type="text"
                     placeholder={`Player ${index + 1}`}
                     value={playerNames[index] || ""}
                     onChange={(e) => handleNameChange(index, e.target.value)}
+                    className="text-lg py-3"
                   />
                 </div>
               ))}
@@ -109,9 +110,9 @@ const GameSetup: React.FC<GameSetupProps> = ({ onStart }) => {
               type="button"
               onClick={handleStart}
               disabled={!canStart}
-              className="btn-primary w-full"
+              className="btn-primary w-full touch-target text-lg font-semibold py-4"
             >
-              {canStart ? "🦊 Start Game" : "Enter at least 2 player names"}
+              {canStart ? "🐍 Start Game" : "Enter at least 2 player names"}
             </button>
           </section>
         </div>

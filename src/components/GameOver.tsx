@@ -17,7 +17,7 @@ export default function GameOver({ players, onRestart }: GameOverProps) {
         <div className="text-center space-y-2">
           <div className="text-5xl">🏆</div>
           <h1 className="title">Game over</h1>
-          <p className="caption">Final scores for this game of Outfox the Fox.</p>
+          <p className="caption">Final scores for this game of Out Snake the Jake.</p>
         </div>
 
         <div className="surface-block px-5 py-5 text-center space-y-2">
@@ -64,7 +64,7 @@ export default function GameOver({ players, onRestart }: GameOverProps) {
         <div className="surface-block px-5 py-4 text-center">
           <p className="caption" style={{ color: "var(--text-secondary)" }}>
             Thanks for playing{" "}
-            <span className="body font-semibold">Outfox the Fox</span>.
+            <span className="body font-semibold">Out Snake the Jake</span>.
           </p>
         </div>
 

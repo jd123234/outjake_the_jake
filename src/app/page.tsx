@@ -20,8 +20,8 @@ export default function Home() {
   };
 
   return (
-    <div className="w-full h-full flex items-stretch justify-center bg-[var(--background)]">
-      <div className="flex-1 flex items-center justify-center p-4">
+    <div className="w-full h-full flex flex-col bg-[var(--background)] overflow-hidden">
+      <div className="flex-1 flex items-center justify-center">
         {gameStarted ? (
           <GameBoard players={players} onRestart={handleRestart} />
         ) : (

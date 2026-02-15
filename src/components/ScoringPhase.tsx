@@ -9,6 +9,11 @@ interface ScoringPhaseProps {
 }
 
 export default function ScoringPhase({ gameState, onNextRound }: ScoringPhaseProps) {
+  const snakePlayer = gameState.players[gameState.currentSnakeIndex];
+  const rankingPlayers = gameState.players.filter(
+    (_, i) => i !== gameState.currentSnakeIndex
+  );
+  const isSnakeCaught = gameState.snakeChoice === gameState.snakeAnswer;
   const { updatedPlayers, scores } = useMemo(() => {
     const calculateScores = () => {
       const updatedPlayers = gameState.players.map((p) => ({ ...p }));
@@ -19,26 +24,27 @@ export default function ScoringPhase({ gameState, onNextRound }: ScoringPhasePro
         scores[player.id] = 0;
       });
 
-      const foxPlayerId = updatedPlayers[gameState.currentFoxIndex].id;
-      const foxAnswerInRankings = gameState.playerRankings.indexOf(
-        gameState.foxAnswer
+      const snakePlayerId = updatedPlayers[gameState.currentSnakeIndex].id;
+      const snakeAnswerInRankings = gameState.playerRankings.indexOf(
+        gameState.snakeAnswer
       );
 
-      if (foxAnswerInRankings === 0) {
-        scores[foxPlayerId] = 5;
-      } else if (foxAnswerInRankings === 1 || foxAnswerInRankings === 2) {
-        scores[foxPlayerId] = 4;
-      } else if (foxAnswerInRankings === 3 || foxAnswerInRankings === 4) {
-        scores[foxPlayerId] = 3;
+      if (snakeAnswerInRankings === 0) {
+        scores[snakePlayerId] = 5;
+      } else if (snakeAnswerInRankings === 1 || snakeAnswerInRankings === 2) {
+        scores[snakePlayerId] = 4;
+      } else if (snakeAnswerInRankings === 3 || snakeAnswerInRankings === 4) {
+        scores[snakePlayerId] = 3;
       }
 
       const guessers = updatedPlayers.filter(
-        (_, i) => i !== gameState.currentFoxIndex
+        (_, i) => i !== gameState.currentSnakeIndex
       );
 
       guessers.forEach((player) => {
         let playerScore = 0;
 
+        // Regular ranking scoring
         gameState.playerRankings.forEach((rankedAnswer, position) => {
           const correctPosition = correctAnswers.indexOf(rankedAnswer);
           if (correctPosition === -1) return;
@@ -58,12 +64,14 @@ export default function ScoringPhase({ gameState, onNextRound }: ScoringPhasePro
           }
         });
 
+        // Double down bonus scoring (+3 points for exact match)
         const doubleDownPosition = gameState.doubleDowns[player.id];
         if (doubleDownPosition !== undefined) {
           const doubleDownAnswer = gameState.playerRankings[doubleDownPosition];
           const correctPosition = correctAnswers.indexOf(doubleDownAnswer);
+          // Award 3 points only if the answer is in the EXACT position they doubled down on
           if (correctPosition === doubleDownPosition) {
-            playerScore += 1;
+            playerScore += 3;
           }
         }
 
@@ -80,61 +88,89 @@ export default function ScoringPhase({ gameState, onNextRound }: ScoringPhasePro
     return calculateScores();
   }, []);
 
-  const foxPlayer = gameState.players[gameState.currentFoxIndex];
-  const guessers = gameState.players.filter(
-    (_, i) => i !== gameState.currentFoxIndex
-  );
-  const isFoxCaught = gameState.foxChoice === gameState.foxAnswer;
-
   return (
-    <section className="space-y-6">
-      <div className="clean-card px-6 py-6 text-center space-y-1">
-        <h2 className="title">Round {gameState.round} scores</h2>
-        <p className="caption">See how the Fox and guessers did.</p>
-      </div>
+    <div className="flex flex-col h-full mobile-container overflow-y-auto">
+      <div className="flex-1 px-2 py-2 space-y-4">
+        <div className="clean-card px-6 py-6 text-center space-y-1">
+          <h2 className="title">Round {gameState.round} Results</h2>
+          <p className="caption">See how the Snake and guessers did.</p>
+        </div>
 
-      <div className="clean-card px-6 py-6 space-y-4">
-        <div
-          className="surface-block px-5 py-4 flex items-center justify-between gap-4"
-          style={{
-            background:
-              "linear-gradient(135deg, rgba(255,159,10,0.22), rgba(255,149,0,0.18))",
-          }}
-        >
-          <div className="flex items-center gap-3">
-            <span className="text-3xl">🦊</span>
-            <div>
-              <div className="body font-semibold">{foxPlayer.name}</div>
+        <div className="clean-card px-6 py-6 space-y-4">
+          <div
+            className="surface-block px-5 py-4 flex items-center justify-between gap-4"
+            style={{
+              background:
+                "linear-gradient(135deg, rgba(255,159,10,0.22), rgba(255,149,0,0.18))",
+            }}
+          >
+            <div className="flex items-center gap-3">
+              <span className="text-3xl">🐍</span>
+              <div>
+                <div className="body font-semibold">{snakePlayer.name}</div>
+                <div className="caption">
+                  {isSnakeCaught
+                    ? "Their answer was caught."
+                    : `Fake answer ranked #${
+                        gameState.playerRankings.indexOf(gameState.snakeAnswer) + 1
+                      }`}
+                </div>
+              </div>
+            </div>
+            <div className="text-right">
+              <div
+                className="body font-semibold"
+                style={{ color: "#22c55e" }}
+              >
+                +{scores[snakePlayer.id]}
+              </div>
               <div className="caption">
-                {isFoxCaught
-                  ? "Their answer was caught."
-                  : `Fake answer ranked #${
-                      gameState.playerRankings.indexOf(gameState.foxAnswer) + 1
-                    }`}
+                Total {updatedPlayers[gameState.currentSnakeIndex].score}
               </div>
             </div>
           </div>
-          <div className="text-right">
-            <div
-              className="body font-semibold"
-              style={{ color: "#ff9f0a" }}
-            >
-              +{scores[foxPlayer.id]}
-            </div>
-            <div className="caption">
-              Total {updatedPlayers[gameState.currentFoxIndex].score}
-            </div>
-          </div>
-        </div>
 
         <div className="space-y-3">
           <h3 className="body font-semibold">Guessers</h3>
-          {guessers.map((player) => {
+          {rankingPlayers.map((player) => {
             const updatedPlayer = updatedPlayers.find(
               (p) => p.id === player.id
             )!;
             const doubleDownPosition = gameState.doubleDowns[player.id];
             const hadDoubleDown = doubleDownPosition !== undefined;
+            
+            // Calculate breakdown of score
+            let regularPoints = 0;
+            let doubleDownPoints = 0;
+            
+            // Calculate regular points
+            gameState.playerRankings.forEach((rankedAnswer, position) => {
+              const correctPosition = gameState.currentCard?.answers.indexOf(rankedAnswer) || -1;
+              if (correctPosition === -1) return;
+
+              if (position === 0 && correctPosition === 0) {
+                regularPoints += 1;
+              } else if (
+                (position === 1 || position === 2) &&
+                (correctPosition === 1 || correctPosition === 2)
+              ) {
+                regularPoints += 1;
+              } else if (
+                (position === 3 || position === 4) &&
+                (correctPosition === 3 || correctPosition === 4)
+              ) {
+                regularPoints += 1;
+              }
+            });
+            
+            // Calculate double down points
+            if (hadDoubleDown) {
+              const doubleDownAnswer = gameState.playerRankings[doubleDownPosition];
+              const correctPosition = gameState.currentCard?.answers.indexOf(doubleDownAnswer) || -1;
+              if (correctPosition === doubleDownPosition) {
+                doubleDownPoints = 3;
+              }
+            }
 
             return (
               <div
@@ -148,17 +184,22 @@ export default function ScoringPhase({ gameState, onNextRound }: ScoringPhasePro
                   />
                   <div>
                     <div className="body font-semibold">{player.name}</div>
-                    {hadDoubleDown && (
-                      <div className="caption">
-                        💎 double down on #{doubleDownPosition! + 1}
-                      </div>
-                    )}
+                    <div className="caption space-y-1">
+                      {regularPoints > 0 && (
+                        <div>🎯 Rankings: {regularPoints} pts</div>
+                      )}
+                      {hadDoubleDown && (
+                        <div className={doubleDownPoints > 0 ? "text-green-600 font-semibold" : "text-gray-500"}>
+                          💎 Double Down #{doubleDownPosition! + 1}: {doubleDownPoints > 0 ? `+${doubleDownPoints} pts!` : "0 pts"}
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </div>
                 <div className="text-right">
                   <div
                     className="body font-semibold"
-                    style={{ color: "var(--success)" }}
+                    style={{ color: scores[player.id] > 0 ? "var(--success)" : "var(--text-secondary)" }}
                   >
                     +{scores[player.id]}
                   </div>
@@ -170,45 +211,46 @@ export default function ScoringPhase({ gameState, onNextRound }: ScoringPhasePro
         </div>
       </div>
 
-      <div className="clean-card px-6 py-6 space-y-4">
-        <div className="space-y-2">
-          <h3 className="body font-semibold text-center">Leaderboard</h3>
+        <div className="clean-card px-6 py-6 space-y-4">
           <div className="space-y-2">
-            {[...updatedPlayers]
-              .sort((a, b) => b.score - a.score)
-              .map((player, index) => (
-                <div
-                  key={player.id}
-                  className="surface-block px-4 py-3 flex items-center justify-between gap-3"
-                  style={{
-                    backgroundColor:
-                      index === 0
-                        ? "rgba(0,122,255,0.16)"
-                        : "var(--background-elevated)",
-                  }}
-                >
-                  <div className="flex items-center gap-2">
-                    <span className="caption font-semibold">
-                      {index === 0 ? "🏆" : `#${index + 1}`}
-                    </span>
-                    <span className="body">{player.name}</span>
+            <h3 className="body font-semibold text-center">Leaderboard</h3>
+            <div className="space-y-2">
+              {[...updatedPlayers]
+                .sort((a, b) => b.score - a.score)
+                .map((player, index) => (
+                  <div
+                    key={player.id}
+                    className="surface-block px-4 py-3 flex items-center justify-between gap-3"
+                    style={{
+                      backgroundColor:
+                        index === 0
+                          ? "rgba(0,122,255,0.16)"
+                          : "var(--background-elevated)",
+                    }}
+                  >
+                    <div className="flex items-center gap-2">
+                      <span className="caption font-semibold">
+                        {index === 0 ? "🏆" : `#${index + 1}`}
+                      </span>
+                      <span className="body">{player.name}</span>
+                    </div>
+                    <span className="body font-semibold">{player.score}</span>
                   </div>
-                  <span className="body font-semibold">{player.score}</span>
-                </div>
-              ))}
+                ))}
+            </div>
           </div>
-        </div>
 
-        <button
-          type="button"
-          onClick={() => onNextRound(updatedPlayers)}
-          className="btn-primary w-full"
-        >
-          {gameState.round < gameState.totalRounds
-            ? "Next round →"
-            : "See final results 🏆"}
-        </button>
+          <button
+            type="button"
+            onClick={() => onNextRound(updatedPlayers)}
+            className="btn-primary w-full touch-target text-lg font-semibold"
+          >
+            {gameState.round < gameState.totalRounds
+              ? "Next Round →"
+              : "See Final Results 🏆"}
+          </button>
+        </div>
       </div>
-    </section>
+    </div>
   );
 }

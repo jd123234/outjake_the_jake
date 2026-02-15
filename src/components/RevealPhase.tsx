@@ -15,11 +15,14 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
 
   const correctAnswers = gameState.currentCard?.answers ?? [];
   const playerRankings = gameState.playerRankings ?? [];
+  const currentSnake = gameState.players[gameState.currentSnakeIndex];
+  const rankingPlayers = gameState.players.filter((_, index) => index !== gameState.currentSnakeIndex);
 
   const isPositionCorrect = (index: number): boolean => {
     const guess = playerRankings[index];
     
-    if (index === 5) return false; // Fox position is never "correct"
+    // Snake position is never "correct" in terms of ranking
+    if (guess === gameState.snakeAnswer) return false;
     
     if (!guess || !correctAnswers[index]) return false;
 
@@ -39,6 +42,20 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
   const getCorrectRankForAnswer = (answer: string): number | null => {
     const correctIndex = correctAnswers.findIndex(correct => correct === answer);
     return correctIndex !== -1 ? correctIndex + 1 : null;
+  };
+
+  const getDoubleDownResults = () => {
+    const results: Array<{ player: any; position: number; correct: boolean }> = [];
+    
+    Object.entries(gameState.doubleDowns).forEach(([playerId, position]) => {
+      const player = gameState.players.find(p => p.id === playerId);
+      if (player) {
+        const isCorrect = isPositionCorrect(position);
+        results.push({ player, position, correct: isCorrect });
+      }
+    });
+    
+    return results;
   };
 
   const handleStartReveal = () => {
@@ -71,55 +88,98 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
   };
 
   const allRevealed = revealedPositions.every(Boolean);
+  const doubleDownResults = getDoubleDownResults();
 
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-full mobile-container">
       {/* Header */}
-      <div className="clean-card px-4 py-3 mb-2 space-y-1">
+      <div className="clean-card mx-2 mt-2 px-4 py-3 mb-2">
         {gameState.currentCard && (
           <>
             {gameState.currentCard.category && (
               <div
-                className="caption uppercase tracking-wide"
+                className="caption uppercase tracking-wide mb-2"
                 style={{ color: "var(--text-secondary)" }}
               >
                 {gameState.currentCard.category}
               </div>
             )}
-            <div className="body font-semibold">
+            <div className="body font-semibold mb-3">
               {gameState.currentCard.question}
             </div>
-            <div className="caption pt-1">
-              {!autoRevealing && !allRevealed 
-                ? "Ready to see how you did?" 
-                : autoRevealing 
-                ? "Revealing answers..." 
-                : "Here's how your ranking stacked up."
-              }
+            {gameState.currentCard.source && (
+              <div 
+                className="caption text-xs mb-3" 
+                style={{ color: "var(--text-tertiary)" }}
+              >
+                Source: {gameState.currentCard.source}
+              </div>
+            )}
+            
+            {/* Status and Button Row */}
+            <div className="flex items-center justify-between mb-2">
+              <div className="caption">
+                {!autoRevealing && !allRevealed 
+                  ? "Ready to see how you did?" 
+                  : autoRevealing 
+                  ? "Revealing answers..." 
+                  : "Here's how your ranking stacked up."
+                }
+              </div>
+              
+              {!autoRevealing && !allRevealed ? (
+                <button
+                  type="button"
+                  onClick={handleStartReveal}
+                  className="btn-primary touch-target px-3 py-2 text-sm font-semibold"
+                >
+                  🎭 Start Reveal
+                </button>
+              ) : allRevealed ? (
+                <button
+                  type="button"
+                  onClick={handleNext}
+                  className="btn-primary touch-target px-3 py-2 text-sm font-semibold"
+                >
+                  Continue →
+                </button>
+              ) : (
+                <div className="caption text-xs" style={{ color: "var(--text-secondary)" }}>
+                  {revealedPositions.filter(Boolean).length}/6
+                </div>
+              )}
             </div>
           </>
         )}
       </div>
 
       {/* Main reveal list */}
-      <div className="flex-1 flex flex-col gap-2 overflow-hidden">
-        <div className="clean-card flex-1 px-4 py-3 flex flex-col gap-2">
+      <div className="flex-1 flex flex-col gap-2 overflow-hidden px-2">
+        <div className="clean-card flex-1 px-4 py-3 flex flex-col gap-3">
           {playerRankings.map((answer, index) => {
-            const isFoxRow = index === 5;
+            const isSnakeAnswer = answer === gameState.snakeAnswer;
             const isRevealed = revealedPositions[index];
-            const isCorrect = !isFoxRow && isPositionCorrect(index);
-            const correctRank = !isFoxRow ? getCorrectRankForAnswer(answer) : null;
-            const isFoxAnswer = answer === gameState.foxAnswer;
+            const isCorrect = !isSnakeAnswer && isPositionCorrect(index);
+            const correctRank = !isSnakeAnswer ? getCorrectRankForAnswer(answer) : null;
+            const hasDoubleDown = Object.values(gameState.doubleDowns).includes(index);
 
             return (
               <div
                 key={`${answer}-${index}`}
-                className="flex items-center gap-3 rounded-xl px-3 py-2 bg-white/70"
+                className={`
+                  flex items-center gap-3 rounded-xl px-4 py-3 touch-target
+                  ${hasDoubleDown && isRevealed 
+                    ? isCorrect 
+                      ? "bg-green-50/70 border-2 border-green-400"
+                      : "bg-red-50/70 border-2 border-red-400"
+                    : "bg-white/70 border-2 border-gray-200"
+                  }
+                `}
               >
                 {/* Position badge */}
                 <div
-                  className={`w-8 h-8 flex items-center justify-center rounded-full text-xs font-bold text-white ${
-                    isFoxRow
+                  className={`w-10 h-10 flex items-center justify-center rounded-full text-sm font-bold text-white ${
+                    isSnakeAnswer
                       ? "bg-orange-500"
                       : isRevealed
                       ? isCorrect
@@ -128,28 +188,41 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
                       : "bg-gray-400"
                   }`}
                 >
-                  {isFoxRow ? "🦊" : index + 1}
+                  {index + 1}
                 </div>
                 
+                {/* Snake indicator if this is the snake answer */}
+                {isSnakeAnswer && (
+                  <div className="text-xl">🐍</div>
+                )}
+                
                 {/* Answer text */}
-                <div className="flex-1 body text-sm leading-snug">
+                <div className="flex-1 body leading-snug">
                   {answer}
+                  {hasDoubleDown && (
+                    <div className="caption text-xs mt-1 flex items-center gap-1">
+                      <span>💎</span>
+                      <span style={{ color: "var(--text-secondary)" }}>
+                        Double Down Position
+                      </span>
+                    </div>
+                  )}
                 </div>
                 
                 {/* Reveal status */}
                 {isRevealed && (
                   <div className="flex items-center gap-2">
-                    {isFoxRow ? (
-                      <span className="text-sm font-semibold text-orange-600">
-                        {isFoxAnswer ? "THE FOX!" : "🦊"}
+                    {isSnakeAnswer ? (
+                      <span className="text-sm font-semibold text-green-600">
+                        THE SNAKE!
                       </span>
                     ) : (
                       <>
-                        <span className="text-lg">
+                        <span className="text-xl">
                           {isCorrect ? "✅" : "❌"}
                         </span>
                         {correctRank && (
-                          <span className="text-xs font-semibold text-[var(--text-secondary)]">
+                          <span className="caption font-semibold" style={{ color: "var(--text-secondary)" }}>
                             (#{correctRank})
                           </span>
                         )}
@@ -162,30 +235,40 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
           })}
         </div>
 
-        {/* Footer */}
-        <div className="clean-card px-4 py-3 flex items-center justify-end">
-          {!autoRevealing && !allRevealed ? (
-            <button
-              type="button"
-              onClick={handleStartReveal}
-              className="btn-primary"
-            >
-              Start Reveal
-            </button>
-          ) : allRevealed ? (
-            <button
-              type="button"
-              onClick={handleNext}
-              className="btn-primary"
-            >
-              Continue
-            </button>
-          ) : (
-            <div className="caption text-[var(--text-secondary)]">
-              Revealing... {revealedPositions.filter(Boolean).length}/6
+        {/* Double Down Results */}
+        {allRevealed && doubleDownResults.length > 0 && (
+          <div className="clean-card mx-0 px-4 py-3">
+            <div className="title text-center mb-3">💎 Double Down Results</div>
+            <div className="space-y-2">
+              {doubleDownResults.map((result, idx) => (
+                <div 
+                  key={idx} 
+                  className={`
+                    flex items-center justify-between px-3 py-2 rounded-lg
+                    ${result.correct 
+                      ? "bg-green-100 border border-green-300"
+                      : "bg-red-100 border border-red-300"
+                    }
+                  `}
+                >
+                  <div className="flex items-center gap-2">
+                    <div className={`w-6 h-6 rounded-full ${gameState.players.find(p => p.id === result.player.id)?.color || 'bg-gray-500'}`}></div>
+                    <span className="body font-medium">{result.player.name}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="caption">Position #{result.position + 1}</span>
+                    <span className="text-lg">
+                      {result.correct ? "🎉" : "💔"}
+                    </span>
+                    {result.correct && (
+                      <span className="caption font-bold text-green-600">+3 points!</span>
+                    )}
+                  </div>
+                </div>
+              ))}
             </div>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </div>
   );

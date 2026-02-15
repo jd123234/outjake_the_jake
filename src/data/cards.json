@@ -1,103 +1,120 @@
 [
   {
     "id": 1,
-    "question": "Most Famous Artists of All Time",
+    "category": "Demographics",
+    "question": "Countries by Population",
     "answers": [
-      "Leonardo da Vinci",
-      "Pablo Picasso",
-      "Vincent van Gogh",
-      "Michelangelo",
-      "Claude Monet"
+      "India",
+      "China",
+      "United States",
+      "Indonesia",
+      "Pakistan"
     ],
-    "foxPosition": 3
+    "snakePosition": 3,
+    "source": "United Nations World Population Prospects (2024)"
   },
   {
     "id": 2,
-    "question": "Best-Selling Video Games of All Time",
+    "category": "Business",
+    "question": "Most Valuable Companies (Market Cap)",
     "answers": [
-      "Minecraft",
-      "Grand Theft Auto V",
-      "Tetris",
-      "Wii Sports",
-      "PUBG"
+      "Apple",
+      "Microsoft",
+      "Nvidia",
+      "Saudi Aramco",
+      "Alphabet"
     ],
-    "foxPosition": 4
+    "snakePosition": 2,
+    "source": "CompaniesMarketCap (2025)"
   },
   {
     "id": 3,
-    "question": "Most Popular Pizza Toppings",
+    "category": "Sports",
+    "question": "NBA Teams with Most Championships",
     "answers": [
-      "Pepperoni",
-      "Mushrooms",
-      "Sausage",
-      "Bacon",
-      "Extra Cheese"
+      "Boston Celtics",
+      "Los Angeles Lakers",
+      "Golden State Warriors",
+      "Chicago Bulls",
+      "San Antonio Spurs"
     ],
-    "foxPosition": 2
+    "snakePosition": 4,
+    "source": "NBA Official Records (2024)"
   },
   {
     "id": 4,
-    "question": "Highest-Grossing Movies of All Time",
+    "category": "Sports",
+    "question": "NFL Teams with Most Super Bowl Wins",
     "answers": [
-      "Avatar",
-      "Avengers: Endgame",
-      "Titanic",
-      "Star Wars: The Force Awakens",
-      "Avengers: Infinity War"
+      "New England Patriots",
+      "Pittsburgh Steelers",
+      "San Francisco 49ers",
+      "Dallas Cowboys",
+      "Green Bay Packers"
     ],
-    "foxPosition": 5
+    "snakePosition": 1,
+    "source": "NFL Official Records (2024)"
   },
   {
     "id": 5,
-    "question": "Most Visited Tourist Attractions in the World",
+    "category": "Travel",
+    "question": "Most Visited Countries",
     "answers": [
-      "Eiffel Tower",
-      "Great Wall of China",
-      "Statue of Liberty",
-      "Machu Picchu",
-      "Colosseum"
+      "France",
+      "Spain",
+      "United States",
+      "China",
+      "Italy"
     ],
-    "foxPosition": 1
+    "snakePosition": 5,
+    "source": "UN World Tourism Organization (2019)"
   },
   {
     "id": 6,
-    "question": "Best James Bond Movies",
+    "category": "Social Media",
+    "question": "Most Followed Instagram Accounts",
     "answers": [
-      "Goldfinger",
-      "Skyfall",
-      "Casino Royale",
-      "GoldenEye",
-      "From Russia with Love"
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Selena Gomez",
+      "Kylie Jenner",
+      "Dwayne Johnson"
     ],
-    "foxPosition": 3
+    "snakePosition": 3,
+    "source": "Instagram Platform Data (2025)"
   },
   {
     "id": 7,
-    "question": "Most Popular Dog Breeds",
+    "category": "Movies",
+    "question": "Highest Grossing Movies (Worldwide)",
     "answers": [
-      "Labrador Retriever",
-      "German Shepherd",
-      "Golden Retriever",
-      "French Bulldog",
-      "Bulldog"
+      "Avatar",
+      "Avengers Endgame",
+      "Avatar The Way of Water",
+      "Titanic",
+      "Star Wars The Force Awakens"
     ],
-    "foxPosition": 4
+    "snakePosition": 2,
+    "source": "Box Office Mojo (2024)"
   },
   {
     "id": 8,
-    "question": "Best-Selling Books of All Time",
+    "category": "Gaming",
+    "question": "Best Selling Video Game Consoles",
     "answers": [
-      "A Tale of Two Cities",
-      "The Lord of the Rings",
-      "The Little Prince",
-      "Harry Potter and the Philosopher's Stone",
-      "The Hobbit"
+      "PlayStation 2",
+      "Nintendo DS",
+      "Nintendo Switch",
+      "Game Boy / Game Boy Color",
+      "PlayStation 4"
     ],
-    "foxPosition": 2
+    "snakePosition": 4,
+    "source": "Company Financial Reports (2024)"
   },
   {
     "id": 9,
-    "question": "Most Spoken Languages in the World",
+    "category": "Language",
+    "question": "Most Spoken Languages",
     "answers": [
       "English",
       "Mandarin Chinese",
@@ -105,11 +122,1091 @@
       "Spanish",
       "French"
     ],
-    "foxPosition": 5
+    "snakePosition": 1,
+    "source": "Ethnologue (2024)"
   },
   {
     "id": 10,
-    "question": "Best-Selling Condiments",
+    "category": "Sports",
+    "question": "Most Valuable Sports Franchises",
+    "answers": [
+      "Dallas Cowboys",
+      "New York Yankees",
+      "Golden State Warriors",
+      "New England Patriots",
+      "Real Madrid"
+    ],
+    "snakePosition": 5,
+    "source": "Forbes (2024)"
+  },
+  {
+    "id": 11,
+    "category": "Music",
+    "question": "Best Selling Music Artists",
+    "answers": [
+      "The Beatles",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna",
+      "Elton John"
+    ],
+    "snakePosition": 3,
+    "source": "RIAA / Guinness (2024)"
+  },
+  {
+    "id": 12,
+    "category": "Pets",
+    "question": "Most Popular Dog Breeds (U.S.)",
+    "answers": [
+      "French Bulldog",
+      "Labrador Retriever",
+      "Golden Retriever",
+      "German Shepherd",
+      "Poodle"
+    ],
+    "snakePosition": 2,
+    "source": "American Kennel Club (2024)"
+  },
+  {
+    "id": 13,
+    "category": "Business",
+    "question": "Most Valuable Brands",
+    "answers": [
+      "Apple",
+      "Amazon",
+      "Google",
+      "Microsoft",
+      "Coca-Cola"
+    ],
+    "snakePosition": 4,
+    "source": "Interbrand (2024)"
+  },
+  {
+    "id": 14,
+    "category": "Social Media",
+    "question": "Most Subscribed YouTube Channels",
+    "answers": [
+      "T-Series",
+      "MrBeast",
+      "Cocomelon",
+      "SET India",
+      "Kids Diana Show"
+    ],
+    "snakePosition": 1,
+    "source": "YouTube Statistics (2025)"
+  },
+  {
+    "id": 15,
+    "category": "Sports",
+    "question": "Countries with Most FIFA World Cup Titles",
+    "answers": [
+      "Brazil",
+      "Germany",
+      "Italy",
+      "Argentina",
+      "France"
+    ],
+    "snakePosition": 5,
+    "source": "FIFA (2022)"
+  },
+  {
+    "id": 16,
+    "category": "Movies",
+    "question": "Most Profitable Movie Franchises",
+    "answers": [
+      "Marvel Cinematic Universe",
+      "Star Wars",
+      "Wizarding World",
+      "Spider-Man",
+      "James Bond"
+    ],
+    "snakePosition": 3,
+    "source": "Box Office Mojo (2024)"
+  },
+  {
+    "id": 17,
+    "category": "Geography",
+    "question": "Largest U.S. Cities by Population",
+    "answers": [
+      "New York City",
+      "Los Angeles",
+      "Chicago",
+      "Houston",
+      "Phoenix"
+    ],
+    "snakePosition": 2,
+    "source": "U.S. Census Bureau (2023)"
+  },
+  {
+    "id": 18,
+    "category": "Entertainment",
+    "question": "Most Popular Streaming Services (U.S.)",
+    "answers": [
+      "Netflix",
+      "Amazon Prime Video",
+      "Disney+",
+      "Hulu",
+      "Max"
+    ],
+    "snakePosition": 4,
+    "source": "Company Earnings Reports (2024)"
+  },
+  {
+    "id": 19,
+    "category": "Games",
+    "question": "Best Selling Board Games",
+    "answers": [
+      "Monopoly",
+      "Scrabble",
+      "Chess",
+      "Clue",
+      "Sorry"
+    ],
+    "snakePosition": 1,
+    "source": "Guinness World Records (2024)"
+  },
+  {
+    "id": 20,
+    "category": "Music",
+    "question": "Most Grammy Wins (Individual)",
+    "answers": [
+      "Beyoncé",
+      "Georg Solti",
+      "Quincy Jones",
+      "Alison Krauss",
+      "Chick Corea"
+    ],
+    "snakePosition": 5,
+    "source": "Grammy Awards (2024)"
+  },
+  {
+    "id": 21,
+    "category": "Sports",
+    "question": "Most Super Bowl Appearances (QB)",
+    "answers": [
+      "Tom Brady",
+      "John Elway",
+      "Peyton Manning",
+      "Joe Montana",
+      "Terry Bradshaw"
+    ],
+    "snakePosition": 3,
+    "source": "NFL (2024)"
+  },
+  {
+    "id": 22,
+    "category": "Sports",
+    "question": "NBA All Time Scoring Leaders",
+    "answers": [
+      "LeBron James",
+      "Kareem Abdul-Jabbar",
+      "Karl Malone",
+      "Kobe Bryant",
+      "Michael Jordan"
+    ],
+    "snakePosition": 2,
+    "source": "Basketball Reference (2024)"
+  },
+  {
+    "id": 23,
+    "category": "Sports",
+    "question": "MLB Career Home Run Leaders",
+    "answers": [
+      "Barry Bonds",
+      "Hank Aaron",
+      "Babe Ruth",
+      "Alex Rodriguez",
+      "Albert Pujols"
+    ],
+    "snakePosition": 4,
+    "source": "MLB (2024)"
+  },
+  {
+    "id": 24,
+    "category": "Sports",
+    "question": "Most Olympic Gold Medals (Individual)",
+    "answers": [
+      "Michael Phelps",
+      "Larisa Latynina",
+      "Paavo Nurmi",
+      "Mark Spitz",
+      "Carl Lewis"
+    ],
+    "snakePosition": 1,
+    "source": "IOC (2024)"
+  },
+  {
+    "id": 25,
+    "category": "Geography",
+    "question": "Largest Countries by Land Area",
+    "answers": [
+      "Russia",
+      "Canada",
+      "United States",
+      "China",
+      "Brazil"
+    ],
+    "snakePosition": 5,
+    "source": "CIA World Factbook (2024)"
+  },
+  {
+    "id": 26,
+    "category": "Business",
+    "question": "Richest People (Net Worth)",
+    "answers": [
+      "Elon Musk",
+      "Bernard Arnault",
+      "Jeff Bezos",
+      "Larry Ellison",
+      "Mark Zuckerberg"
+    ],
+    "snakePosition": 3,
+    "source": "Forbes (2025)"
+  },
+  {
+    "id": 27,
+    "category": "Sports",
+    "question": "Most Watched Sporting Events",
+    "answers": [
+      "FIFA World Cup Final",
+      "Super Bowl",
+      "Olympic Opening Ceremony",
+      "Cricket World Cup Final",
+      "Champions League Final"
+    ],
+    "snakePosition": 2,
+    "source": "Nielsen / FIFA (2024)"
+  },
+  {
+    "id": 28,
+    "category": "Movies",
+    "question": "Most Oscar Wins (Acting)",
+    "answers": [
+      "Katharine Hepburn",
+      "Daniel Day-Lewis",
+      "Meryl Streep",
+      "Jack Nicholson",
+      "Frances McDormand"
+    ],
+    "snakePosition": 4,
+    "source": "Academy Awards (2024)"
+  },
+  {
+    "id": 29,
+    "category": "Travel",
+    "question": "Most Visited U.S. National Parks",
+    "answers": [
+      "Great Smoky Mountains",
+      "Grand Canyon",
+      "Zion",
+      "Yellowstone",
+      "Rocky Mountain"
+    ],
+    "snakePosition": 1,
+    "source": "National Park Service (2023)"
+  },
+  {
+    "id": 30,
+    "category": "Business",
+    "question": "Largest Retailers by Revenue",
+    "answers": [
+      "Walmart",
+      "Amazon",
+      "Costco",
+      "Schwarz Group",
+      "Aldi"
+    ],
+    "snakePosition": 5,
+    "source": "Fortune Global 500 (2024)"
+  },
+  {
+    "id": 31,
+    "category": "Technology",
+    "question": "Most Downloaded Apps",
+    "answers": [
+      "TikTok",
+      "Instagram",
+      "Facebook",
+      "WhatsApp",
+      "Temu"
+    ],
+    "snakePosition": 3,
+    "source": "Data.ai (2024)"
+  },
+  {
+    "id": 32,
+    "category": "Sports",
+    "question": "Most Valuable NBA Teams",
+    "answers": [
+      "Golden State Warriors",
+      "New York Knicks",
+      "Los Angeles Lakers",
+      "Chicago Bulls",
+      "Boston Celtics"
+    ],
+    "snakePosition": 2,
+    "source": "Forbes (2024)"
+  },
+  {
+    "id": 33,
+    "category": "Sports",
+    "question": "Most FIFA World Cup Goals (Career)",
+    "answers": [
+      "Miroslav Klose",
+      "Ronaldo Nazário",
+      "Gerd Müller",
+      "Just Fontaine",
+      "Pelé"
+    ],
+    "snakePosition": 4,
+    "source": "FIFA (2024)"
+  },
+  {
+    "id": 34,
+    "category": "Sports",
+    "question": "Most Successful College Football Programs (Wins)",
+    "answers": [
+      "Michigan",
+      "Alabama",
+      "Ohio State",
+      "Notre Dame",
+      "Texas"
+    ],
+    "snakePosition": 1,
+    "source": "NCAA (2024)"
+  },
+  {
+    "id": 35,
+    "category": "Gaming",
+    "question": "Most Played Steam Games (Peak Players)",
+    "answers": [
+      "PUBG",
+      "Counter-Strike 2",
+      "Dota 2",
+      "Lost Ark",
+      "Cyberpunk 2077"
+    ],
+    "snakePosition": 5,
+    "source": "SteamCharts (2024)"
+  },
+  {
+    "id": 36,
+    "category": "Sports",
+    "question": "Most Expensive Sports Contracts (Total Value)",
+    "answers": [
+      "Shohei Ohtani",
+      "Patrick Mahomes",
+      "Lionel Messi",
+      "Mike Trout",
+      "Cristiano Ronaldo"
+    ],
+    "snakePosition": 3,
+    "source": "ESPN / Spotrac (2024)"
+  },
+  {
+    "id": 37,
+    "category": "Food",
+    "question": "Most Popular Ice Cream Flavors (U.S.)",
+    "answers": [
+      "Vanilla",
+      "Chocolate",
+      "Cookies and Cream",
+      "Strawberry",
+      "Mint Chocolate Chip"
+    ],
+    "snakePosition": 2,
+    "source": "IDFA (2024)"
+  },
+  {
+    "id": 38,
+    "category": "Food",
+    "question": "Most Popular Soda Brands (Global)",
+    "answers": [
+      "Coca-Cola",
+      "Pepsi",
+      "Sprite",
+      "Fanta",
+      "Mountain Dew"
+    ],
+    "snakePosition": 4,
+    "source": "Beverage Industry Reports (2024)"
+  },
+  {
+    "id": 39,
+    "category": "Demographics",
+    "question": "Most Common U.S. Last Names",
+    "answers": [
+      "Smith",
+      "Johnson",
+      "Williams",
+      "Brown",
+      "Jones"
+    ],
+    "snakePosition": 1,
+    "source": "U.S. Census Bureau (2010)"
+  },
+  {
+    "id": 40,
+    "category": "Demographics",
+    "question": "Most Common Baby Boy Names (U.S.)",
+    "answers": [
+      "Liam",
+      "Noah",
+      "Oliver",
+      "James",
+      "Elijah"
+    ],
+    "snakePosition": 5,
+    "source": "SSA (2023)"
+  },
+  {
+    "id": 41,
+    "category": "Demographics",
+    "question": "Most Common Baby Girl Names (U.S.)",
+    "answers": [
+      "Olivia",
+      "Emma",
+      "Charlotte",
+      "Amelia",
+      "Sophia"
+    ],
+    "snakePosition": 3,
+    "source": "Social Security Administration (2023)"
+  },
+  {
+    "id": 42,
+    "category": "Entertainment",
+    "question": "Most Subscribed Streaming Platforms (Global)",
+    "answers": [
+      "Netflix",
+      "Amazon Prime Video",
+      "Disney+",
+      "Tencent Video",
+      "iQIYI"
+    ],
+    "snakePosition": 2,
+    "source": "Company Earnings Reports (2024)"
+  },
+  {
+    "id": 43,
+    "category": "Geography",
+    "question": "Largest U.S. States by Area",
+    "answers": [
+      "Alaska",
+      "Texas",
+      "California",
+      "Montana",
+      "New Mexico"
+    ],
+    "snakePosition": 4,
+    "source": "U.S. Census Bureau (2024)"
+  },
+  {
+    "id": 44,
+    "category": "Movies",
+    "question": "Most Expensive Movie Budgets (All Time)",
+    "answers": [
+      "Star Wars The Force Awakens",
+      "Avengers Endgame",
+      "Avatar The Way of Water",
+      "Pirates of the Caribbean On Stranger Tides",
+      "Avengers Age of Ultron"
+    ],
+    "snakePosition": 1,
+    "source": "Box Office Mojo (2024)"
+  },
+  {
+    "id": 45,
+    "category": "Geography",
+    "question": "Most Populous U.S. States",
+    "answers": [
+      "California",
+      "Texas",
+      "Florida",
+      "New York",
+      "Pennsylvania"
+    ],
+    "snakePosition": 5,
+    "source": "U.S. Census Bureau (2023)"
+  },
+  {
+    "id": 46,
+    "category": "Sports",
+    "question": "Most Valuable NFL Teams",
+    "answers": [
+      "Dallas Cowboys",
+      "New England Patriots",
+      "Los Angeles Rams",
+      "New York Giants",
+      "Chicago Bears"
+    ],
+    "snakePosition": 3,
+    "source": "Forbes (2024)"
+  },
+  {
+    "id": 47,
+    "category": "Sports",
+    "question": "Most Decorated Olympians (Total Medals)",
+    "answers": [
+      "Michael Phelps",
+      "Larisa Latynina",
+      "Marit Bjørgen",
+      "Nikolai Andrianov",
+      "Ole Einar Bjørndalen"
+    ],
+    "snakePosition": 2,
+    "source": "International Olympic Committee (2024)"
+  },
+  {
+    "id": 48,
+    "category": "Movies",
+    "question": "Highest Grossing Actors (Box Office Total)",
+    "answers": [
+      "Samuel L. Jackson",
+      "Robert Downey Jr.",
+      "Scarlett Johansson",
+      "Zoe Saldaña",
+      "Chris Pratt"
+    ],
+    "snakePosition": 4,
+    "source": "The Numbers Box Office Data (2024)"
+  },
+  {
+    "id": 49,
+    "category": "Sports",
+    "question": "Most Successful Formula 1 Drivers (Wins)",
+    "answers": [
+      "Lewis Hamilton",
+      "Michael Schumacher",
+      "Max Verstappen",
+      "Sebastian Vettel",
+      "Alain Prost"
+    ],
+    "snakePosition": 1,
+    "source": "FIA Official Records (2024)"
+  },
+  {
+    "id": 50,
+    "category": "Language",
+    "question": "Most Spoken Languages (Native Speakers Only)",
+    "answers": [
+      "Mandarin Chinese",
+      "Spanish",
+      "English",
+      "Hindi",
+      "Bengali"
+    ],
+    "snakePosition": 5,
+    "source": "Ethnologue (2024)"
+  },
+  {
+    "id": 51,
+    "category": "Sports",
+    "question": "Largest Stadiums by Capacity",
+    "answers": [
+      "Rungrado 1st of May Stadium",
+      "Michigan Stadium",
+      "Beaver Stadium",
+      "Ohio Stadium",
+      "Kyle Field"
+    ],
+    "snakePosition": 3,
+    "source": "StadiumDB (2024)"
+  },
+  {
+    "id": 52,
+    "category": "Sports",
+    "question": "Most Valuable Soccer Clubs",
+    "answers": [
+      "Real Madrid",
+      "Manchester United",
+      "Barcelona",
+      "Liverpool",
+      "Manchester City"
+    ],
+    "snakePosition": 2,
+    "source": "Forbes (2024)"
+  },
+  {
+    "id": 53,
+    "category": "Entertainment",
+    "question": "Most Viewed YouTube Videos",
+    "answers": [
+      "Baby Shark",
+      "Despacito",
+      "Wheels on the Bus",
+      "Johny Johny Yes Papa",
+      "Bath Song"
+    ],
+    "snakePosition": 4,
+    "source": "YouTube Charts (2024)"
+  },
+  {
+    "id": 54,
+    "category": "Sports",
+    "question": "Most Successful MLB Teams (World Series Titles)",
+    "answers": [
+      "New York Yankees",
+      "St. Louis Cardinals",
+      "Boston Red Sox",
+      "Los Angeles Dodgers",
+      "San Francisco Giants"
+    ],
+    "snakePosition": 1,
+    "source": "MLB Official Records (2024)"
+  },
+  {
+    "id": 55,
+    "category": "Sports",
+    "question": "Most Successful NHL Teams (Stanley Cups)",
+    "answers": [
+      "Montreal Canadiens",
+      "Toronto Maple Leafs",
+      "Detroit Red Wings",
+      "Boston Bruins",
+      "Chicago Blackhawks"
+    ],
+    "snakePosition": 5,
+    "source": "NHL Official Records (2024)"
+  },
+  {
+    "id": 56,
+    "category": "Sports",
+    "question": "Most Gold Medals in Single Olympics",
+    "answers": [
+      "Michael Phelps",
+      "Mark Spitz",
+      "Matt Biondi",
+      "Kristin Otto",
+      "Carl Lewis"
+    ],
+    "snakePosition": 3,
+    "source": "International Olympic Committee (2024)"
+  },
+  {
+    "id": 57,
+    "category": "Business",
+    "question": "Most Valuable Car Brands",
+    "answers": [
+      "Toyota",
+      "Mercedes-Benz",
+      "Tesla",
+      "BMW",
+      "Porsche"
+    ],
+    "snakePosition": 2,
+    "source": "Interbrand (2024)"
+  },
+  {
+    "id": 58,
+    "category": "Health",
+    "question": "Most Common Blood Types (U.S.)",
+    "answers": [
+      "O+",
+      "A+",
+      "B+",
+      "O-",
+      "AB+"
+    ],
+    "snakePosition": 4,
+    "source": "American Red Cross (2024)"
+  },
+  {
+    "id": 59,
+    "category": "Entertainment",
+    "question": "Most Watched TV Series Finales (U.S.)",
+    "answers": [
+      "MAS*H",
+      "Cheers",
+      "The Fugitive",
+      "Seinfeld",
+      "Friends"
+    ],
+    "snakePosition": 1,
+    "source": "Nielsen Ratings Archives (2024)"
+  },
+  {
+    "id": 60,
+    "category": "Sports",
+    "question": "Most Successful Tennis Players (Grand Slams, Men)",
+    "answers": [
+      "Novak Djokovic",
+      "Rafael Nadal",
+      "Roger Federer",
+      "Pete Sampras",
+      "Roy Emerson"
+    ],
+    "snakePosition": 5,
+    "source": "ATP (2024)"
+  },
+  {
+    "id": 61,
+    "category": "Sports",
+    "question": "Most Successful Tennis Players (Grand Slams, Women)",
+    "answers": [
+      "Margaret Court",
+      "Serena Williams",
+      "Steffi Graf",
+      "Helen Wills Moody",
+      "Martina Navratilova"
+    ],
+    "snakePosition": 3,
+    "source": "WTA (2024)"
+  },
+  {
+    "id": 62,
+    "category": "Social Media",
+    "question": "Most Popular Social Media Platforms",
+    "answers": [
+      "Facebook",
+      "YouTube",
+      "WhatsApp",
+      "Instagram",
+      "TikTok"
+    ],
+    "snakePosition": 2,
+    "source": "DataReportal Digital Report (2024)"
+  },
+  {
+    "id": 63,
+    "category": "Sports",
+    "question": "Most Valuable MLB Teams",
+    "answers": [
+      "New York Yankees",
+      "Los Angeles Dodgers",
+      "Boston Red Sox",
+      "Chicago Cubs",
+      "San Francisco Giants"
+    ],
+    "snakePosition": 4,
+    "source": "Forbes (2024)"
+  },
+  {
+    "id": 64,
+    "category": "Sports",
+    "question": "Most Successful NBA Players (MVP Awards)",
+    "answers": [
+      "Kareem Abdul-Jabbar",
+      "Michael Jordan",
+      "Bill Russell",
+      "LeBron James",
+      "Wilt Chamberlain"
+    ],
+    "snakePosition": 1,
+    "source": "NBA Official Records (2024)"
+  },
+  {
+    "id": 65,
+    "category": "Food",
+    "question": "Most Popular Fast Food Chains (Revenue)",
+    "answers": [
+      "McDonald's",
+      "Starbucks",
+      "Chick-fil-A",
+      "Taco Bell",
+      "Wendy's"
+    ],
+    "snakePosition": 5,
+    "source": "QSR Magazine (2024)"
+  },
+  {
+    "id": 66,
+    "category": "Economics",
+    "question": "Largest Economies (Nominal GDP)",
+    "answers": [
+      "United States",
+      "China",
+      "Germany",
+      "Japan",
+      "India"
+    ],
+    "snakePosition": 3,
+    "source": "World Bank (2024)"
+  },
+  {
+    "id": 67,
+    "category": "Movies",
+    "question": "Most Oscar Wins (All Categories, Individual)",
+    "answers": [
+      "Walt Disney",
+      "Cedric Gibbons",
+      "Edith Head",
+      "Dennis Muren",
+      "Katharine Hepburn"
+    ],
+    "snakePosition": 2,
+    "source": "Academy Awards (2024)"
+  },
+  {
+    "id": 68,
+    "category": "Entertainment",
+    "question": "Most Visited Theme Parks",
+    "answers": [
+      "Magic Kingdom",
+      "Disneyland",
+      "Universal Studios Japan",
+      "Tokyo Disneyland",
+      "Shanghai Disneyland"
+    ],
+    "snakePosition": 4,
+    "source": "TEA Global Attractions Report (2023)"
+  },
+  {
+    "id": 69,
+    "category": "Food",
+    "question": "Most Popular Candy Brands (U.S.)",
+    "answers": [
+      "Reese's",
+      "M&M's",
+      "Snickers",
+      "Hershey's",
+      "Skittles"
+    ],
+    "snakePosition": 1,
+    "source": "Candy Industry Rankings (2024)"
+  },
+  {
+    "id": 70,
+    "category": "Sports",
+    "question": "Most Successful College Basketball Programs (Titles)",
+    "answers": [
+      "UCLA",
+      "Kentucky",
+      "North Carolina",
+      "Duke",
+      "Indiana"
+    ],
+    "snakePosition": 5,
+    "source": "NCAA Records (2024)"
+  },
+  {
+    "id": 71,
+    "category": "Economics",
+    "question": "Most Expensive Cities (Cost of Living)",
+    "answers": [
+      "Singapore",
+      "Zurich",
+      "Geneva",
+      "New York",
+      "Hong Kong"
+    ],
+    "snakePosition": 3,
+    "source": "Economist Intelligence Unit (2024)"
+  },
+  {
+    "id": 72,
+    "category": "Social Media",
+    "question": "Most Followed TikTok Accounts",
+    "answers": [
+      "Khaby Lame",
+      "Charli D'Amelio",
+      "Bella Poarch",
+      "MrBeast",
+      "Addison Rae"
+    ],
+    "snakePosition": 2,
+    "source": "TikTok Platform Data (2024)"
+  },
+  {
+    "id": 73,
+    "category": "Travel",
+    "question": "Largest Airlines by Fleet Size",
+    "answers": [
+      "American Airlines",
+      "Delta",
+      "United",
+      "Southwest",
+      "China Southern"
+    ],
+    "snakePosition": 4,
+    "source": "Airline Fleet Reports (2024)"
+  },
+  {
+    "id": 74,
+    "category": "Sports",
+    "question": "Most Successful Golfers (Major Wins)",
+    "answers": [
+      "Jack Nicklaus",
+      "Tiger Woods",
+      "Walter Hagen",
+      "Ben Hogan",
+      "Gary Player"
+    ],
+    "snakePosition": 1,
+    "source": "PGA Records (2024)"
+  },
+  {
+    "id": 75,
+    "category": "Sports",
+    "question": "Most Successful Boxers (Undisputed Era Wins, Widely Cited)",
+    "answers": [
+      "Floyd Mayweather Jr.",
+      "Muhammad Ali",
+      "Joe Louis",
+      "Sugar Ray Robinson",
+      "Mike Tyson"
+    ],
+    "snakePosition": 5,
+    "source": "Ring Magazine Historical Rankings (2024)"
+  },
+  {
+    "id": 76,
+    "category": "Food",
+    "question": "Most Common Breakfast Foods (U.S.)",
+    "answers": [
+      "Eggs",
+      "Cereal",
+      "Pancakes",
+      "Bacon",
+      "Oatmeal"
+    ],
+    "snakePosition": 3,
+    "source": "YouGov Food Survey (2024)"
+  },
+  {
+    "id": 77,
+    "category": "Sports",
+    "question": "Most Valuable NHL Teams",
+    "answers": [
+      "Toronto Maple Leafs",
+      "New York Rangers",
+      "Montreal Canadiens",
+      "Chicago Blackhawks",
+      "Boston Bruins"
+    ],
+    "snakePosition": 2,
+    "source": "Forbes (2024)"
+  },
+  {
+    "id": 78,
+    "category": "Sports",
+    "question": "Most Gold Medals by Country (All Time)",
+    "answers": [
+      "United States",
+      "Soviet Union",
+      "Germany",
+      "Great Britain",
+      "France"
+    ],
+    "snakePosition": 4,
+    "source": "International Olympic Committee (2024)"
+  },
+  {
+    "id": 79,
+    "category": "Science",
+    "question": "Most Nobel Prizes by Country",
+    "answers": [
+      "United States",
+      "United Kingdom",
+      "Germany",
+      "France",
+      "Sweden"
+    ],
+    "snakePosition": 1,
+    "source": "Nobel Prize Organization (2024)"
+  },
+  {
+    "id": 80,
+    "category": "Sports",
+    "question": "Most Played Sports Worldwide (Estimated Participants)",
+    "answers": [
+      "Soccer",
+      "Cricket",
+      "Basketball",
+      "Tennis",
+      "Field Hockey"
+    ],
+    "snakePosition": 5,
+    "source": "WorldAtlas Global Sports Data (2024)"
+  },
+  {
+    "id": 81,
+    "category": "Food",
+    "question": "Most Popular Ice Cream Brands (U.S.)",
+    "answers": [
+      "Ben & Jerry's",
+      "Häagen-Dazs",
+      "Blue Bell",
+      "Breyers",
+      "Tillamook"
+    ],
+    "snakePosition": 3,
+    "source": "YouGov Brand Rankings (2024)"
+  },
+  {
+    "id": 82,
+    "category": "Sports",
+    "question": "Most Successful NFL Coaches (Super Bowl Wins)",
+    "answers": [
+      "Bill Belichick",
+      "Chuck Noll",
+      "Bill Walsh",
+      "Joe Gibbs",
+      "Vince Lombardi"
+    ],
+    "snakePosition": 2,
+    "source": "NFL Records (2024)"
+  },
+  {
+    "id": 83,
+    "category": "Sports",
+    "question": "Most Successful NBA Coaches (Championships)",
+    "answers": [
+      "Phil Jackson",
+      "Red Auerbach",
+      "Pat Riley",
+      "Gregg Popovich",
+      "Steve Kerr"
+    ],
+    "snakePosition": 4,
+    "source": "NBA Records (2024)"
+  },
+  {
+    "id": 84,
+    "category": "Education",
+    "question": "Most Valuable College Athletic Programs",
+    "answers": [
+      "Texas",
+      "Ohio State",
+      "Alabama",
+      "Michigan",
+      "Georgia"
+    ],
+    "snakePosition": 1,
+    "source": "Department of Education Financial Reports (2024)"
+  },
+  {
+    "id": 85,
+    "category": "Sports",
+    "question": "Most Successful MLS Teams (MLS Cups)",
+    "answers": [
+      "LA Galaxy",
+      "D.C. United",
+      "Houston Dynamo",
+      "Columbus Crew",
+      "Seattle Sounders"
+    ],
+    "snakePosition": 5,
+    "source": "MLS Official Records (2024)"
+  },
+  {
+    "id": 86,
+    "category": "Food",
+    "question": "Most Popular Pizza Toppings (U.S.)",
+    "answers": [
+      "Pepperoni",
+      "Sausage",
+      "Mushrooms",
+      "Onions",
+      "Extra Cheese"
+    ],
+    "snakePosition": 3,
+    "source": "YouGov Food Data (2024)"
+  },
+  {
+    "id": 87,
+    "category": "Food",
+    "question": "Most Popular Condiments (U.S.)",
     "answers": [
       "Ketchup",
       "Mayonnaise",
@@ -117,6 +1214,189 @@
       "Soy Sauce",
       "Hot Sauce"
     ],
-    "foxPosition": 1
+    "snakePosition": 2,
+    "source": "Statista Consumer Insights (2024)"
+  },
+  {
+    "id": 88,
+    "category": "Demographics",
+    "question": "Most Common U.S. First Names (All Time)",
+    "answers": [
+      "James",
+      "John",
+      "Robert",
+      "Michael",
+      "William"
+    ],
+    "snakePosition": 4,
+    "source": "Social Security Administration (2024)"
+  },
+  {
+    "id": 89,
+    "category": "Sports",
+    "question": "Most Successful NBA Franchises (Playoff Appearances)",
+    "answers": [
+      "Boston Celtics",
+      "Los Angeles Lakers",
+      "San Antonio Spurs",
+      "Philadelphia 76ers",
+      "Detroit Pistons"
+    ],
+    "snakePosition": 1,
+    "source": "Basketball Reference (2024)"
+  },
+  {
+    "id": 90,
+    "category": "Technology",
+    "question": "Most Popular Smartphone Brands (Global Market Share)",
+    "answers": [
+      "Samsung",
+      "Apple",
+      "Xiaomi",
+      "Oppo",
+      "Vivo"
+    ],
+    "snakePosition": 5,
+    "source": "IDC Worldwide Smartphone Report (2024)"
+  },
+  {
+    "id": 91,
+    "category": "Sports",
+    "question": "Most Successful Formula 1 Constructors (Championships)",
+    "answers": [
+      "Ferrari",
+      "Williams",
+      "McLaren",
+      "Mercedes",
+      "Red Bull"
+    ],
+    "snakePosition": 3,
+    "source": "FIA Records (2024)"
+  },
+  {
+    "id": 92,
+    "category": "Food",
+    "question": "Most Popular Soda Flavors",
+    "answers": [
+      "Cola",
+      "Lemon-Lime",
+      "Orange",
+      "Root Beer",
+      "Ginger Ale"
+    ],
+    "snakePosition": 2,
+    "source": "Beverage Industry Reports (2024)"
+  },
+  {
+    "id": 93,
+    "category": "Sports",
+    "question": "Most Common U.S. High School Sports (Participation)",
+    "answers": [
+      "Football",
+      "Track and Field",
+      "Basketball",
+      "Baseball",
+      "Soccer"
+    ],
+    "snakePosition": 4,
+    "source": "NFHS Participation Survey (2023)"
+  },
+  {
+    "id": 94,
+    "category": "Sports",
+    "question": "Most Successful WNBA Teams (Championships)",
+    "answers": [
+      "Houston Comets",
+      "Minnesota Lynx",
+      "Seattle Storm",
+      "Los Angeles Sparks",
+      "Phoenix Mercury"
+    ],
+    "snakePosition": 1,
+    "source": "WNBA Official Records (2024)"
+  },
+  {
+    "id": 95,
+    "category": "Sports",
+    "question": "Most Valuable Soccer Leagues (Revenue)",
+    "answers": [
+      "English Premier League",
+      "La Liga",
+      "Bundesliga",
+      "Serie A",
+      "Ligue 1"
+    ],
+    "snakePosition": 5,
+    "source": "Deloitte Football Money League (2024)"
+  },
+  {
+    "id": 96,
+    "category": "Sports",
+    "question": "Most Successful NCAA Football Coaches (Wins)",
+    "answers": [
+      "Joe Paterno",
+      "Bobby Bowden",
+      "Bear Bryant",
+      "Pop Warner",
+      "Nick Saban"
+    ],
+    "snakePosition": 3,
+    "source": "NCAA Records (2024)"
+  },
+  {
+    "id": 97,
+    "category": "Food",
+    "question": "Most Popular Energy Drink Brands (U.S.)",
+    "answers": [
+      "Red Bull",
+      "Monster",
+      "Celsius",
+      "Rockstar",
+      "Bang"
+    ],
+    "snakePosition": 2,
+    "source": "Beverage Industry Market Report (2024)"
+  },
+  {
+    "id": 98,
+    "category": "Sports",
+    "question": "Most Successful College Baseball Programs (Titles)",
+    "answers": [
+      "USC",
+      "LSU",
+      "Texas",
+      "Arizona State",
+      "Arizona"
+    ],
+    "snakePosition": 4,
+    "source": "NCAA Records (2024)"
+  },
+  {
+    "id": 99,
+    "category": "Business",
+    "question": "Most Valuable Apparel Brands",
+    "answers": [
+      "Nike",
+      "Louis Vuitton",
+      "Adidas",
+      "Chanel",
+      "Zara"
+    ],
+    "snakePosition": 1,
+    "source": "Interbrand / Brand Finance (2024)"
+  },
+  {
+    "id": 100,
+    "category": "Sports",
+    "question": "Most Successful NBA Franchises (Regular Season Wins)",
+    "answers": [
+      "Boston Celtics",
+      "Los Angeles Lakers",
+      "Philadelphia 76ers",
+      "Golden State Warriors",
+      "San Antonio Spurs"
+    ],
+    "snakePosition": 5,
+    "source": "Basketball Reference (2024)"
   }
 ]

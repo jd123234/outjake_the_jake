@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Player, GameState, Card } from "@/types/game";
-import FoxTurn from "./FoxTurn";
+import SnakeTurn from "./SnakeTurn";
 import RankingPhase from "./RankingPhase";
 import RevealPhase from "./RevealPhase";
 import ScoringPhase from "./ScoringPhase";
@@ -16,44 +16,51 @@ interface GameBoardProps {
 
 export default function GameBoard({ players, onRestart }: GameBoardProps) {
   const [gameState, setGameState] = useState<GameState>({
-    phase: "fox-turn",
+    phase: "snake-turn",
     players: players,
-    currentFoxIndex: 0,
+    currentSnakeIndex: 0,
     currentCard: null,
-    foxAnswer: "",
+    snakeAnswer: "",
     allAnswers: [],
     playerRankings: [],
-    foxChoice: "",
+    snakeChoice: "",
     doubleDowns: {},
     round: 1,
     totalRounds: players.length,
     timeRemaining: 120,
   });
 
-  const [availableCards, setAvailableCards] = useState<Card[]>([...cardsData]);
+  const [availableCards, setAvailableCards] = useState<Card[]>([...(cardsData as Card[])]);
 
   const drawCards = () => {
-    const shuffled = [...availableCards].sort(() => Math.random() - 0.5);
-    const drawn = shuffled.slice(0, 3);
-
+    // If we don't have enough cards, reset the deck
     if (availableCards.length < 3) {
-      setAvailableCards([...cardsData]);
-      return [...cardsData].sort(() => Math.random() - 0.5).slice(0, 3);
+      const shuffled = [...(cardsData as Card[])].sort(() => Math.random() - 0.5);
+      const drawn = shuffled.slice(0, 3);
+      const remaining = shuffled.slice(3);
+      setAvailableCards(remaining);
+      return drawn;
     }
 
+    // Draw from available cards
+    const shuffled = [...availableCards].sort(() => Math.random() - 0.5);
+    const drawn = shuffled.slice(0, 3);
+    const remaining = shuffled.slice(3);
+    setAvailableCards(remaining);
+    
     return drawn;
   };
 
-  const handleFoxSubmit = (card: Card, foxAnswer: string) => {
+  const handleSnakeSubmit = (card: Card, snakeAnswer: string) => {
     const allAnswers = [...card.answers];
-    allAnswers.splice(card.foxPosition - 1, 0, foxAnswer);
+    allAnswers.splice(card.snakePosition - 1, 0, snakeAnswer);
     const shuffledAnswers = [...allAnswers].sort(() => Math.random() - 0.5);
 
     setGameState({
       ...gameState,
       phase: "ranking",
       currentCard: card,
-      foxAnswer,
+      snakeAnswer,
       allAnswers: shuffledAnswers,
       timeRemaining: 120,
     });
@@ -61,14 +68,14 @@ export default function GameBoard({ players, onRestart }: GameBoardProps) {
 
   const handleRankingComplete = (
     rankings: string[],
-    foxChoice: string,
+    snakeChoice: string,
     doubleDowns: Record<string, number>
   ) => {
     setGameState({
       ...gameState,
       phase: "reveal",
       playerRankings: rankings,
-      foxChoice,
+      snakeChoice,
       doubleDowns,
     });
   };
@@ -82,7 +89,7 @@ export default function GameBoard({ players, onRestart }: GameBoardProps) {
 
   const handleNextRound = (updatedPlayers: Player[]) => {
     const nextRound = gameState.round + 1;
-    const nextFoxIndex = gameState.currentFoxIndex + 1;
+    const nextSnakeIndex = gameState.currentSnakeIndex + 1;
 
     if (nextRound > gameState.totalRounds) {
       setGameState({
@@ -93,14 +100,14 @@ export default function GameBoard({ players, onRestart }: GameBoardProps) {
     } else {
       setGameState({
         ...gameState,
-        phase: "fox-turn",
+        phase: "snake-turn",
         players: updatedPlayers,
-        currentFoxIndex: nextFoxIndex,
+        currentSnakeIndex: nextSnakeIndex,
         currentCard: null,
-        foxAnswer: "",
+        snakeAnswer: "",
         allAnswers: [],
         playerRankings: [],
-        foxChoice: "",
+        snakeChoice: "",
         doubleDowns: {},
         round: nextRound,
         timeRemaining: 120,
@@ -109,14 +116,14 @@ export default function GameBoard({ players, onRestart }: GameBoardProps) {
   };
 
   return (
-    <div className="w-full h-full flex flex-col bg-[var(--background)]">
+    <div className="w-full h-full flex flex-col bg-[var(--background)] overflow-hidden">
       {/* Header */}
-      <header className="clean-card mx-4 mt-4 mb-2 px-4 py-3 flex items-center justify-between gap-3">
+      <header className="clean-card mx-2 mt-2 mb-2 px-4 py-3 flex items-center justify-between gap-3 flex-shrink-0">
         <div className="flex items-center gap-3">
-          <span className="text-3xl">🦊</span>
+          <span className="text-3xl">🐍</span>
           <div>
-            <div className="title-large leading-tight">Outfox the Fox</div>
-            <p className="caption mt-1">
+            <div className="title text-lg leading-tight font-bold">Out Snake the Jake</div>
+            <p className="caption mt-1 text-sm">
               Round {gameState.round} of {gameState.totalRounds}
             </p>
           </div>
@@ -124,18 +131,18 @@ export default function GameBoard({ players, onRestart }: GameBoardProps) {
         <button
           type="button"
           onClick={onRestart}
-          className="btn-text"
+          className="btn-text touch-target px-3 py-2"
         >
           End Game
         </button>
       </header>
 
       {/* Main content area */}
-      <main className="flex-1 flex flex-col gap-2 px-4 pb-4 overflow-hidden">
-        {gameState.phase === "fox-turn" && (
-          <FoxTurn
-            fox={gameState.players[gameState.currentFoxIndex]}
-            onSubmit={handleFoxSubmit}
+      <main className="flex-1 flex flex-col overflow-hidden">
+        {gameState.phase === "snake-turn" && (
+          <SnakeTurn
+            snake={gameState.players[gameState.currentSnakeIndex]}
+            onSubmit={handleSnakeSubmit}
             drawCards={drawCards}
           />
         )}

@@ -3,16 +3,16 @@
 import React, { useState } from "react";
 import { Card, Player } from "@/types/game";
 
-interface FoxTurnProps {
-  fox: Player;
-  onSubmit: (card: Card, foxAnswer: string) => void;
+interface SnakeTurnProps {
+  snake: Player;
+  onSubmit: (card: Card, snakeAnswer: string) => void;
   drawCards: () => Card[];
 }
 
-export default function FoxTurn({ fox, onSubmit, drawCards }: FoxTurnProps) {
+export default function SnakeTurn({ snake, onSubmit, drawCards }: SnakeTurnProps) {
   const [drawnCards, setDrawnCards] = useState<Card[]>([]);
   const [selectedCard, setSelectedCard] = useState<Card | null>(null);
-  const [foxAnswer, setFoxAnswer] = useState("");
+  const [snakeAnswer, setSnakeAnswer] = useState("");
   const [showInstructions, setShowInstructions] = useState(true);
 
   const handleDrawCards = () => {
@@ -26,21 +26,21 @@ export default function FoxTurn({ fox, onSubmit, drawCards }: FoxTurnProps) {
   };
 
   const handleSubmit = () => {
-    if (selectedCard && foxAnswer.trim()) {
-      onSubmit(selectedCard, foxAnswer.trim());
+    if (selectedCard && snakeAnswer.trim()) {
+      onSubmit(selectedCard, snakeAnswer.trim());
     }
   };
 
-  const canSubmit = selectedCard && foxAnswer.trim().length > 0;
+  const canSubmit = selectedCard && snakeAnswer.trim().length > 0;
 
   return (
     <div className="flex flex-col h-full">
       {/* Compact header/instructions */}
       <div className="clean-card px-4 py-3 mb-2 space-y-1">
         <div className="text-center max-w-2xl mx-auto space-y-2">
-          <div className="text-5xl">🦊</div>
+          <div className="text-5xl">🐍</div>
           <div className="space-y-2">
-            <h2 className="title">{fox.name}, you're the Fox</h2>
+            <h2 className="title">{snake.name}, you're the Snake</h2>
             <p className="caption">Create a fake answer that blends in.</p>
           </div>
         </div>
@@ -51,9 +51,9 @@ export default function FoxTurn({ fox, onSubmit, drawCards }: FoxTurnProps) {
         {showInstructions ? (
           <div className="clean-card px-4 py-3 mb-2">
             <div className="text-center max-w-2xl mx-auto space-y-6">
-              <div className="text-5xl">🦊</div>
+              <div className="text-5xl">🐍</div>
               <div className="space-y-2">
-                <h2 className="title">{fox.name}, you're the Fox</h2>
+                <h2 className="title">{snake.name}, you're the Snake</h2>
                 <p className="caption">Create a fake answer that blends in.</p>
               </div>
               <div className="surface-block p-5 space-y-3">
@@ -94,6 +94,14 @@ export default function FoxTurn({ fox, onSubmit, drawCards }: FoxTurnProps) {
                     {card.category}
                   </span>
                   <span className="body font-semibold">{card.question}</span>
+                  {card.source && (
+                    <span 
+                      className="caption text-xs mt-1" 
+                      style={{ color: "var(--text-tertiary)" }}
+                    >
+                      Source: {card.source}
+                    </span>
+                  )}
                 </button>
               ))}
             </div>
@@ -103,14 +111,32 @@ export default function FoxTurn({ fox, onSubmit, drawCards }: FoxTurnProps) {
           <div className="clean-card flex-1 px-4 py-3 overflow-y-auto space-y-3">
             {/* Question & answers */}
             <div className="space-y-2">
-              <label className="body font-semibold" htmlFor="fox-answer">
-                Your Fox answer
+              <div className="space-y-1">
+                <span
+                  className="caption uppercase tracking-wide"
+                  style={{ color: "var(--text-secondary)" }}
+                >
+                  {selectedCard.category}
+                </span>
+                <h2 className="title">{selectedCard.question}</h2>
+                {selectedCard.source && (
+                  <p 
+                    className="caption text-xs" 
+                    style={{ color: "var(--text-tertiary)" }}
+                  >
+                    Source: {selectedCard.source}
+                  </p>
+                )}
+              </div>
+              
+              <label className="body font-semibold" htmlFor="snake-answer">
+                Your Snake answer
               </label>
               <input
-                id="fox-answer"
+                id="snake-answer"
                 type="text"
-                value={foxAnswer}
-                onChange={(e) => setFoxAnswer(e.target.value)}
+                value={snakeAnswer}
+                onChange={(e) => setSnakeAnswer(e.target.value)}
                 placeholder="Type a believable fake answer"
               />
               <p
@@ -120,7 +146,7 @@ export default function FoxTurn({ fox, onSubmit, drawCards }: FoxTurnProps) {
                 Tip: mirror the tone and length of the real answers.
               </p>
 
-              {/* show all real answers in a compact list so the Fox can see the rankings */}
+              {/* show all real answers in a compact list so the Snake can see the rankings */}
               <div className="space-y-1">
                 {selectedCard.answers.map((answer, idx) => (
                   <div key={answer} className="surface-block px-3 py-2 body text-sm">
@@ -137,7 +163,7 @@ export default function FoxTurn({ fox, onSubmit, drawCards }: FoxTurnProps) {
                   type="button"
                   onClick={() => {
                     setSelectedCard(null);
-                    setFoxAnswer("");
+                    setSnakeAnswer("");
                   }}
                   className="btn-text"
                 >
