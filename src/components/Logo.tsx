@@ -15,7 +15,7 @@ export default function Logo({
 }: LogoProps) {
   return (
     <Image
-      src="/file.svg"
+      src="/file.png"
       alt={alt}
       width={size}
       height={size}
