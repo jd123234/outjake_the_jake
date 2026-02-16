@@ -197,7 +197,7 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
             )}
             
             {/* Timer and Submit Button Row */}
-            <div className="flex items-center justify-between mb-0 mt-0">
+            <div className="flex items-center justify-between mt-1 mb-2">
               <div className="flex items-center gap-2">
                 <span className="text-xl" aria-hidden>⏱</span>
                 <div
