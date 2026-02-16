@@ -67,7 +67,7 @@ export default function SnakeTurn({ snake, onSubmit, drawCards }: SnakeTurnProps
           </div>
         ) : !selectedCard ? (
           /* Vertical list of candidate cards */
-          <div className="clean-card flex-1 px-4 py-3 overflow-y-auto">
+          <div className="clean-card flex-1 px-4 py-3 overflow-y-auto pb-9">
             <div className="space-y-3">
               {drawnCards.map((card) => (
                 <button
@@ -97,7 +97,7 @@ export default function SnakeTurn({ snake, onSubmit, drawCards }: SnakeTurnProps
           </div>
         ) : (
           /* Step: write fake answer */
-          <div className="clean-card flex-1 px-4 py-3 overflow-y-auto space-y-3 text-center">
+          <div className="clean-card flex-1 px-4 py-3 overflow-y-auto space-y-3 text-center pb-9">
             {/* Question & answers */}
             <div className="space-y-2">
               <div className="space-y-1">

@@ -85,22 +85,22 @@ export default function ScoringPhase({ gameState, onNextRound }: ScoringPhasePro
   }, []);
 
   return (
-    <div className="flex flex-col h-full mobile-container">
-      <div className="flex-1 overflow-y-auto px-2 py-2 pb-32 space-y-4">
-        <div className="clean-card px-6 py-6 space-y-4">
-          <div className="text-center space-y-1 mb-2">
+    <div className="flex flex-col h-full mobile-container relative">
+      <div className="flex-1 overflow-y-auto px-2 py-2 space-y-3 pb-2">
+        <div className="clean-card px-4 py-4 space-y-3 pb-9 mb-0">
+          <div className="text-center space-y-1 mb-1.5">
             <h2 className="title">Round {gameState.round} Results</h2>
             <p className="caption">See how the Snake and guessers did.</p>
           </div>
           <div
-            className="surface-block px-5 py-4 flex items-center justify-between gap-4"
+            className="surface-block px-5 py-3 flex items-center justify-between gap-3"
             style={{
               background:
                 "linear-gradient(135deg, rgba(255,159,10,0.22), rgba(255,149,0,0.18))",
             }}
           >
             <div className="flex items-center gap-3">
-              <span className="text-3xl">🐍</span>
+              <span className="text-2xl">🐍</span>
               <div>
                 <div className="body font-semibold">{snakePlayer.name}</div>
                 <div className="caption">
@@ -125,7 +125,7 @@ export default function ScoringPhase({ gameState, onNextRound }: ScoringPhasePro
             </div>
           </div>
 
-        <div className="space-y-3">
+        <div className="space-y-2">
           <h3 className="body font-semibold">Guessers</h3>
           {rankingPlayers.map((player) => {
             const updatedPlayer = updatedPlayers.find(
@@ -170,7 +170,7 @@ export default function ScoringPhase({ gameState, onNextRound }: ScoringPhasePro
             return (
               <div
                 key={player.id}
-                className="surface-block px-5 py-4 flex items-center justify-between gap-4"
+                className="surface-block px-5 py-3 flex items-center justify-between gap-3"
               >
                 <div className="flex items-center gap-3">
                   <div
@@ -195,17 +195,16 @@ export default function ScoringPhase({ gameState, onNextRound }: ScoringPhasePro
           })}
         </div>
         </div>
-
-        <button
-          type="button"
-          onClick={() => onNextRound(updatedPlayers)}
-          className="btn-primary w-full touch-target text-lg font-semibold mx-auto px-6"
-        >
-          {updatedPlayers.some(player => player.score >= (gameState.winningScore || 10))
-            ? "See Final Results 🏆"
-            : "Next Round →"}
-        </button>
       </div>
+      <button
+        type="button"
+        onClick={() => onNextRound(updatedPlayers)}
+        className="fixed bottom-2 left-4 right-4 btn-primary text-lg font-semibold z-50"
+      >
+        {updatedPlayers.some(player => player.score >= (gameState.winningScore || 10))
+          ? "See Final Results 🏆"
+          : "Next Round →"}
+      </button>
     </div>
   );
 }
