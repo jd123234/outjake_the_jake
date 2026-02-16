@@ -13,6 +13,9 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
   const [snakeRevealed, setSnakeRevealed] = useState(false);
   const [autoRevealing, setAutoRevealing] = useState(false);
   const [currentRevealIndex, setCurrentRevealIndex] = useState(0);
+  const [showSnakePopup, setShowSnakePopup] = useState(false);
+  const [snakePopupFading, setSnakePopupFading] = useState(false);
+  const [showConfetti, setShowConfetti] = useState(false);
 
   const correctAnswers = gameState.currentCard?.answers ?? [];
   const playerRankings = gameState.playerRankings ?? [];
@@ -73,7 +76,7 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
         const timer = setTimeout(() => {
           setSnakeRevealed(true);
           setAutoRevealing(false);
-        }, 2000);
+        }, 1200);
         return () => clearTimeout(timer);
       }
       setAutoRevealing(false);
@@ -87,10 +90,43 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
         return next;
       });
       setCurrentRevealIndex(prev => prev + 1);
-    }, 2000); // 2 second delay between reveals
+    }, 1200); // 1.2 second delay between reveals
 
     return () => clearTimeout(timer);
   }, [autoRevealing, currentRevealIndex, snakeRevealed]);
+
+  // Show and dissolve snake popup when position #1 is revealed and contains the snake
+  useEffect(() => {
+    if (revealedPositions[0]) {
+      const snakeAnswer = gameState.snakeAnswer;
+      if (playerRankings[0] === snakeAnswer) {
+        setShowSnakePopup(true);
+        const timer = setTimeout(() => {
+          setSnakePopupFading(true);
+          const fadeTimer = setTimeout(() => {
+            setShowSnakePopup(false);
+            setSnakePopupFading(false);
+          }, 1000);
+          return () => clearTimeout(fadeTimer);
+        }, 1000);
+        return () => clearTimeout(timer);
+      }
+    }
+  }, [revealedPositions[0], playerRankings, gameState.snakeAnswer]);
+
+  // Show confetti when position #6 is revealed and contains the snake
+  useEffect(() => {
+    if (revealedPositions[5]) {
+      const snakeAnswer = gameState.snakeAnswer;
+      if (playerRankings[5] === snakeAnswer) {
+        setShowConfetti(true);
+        const timer = setTimeout(() => {
+          setShowConfetti(false);
+        }, 3000);
+        return () => clearTimeout(timer);
+      }
+    }
+  }, [revealedPositions[5], playerRankings, gameState.snakeAnswer]);
 
   const handleNext = () => {
     onComplete();
@@ -100,14 +136,96 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
   const doubleDownResults = getDoubleDownResults();
 
   return (
-    <div className="flex flex-col h-full mobile-container">
+    <div className="flex flex-col h-full mobile-container relative">
+      {/* Snake popup */}
+      {showSnakePopup && (
+        <div className="fixed inset-0 flex items-center justify-center pointer-events-none z-50">
+          <div 
+            className="text-9xl"
+            style={{
+              animation: snakePopupFading ? "fadeOut 1s ease-out forwards" : "shake 0.5s infinite, scaleIn 0.6s ease-out",
+              transformOrigin: "center",
+            }}
+          >
+            🐍
+          </div>
+        </div>
+      )}
+
+      {/* Confetti */}
+      {showConfetti && (
+        <div className="fixed inset-0 pointer-events-none z-30">
+          {[...Array(80)].map((_, i) => (
+            <div
+              key={`confetti-${i}`}
+              style={{
+                position: "absolute",
+                left: `${Math.random() * 100}%`,
+                top: "-10px",
+                width: `${6 + Math.random() * 6}px`,
+                height: `${6 + Math.random() * 6}px`,
+                backgroundColor: ["#FFD700", "#FF6B6B", "#4ECDC4", "#45B7D1", "#FFA07A"][Math.floor(Math.random() * 5)],
+                borderRadius: Math.random() > 0.5 ? "50%" : "0%",
+                animation: `confettiFall ${1.8 + Math.random() * 0.8}s linear forwards`,
+                animationDelay: `${Math.random() * 0.2}s`,
+                willChange: "transform",
+              }}
+            />
+          ))}
+        </div>
+      )}
+      
+      <style>{`
+        @keyframes scaleIn {
+          from {
+            transform: scale(0);
+            opacity: 0;
+          }
+          to {
+            transform: scale(1);
+            opacity: 1;
+          }
+        }
+        
+        @keyframes fadeOut {
+          from {
+            opacity: 1;
+          }
+          to {
+            opacity: 0;
+          }
+        }
+        
+        @keyframes shake {
+          0%, 100% {
+            transform: translateX(0);
+          }
+          10%, 30%, 50%, 70%, 90% {
+            transform: translateX(-10px) rotateZ(-2deg);
+          }
+          20%, 40%, 60%, 80% {
+            transform: translateX(10px) rotateZ(2deg);
+          }
+        }
+
+        @keyframes confettiFall {
+          0% {
+            transform: translateY(0) rotateZ(0deg);
+            opacity: 1;
+          }
+          100% {
+            transform: translateY(150vh) rotateZ(720deg);
+            opacity: 0;
+          }
+        }
+      `}</style>
       {/* Header */}
       <div className="clean-card mx-2 mt-0 px-4 py-0.5 mb-1">
         {gameState.currentCard && (
           <>
             {gameState.currentCard.category && (
               <div
-                className="caption uppercase tracking-wide mb-2"
+                className="caption uppercase tracking-wide mb-2 mt-2"
                 style={{ color: "var(--text-secondary)" }}
               >
                 {gameState.currentCard.category}
@@ -142,7 +260,7 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
                   onClick={handleStartReveal}
                   className="btn-primary touch-target px-3 py-2 text-sm font-semibold"
                 >
-                  🎭 Start Reveal
+                  Start Reveal
                 </button>
               ) : allRevealed ? (
                 <button
@@ -177,12 +295,7 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
                 key={`${answer}-${index}`}
                 className={`
                   flex items-center gap-3 rounded-xl px-4 py-3 touch-target
-                  ${hasDoubleDown && isRevealed 
-                    ? isCorrect 
-                      ? "bg-green-50/70 border-2 border-green-400"
-                      : "bg-red-50/70 border-2 border-red-400"
-                    : "bg-white/70 border-2 border-gray-200"
-                  }
+                  bg-white/70 border-2 border-gray-200
                 `}
               >
                 {/* Position badge */}
@@ -195,20 +308,35 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
                       : "bg-gray-400"
                   }`}
                 >
-                  {index + 1}
+                  {index === 5 ? '🐍' : index + 1}
                 </div>
                 
                 {/* Snake indicator if this is the snake answer */}
                 
                 {/* Answer text */}
-                <div className="flex-1 body leading-snug">
+                <div className="flex-1 leading-snug text-black" style={{ color: "#000000 !important" }}>
                   {answer}
                   {hasDoubleDown && (
-                    <div className="caption text-xs mt-1 flex items-center gap-1">
-                      <span>💎</span>
-                      <span style={{ color: "var(--text-secondary)" }}>
-                        Double Down Position
-                      </span>
+                    <div className="caption text-xs mt-1 flex flex-wrap gap-1 items-center" style={{ color: "#000000" }}>
+                      {Object.entries(gameState.doubleDowns).map(([playerId, doubleDownIndex]) => {
+                        if (doubleDownIndex === index) {
+                          const player = gameState.players.find(p => p.id === playerId);
+                          if (player) {
+                            return (
+                              <div key={playerId} className="flex items-center gap-0.5">
+                                <div 
+                                  className="w-2.5 h-2.5 rounded-full"
+                                  style={{ backgroundColor: player.color.toLowerCase() }}
+                                />
+                                <span style={{ color: "#000000" }}>
+                                  {player.name}
+                                </span>
+                              </div>
+                            );
+                          }
+                        }
+                        return null;
+                      })}
                     </div>
                   )}
                 </div>
@@ -239,40 +367,6 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
           })}
         </div>
 
-        {/* Double Down Results */}
-        {allRevealed && doubleDownResults.length > 0 && (
-          <div className="clean-card mx-0 px-4 py-3">
-            <div className="title text-center mb-3">💎 Double Down Results</div>
-            <div className="space-y-2">
-              {doubleDownResults.map((result, idx) => (
-                <div 
-                  key={idx} 
-                  className={`
-                    flex items-center justify-between px-3 py-2 rounded-lg
-                    ${result.correct 
-                      ? "bg-green-100 border border-green-300"
-                      : "bg-red-100 border border-red-300"
-                    }
-                  `}
-                >
-                  <div className="flex items-center gap-2">
-                    <div className={`w-6 h-6 rounded-full ${gameState.players.find(p => p.id === result.player.id)?.color || 'bg-gray-500'}`}></div>
-                    <span className="body font-medium">{result.player.name}</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="caption">Position #{result.position + 1}</span>
-                    <span className="text-lg">
-                      {result.correct ? "🎉" : "💔"}
-                    </span>
-                    {result.correct && (
-                      <span className="caption font-bold text-green-600">+3 points!</span>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );
