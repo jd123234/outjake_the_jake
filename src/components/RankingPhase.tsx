@@ -173,7 +173,7 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
   return (
     <div className="flex flex-col h-full mobile-container">
       {/* Header */}
-      <div className="clean-card mx-2 mt-2 px-4 py-3 mb-2">
+      <div className="clean-card mx-2 mt-0 px-4 py-0.5 mb-1">
         {gameState.currentCard && (
           <>
             {gameState.currentCard.category && (
@@ -184,12 +184,12 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
                 {gameState.currentCard.category}
               </div>
             )}
-            <div className="body font-semibold mb-3">
+            <div className="body font-semibold mb-0">
               {gameState.currentCard.question}
             </div>
             {gameState.currentCard.source && (
               <div 
-                className="caption text-xs mb-3" 
+                className="caption text-xs mb-0 leading-tight" 
                 style={{ color: "var(--text-tertiary)" }}
               >
                 Source: {gameState.currentCard.source}
@@ -197,7 +197,7 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
             )}
             
             {/* Timer and Submit Button Row */}
-            <div className="flex items-center justify-between mb-2">
+            <div className="flex items-center justify-between mb-0 mt-0">
               <div className="flex items-center gap-2">
                 <span className="text-xl" aria-hidden>⏱</span>
                 <div
@@ -240,7 +240,7 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
               )}
             </div>
             
-            <div className="caption text-xs">
+            <div className="caption text-xs leading-tight">
               {step === 'ranking' 
                 ? "Drag cards to set Top 5; last card is the Snake."
                 : "Pick ONE position (1-5) to double down on for +3 bonus points if correct!"
