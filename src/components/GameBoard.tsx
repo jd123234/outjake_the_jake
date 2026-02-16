@@ -133,7 +133,7 @@ export default function GameBoard({ players, winningScore = 10, onRestart }: Gam
     <div className="w-full h-full flex flex-col bg-[var(--background)] overflow-hidden">
       {/* Header */}
       <header className="clean-card mx-2 mt-2 mb-2 px-4 py-3 flex items-center justify-center gap-3 flex-shrink-0 relative">
-        {gameState.players.length <= 4 && (
+        {gameState.players.length <= 3 && (
           <Logo size={80} className="absolute left-4 top-1/2 -translate-y-1/2" />
         )}
         <div className="flex-1 flex flex-col items-center gap-2">
@@ -141,7 +141,7 @@ export default function GameBoard({ players, winningScore = 10, onRestart }: Gam
             <p className="caption text-sm" style={{ color: "var(--text-secondary)" }}>
               First to {gameState.winningScore || 10} points
             </p>
-            {gameState.players.length > 4 && (
+            {gameState.players.length >= 4 && (
               <button
                 type="button"
                 onClick={onRestart}
@@ -161,7 +161,7 @@ export default function GameBoard({ players, winningScore = 10, onRestart }: Gam
             ))}
           </div>
         </div>
-        {gameState.players.length <= 4 && (
+        {gameState.players.length <= 3 && (
           <button
             type="button"
             onClick={onRestart}
