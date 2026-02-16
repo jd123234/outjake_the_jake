@@ -152,14 +152,28 @@ export default function GameBoard({ players, winningScore = 10, onRestart }: Gam
               </button>
             )}
           </div>
-          <div className={`flex flex-wrap items-center justify-center w-full ml-0 ${gameState.players.length > 4 ? 'mr-0' : ''} -mt-2 -space-x-2`}>
-            {gameState.players.map((p) => (
-              <div key={p.id} className="flex flex-col items-center gap-0.5 min-w-12 max-w-20 flex-1">
-                <div className="text-xl font-semibold text-center truncate">{p.name}</div>
-                <div className="text-3xl font-bold text-[color:var(--accent)]">{p.score}</div>
-              </div>
-            ))}
-          </div>
+          {gameState.players.length >= 3 ? (
+            <div
+              className="grid w-full gap-2 -mt-2"
+              style={{ gridTemplateColumns: `repeat(${gameState.players.length}, minmax(0, 1fr))` }}
+            >
+              {gameState.players.map((p) => (
+                <div key={p.id} className="flex flex-col items-center gap-0.5 min-w-0">
+                  <div className="text-xl font-semibold text-center truncate">{p.name}</div>
+                  <div className="text-3xl font-bold text-[color:var(--accent)]">{p.score}</div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className={`flex flex-wrap items-center justify-center w-full ml-0 ${gameState.players.length > 4 ? 'mr-0' : ''} -mt-2 -space-x-2`}>
+              {gameState.players.map((p) => (
+                <div key={p.id} className="flex flex-col items-center gap-0.5 min-w-12 max-w-20 flex-1">
+                  <div className="text-xl font-semibold text-center truncate">{p.name}</div>
+                  <div className="text-3xl font-bold text-[color:var(--accent)]">{p.score}</div>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
         {gameState.players.length <= 3 && (
           <button
