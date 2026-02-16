@@ -37,7 +37,7 @@ const GameSetup: React.FC<GameSetupProps> = ({ onStart }) => {
 
   return (
     <div className="flex flex-col h-full mobile-container">
-      <div className="clean-card mx-2 my-4 p-6 space-y-6 flex-1 overflow-y-auto">
+      <div className="mx-2 my-4 p-6 space-y-6 flex-1 overflow-y-auto">
         <div className="text-center max-w-2xl mx-auto">
           <div className="flex items-center justify-center gap-3 mb-4">
             <span className="text-5xl">🐍</span>
