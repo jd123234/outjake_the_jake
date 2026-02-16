@@ -154,7 +154,7 @@ export default function GameBoard({ players, winningScore = 10, onRestart }: Gam
           </div>
           {gameState.players.length >= 3 ? (
             <div
-              className="grid w-full gap-2 -mt-2"
+              className={`grid -mt-2 ${gameState.players.length === 3 ? "gap-0 w-11/12 max-w-md mx-auto" : "gap-2 w-full"}`}
               style={{ gridTemplateColumns: `repeat(${gameState.players.length}, minmax(0, 1fr))` }}
             >
               {gameState.players.map((p) => (
