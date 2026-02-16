@@ -17,6 +17,8 @@ interface GameBoardProps {
 }
 
 export default function GameBoard({ players, winningScore = 10, onRestart }: GameBoardProps) {
+  const shuffleCards = (cards: Card[]) => [...cards].sort(() => Math.random() - 0.5);
+
   const [gameState, setGameState] = useState<GameState>({
     phase: "snake-turn",
     players: players,
@@ -33,24 +35,30 @@ export default function GameBoard({ players, winningScore = 10, onRestart }: Gam
     winningScore: winningScore,
   });
 
-  const [availableCards, setAvailableCards] = useState<Card[]>([...(cardsData as Card[])]);
+  const [drawPile, setDrawPile] = useState<Card[]>(() => shuffleCards(cardsData as Card[]));
+  const [lastDrawnIds, setLastDrawnIds] = useState<number[]>([]);
 
   const drawCards = () => {
+    let pile = drawPile;
+
     // If we don't have enough cards, reset the deck
-    if (availableCards.length < 3) {
-      const shuffled = [...(cardsData as Card[])].sort(() => Math.random() - 0.5);
-      const drawn = shuffled.slice(0, 3);
-      const remaining = shuffled.slice(3);
-      setAvailableCards(remaining);
-      return drawn;
+    if (pile.length < 3) {
+      pile = shuffleCards(cardsData as Card[]);
     }
 
-    // Draw from available cards
-    const shuffled = [...availableCards].sort(() => Math.random() - 0.5);
-    const drawn = shuffled.slice(0, 3);
-    const remaining = shuffled.slice(3);
-    setAvailableCards(remaining);
-    
+    let drawn = pile.slice(0, 3);
+    let attempts = 0;
+
+    while (attempts < 6 && drawn.some((card) => lastDrawnIds.includes(card.id))) {
+      pile = shuffleCards(pile);
+      drawn = pile.slice(0, 3);
+      attempts += 1;
+    }
+
+    const remaining = pile.slice(3);
+    setDrawPile(remaining);
+    setLastDrawnIds(drawn.map((card) => card.id));
+
     return drawn;
   };
 
