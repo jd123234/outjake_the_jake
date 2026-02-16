@@ -10,7 +10,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://outjakethejakeapp.vercel.app'), // Update this to your actual Vercel URL
+  metadataBase: new URL('https://outjake-the-jake.vercel.app'), // Update this to your actual Vercel URL
   title: "Out Snake the Jake - Party Game",
   description:
     "A fun party game where one player is the Snake who creates a fake answer to trick the group!",
