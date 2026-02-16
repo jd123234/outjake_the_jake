@@ -102,7 +102,7 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
   return (
     <div className="flex flex-col h-full mobile-container">
       {/* Header */}
-      <div className="clean-card mx-2 mt-2 px-4 py-3 mb-2">
+      <div className="clean-card mx-2 mt-0 px-4 py-0.5 mb-1">
         {gameState.currentCard && (
           <>
             {gameState.currentCard.category && (
@@ -113,12 +113,12 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
                 {gameState.currentCard.category}
               </div>
             )}
-            <div className="body font-semibold mb-3">
+            <div className="body font-semibold mb-0">
               {gameState.currentCard.question}
             </div>
             {gameState.currentCard.source && (
               <div 
-                className="caption text-xs mb-3" 
+                className="caption text-xs mb-0 leading-tight" 
                 style={{ color: "var(--text-tertiary)" }}
               >
                 Source: {gameState.currentCard.source}
@@ -126,7 +126,7 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
             )}
             
             {/* Status and Button Row */}
-            <div className="flex items-center justify-between mb-2">
+            <div className="flex items-center justify-between mt-1 mb-2">
               <div className="caption">
                 {!autoRevealing && !allRevealed 
                   ? "Ready to see how you did?" 
