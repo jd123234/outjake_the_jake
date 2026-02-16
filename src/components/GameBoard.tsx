@@ -165,9 +165,11 @@ export default function GameBoard({ players, winningScore = 10, onRestart }: Gam
               ))}
             </div>
           ) : (
-            <div className="flex flex-wrap items-center justify-center w-full -mt-2 -space-x-2">
+            <div
+              className={`flex flex-wrap items-center justify-center -mt-2 ${gameState.players.length === 3 ? "w-10/12 mx-auto -space-x-4" : "w-full -space-x-2"}`}
+            >
               {gameState.players.map((p) => (
-                <div key={p.id} className="flex flex-col items-center gap-0.5 min-w-12 max-w-20 flex-1">
+                <div key={p.id} className="flex flex-col items-center gap-0.5 min-w-10 max-w-16 flex-1">
                   <div className="text-xl font-semibold text-center truncate">{p.name}</div>
                   <div className="text-3xl font-bold text-[color:var(--accent)]">{p.score}</div>
                 </div>
