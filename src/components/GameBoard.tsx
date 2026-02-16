@@ -128,7 +128,14 @@ export default function GameBoard({ players, winningScore = 10, onRestart }: Gam
         <div className="flex items-center gap-3">
           <Logo size={40} />
           <div>
-            <div className="title text-lg leading-tight font-bold">Out Snake the Jake</div>
+            <div className="flex items-center gap-4">
+              {gameState.players.map((p) => (
+                <div key={p.id} className="flex items-baseline gap-2 px-2 py-1 rounded-md">
+                  <div className="text-sm font-semibold">{p.name}</div>
+                  <div className="text-sm text-[color:var(--text-secondary)]">{p.score}</div>
+                </div>
+              ))}
+            </div>
             <p className="caption mt-1 text-sm">
               First to {gameState.winningScore || 10} points wins!
             </p>
