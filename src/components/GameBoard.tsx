@@ -125,30 +125,57 @@ export default function GameBoard({ players, winningScore = 10, onRestart }: Gam
     <div className="w-full h-full flex flex-col bg-[var(--background)] overflow-hidden">
       {/* Header */}
       <header className="clean-card mx-2 mt-2 mb-2 px-4 py-3 flex items-center justify-center gap-3 flex-shrink-0 relative">
-        <Logo size={80} className="absolute left-4" />
+        {gameState.players.length <= 4 && (
+          <Logo size={80} className="absolute left-4 top-1/2 -translate-y-1/2" />
+        )}
         <div className="flex-1 flex flex-col items-center gap-2">
-          <p className="caption text-sm ml-4"
-            style={{ color: "var(--text-secondary)" }}
-          >
-            First to {gameState.winningScore || 10} points
-          </p>
-          <div className="flex items-center gap-6 justify-center w-full ml-4 -mt-2">
+          <div className={`flex items-center w-full ${gameState.players.length > 4 ? 'justify-center' : 'justify-center'} relative`}>
+            <p className="caption text-sm" style={{ color: "var(--text-secondary)" }}>
+              First to {gameState.winningScore || 10} points
+            </p>
+            {gameState.players.length > 4 && (
+              <button
+                type="button"
+                onClick={onRestart}
+                className="btn-text touch-target px-2 py-1 text-xs border border-[color:var(--accent)] rounded absolute right-0"
+                style={{ minWidth: 0 }}
+              >
+                End Game
+              </button>
+            )}
+          </div>
+          <div className={`flex flex-wrap items-center justify-center w-full ml-0 ${gameState.players.length > 4 ? 'mr-0' : ''} -mt-2 -space-x-2`}>
             {gameState.players.map((p) => (
-              <div key={p.id} className="flex flex-col items-center gap-0.5 w-24">
+              <div key={p.id} className="flex flex-col items-center gap-0.5 min-w-12 max-w-20 flex-1">
                 <div className="text-xl font-semibold text-center truncate">{p.name}</div>
                 <div className="text-3xl font-bold text-[color:var(--accent)]">{p.score}</div>
               </div>
             ))}
           </div>
         </div>
-        <button
-          type="button"
-          onClick={onRestart}
-          className="btn-text touch-target px-3 py-2 absolute right-4 flex flex-col items-center"
-        >
-          <span>End</span>
-          <span>Game</span>
-        </button>
+        {gameState.players.length <= 4 && (
+          <button
+            type="button"
+            onClick={onRestart}
+            className="absolute top-1/2 -translate-y-1/2 flex items-center justify-center rounded-lg"
+            style={{
+              right: '1rem', // matches left-4 for logo
+              width: 64,
+              height: 64,
+              background: '#2563eb', // Tailwind blue-600
+              color: 'white',
+              fontWeight: 700,
+              fontSize: 17,
+              boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+              border: 'none',
+              transition: 'background 0.2s',
+            }}
+            onMouseOver={e => (e.currentTarget.style.background = '#1d4ed8')}
+            onMouseOut={e => (e.currentTarget.style.background = '#2563eb')}
+          >
+            End<br />Game
+          </button>
+        )}
       </header>
 
       {/* Main content area */}

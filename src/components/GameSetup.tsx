@@ -19,8 +19,10 @@ const GameSetup: React.FC<GameSetupProps> = ({ onStart }) => {
   };
 
   const handleNameChange = (index: number, name: string) => {
+    // Capitalize the first letter automatically
+    const capitalized = name.charAt(0).toUpperCase() + name.slice(1);
     const newNames = [...playerNames];
-    newNames[index] = name;
+    newNames[index] = capitalized;
     setPlayerNames(newNames);
   };
 
