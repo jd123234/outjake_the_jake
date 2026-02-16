@@ -29,7 +29,16 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
   const [touchStartY, setTouchStartY] = useState<number | null>(null);
   const [touchCurrentY, setTouchCurrentY] = useState<number | null>(null);
   const [step, setStep] = useState<'ranking' | 'double-down'>('ranking');
-  const [selectedDoubleDown, setSelectedDoubleDown] = useState<number | null>(null);
+  const [doubleDownSelections, setDoubleDownSelections] = useState<Record<string, number | null>>(() => {
+    const selections: Record<string, number | null> = {};
+    gameState.players.forEach((player, index) => {
+      if (index !== gameState.currentSnakeIndex) {
+        selections[player.id] = null;
+      }
+    });
+    return selections;
+  });
+  const [currentPickerIndex, setCurrentPickerIndex] = useState(0);
   const [timeRemaining, setTimeRemaining] = useState(120); // 2 minutes
   const [shouldAutoComplete, setShouldAutoComplete] = useState(false);
   const dragElementRef = useRef<HTMLDivElement | null>(null);
@@ -65,6 +74,9 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
   // Get current snake player (the one NOT ranking)
   const currentSnake = gameState.players[gameState.currentSnakeIndex];
   const rankingPlayers = gameState.players.filter((_, index) => index !== gameState.currentSnakeIndex);
+  const isMultiPicker = rankingPlayers.length > 1;
+  const currentPicker = rankingPlayers[currentPickerIndex] || null;
+  const currentSelection = currentPicker ? doubleDownSelections[currentPicker.id] : null;
 
   // Touch and drag handlers
   const handleTouchStart = (e: React.TouchEvent, index: number) => {
@@ -147,27 +159,47 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
       // Move to double down selection
       setStep('double-down');
     } else {
-      // Complete the phase with rankings and double down
-      const doubleDowns: Record<string, number> = {};
-      if (selectedDoubleDown !== null) {
-        // Add double down for all ranking players (everyone except the snake)
-        rankingPlayers.forEach(player => {
-          doubleDowns[player.id] = selectedDoubleDown;
-        });
+      if (isMultiPicker) {
+        if (!currentPicker || currentSelection === null) {
+          return;
+        }
+
+        if (currentPickerIndex < rankingPlayers.length - 1) {
+          setCurrentPickerIndex((prev) => prev + 1);
+          return;
+        }
       }
-      
+
+      const doubleDowns: Record<string, number> = {};
+      Object.entries(doubleDownSelections).forEach(([playerId, position]) => {
+        if (position !== null) {
+          doubleDowns[playerId] = position;
+        }
+      });
+
       // Pass the complete ordered array (6 elements: 5 top + 1 snake)
       onComplete(orderedAnswers, orderedAnswers[5], doubleDowns);
     }
   };
 
   const handleDoubleDownSelect = (position: number) => {
-    setSelectedDoubleDown(position === selectedDoubleDown ? null : position);
+    if (!currentPicker) return;
+    setDoubleDownSelections((prev) => ({
+      ...prev,
+      [currentPicker.id]: position === prev[currentPicker.id] ? null : position,
+    }));
   };
 
   const handleBackToRanking = () => {
     setStep('ranking');
-    setSelectedDoubleDown(null);
+    setCurrentPickerIndex(0);
+    setDoubleDownSelections((prev) => {
+      const reset: Record<string, number | null> = {};
+      Object.keys(prev).forEach((playerId) => {
+        reset[playerId] = null;
+      });
+      return reset;
+    });
   };
 
   return (
@@ -232,9 +264,15 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
                     type="button"
                     onClick={handleSubmit}
                     className="btn-primary touch-target px-3 py-2 text-sm font-semibold"
-                    disabled={selectedDoubleDown === null}
+                    disabled={isMultiPicker ? currentSelection === null : Object.values(doubleDownSelections).every((value) => value === null)}
                   >
-                    {selectedDoubleDown === null ? "Pick One" : "Lock In!"}
+                    {isMultiPicker
+                      ? currentPickerIndex < rankingPlayers.length - 1
+                        ? "Next Player →"
+                        : "Lock In!"
+                      : Object.values(doubleDownSelections).every((value) => value === null)
+                      ? "Pick One"
+                      : "Lock In!"}
                   </button>
                 </div>
               )}
@@ -243,6 +281,8 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
             <div className="caption text-xs leading-tight">
               {step === 'ranking' 
                 ? "Drag cards to set Top 5; last card is the Snake."
+                : isMultiPicker && currentPicker
+                ? `${currentPicker.name}, pick ONE position (1-5) to double down on for +3 bonus points!`
                 : "Pick ONE position (1-5) to double down on for +3 bonus points if correct!"
               }
             </div>
@@ -322,11 +362,13 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
           <div className="clean-card flex-1 px-4 py-3 flex flex-col gap-3">
             <div className="body font-semibold text-center mb-2">💎 Choose Your Double Down</div>
             <div className="caption text-center mb-3 text-xs" style={{ color: "var(--text-secondary)" }}>
-              Select ONE position you're most confident about:
+              {isMultiPicker && currentPicker
+                ? `${currentPicker.name}'s pick (${currentPickerIndex + 1}/${rankingPlayers.length})`
+                : "Select ONE position you're most confident about:"}
             </div>
             
             {orderedAnswers.slice(0, 5).map((answer, index) => {
-              const isSelected = selectedDoubleDown === index;
+              const isSelected = currentSelection === index;
               
               return (
                 <button
