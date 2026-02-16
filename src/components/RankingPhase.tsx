@@ -349,9 +349,9 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
         /* Double Down Step */
         <div className="flex-1 flex flex-col gap-2 overflow-hidden px-2">
           <div className="clean-card flex-1 px-3 py-2 flex flex-col gap-2 overflow-y-auto">
-            <div className="body font-semibold text-center mb-1 text-sm">💎 Choose Your Double Down</div>
-            <div className="rounded-lg border border-dashed border-gray-200 p-2">
-              <div className="caption text-xs mb-1" style={{ color: "var(--text-secondary)" }}>
+            <div className="body font-semibold text-center mb-2 text-sm">💎 Choose Your Double Down</div>
+            <div className="rounded-lg border border-dashed border-gray-200 p-2 mb-1">
+              <div className="caption text-xs mb-1 font-semibold" style={{ color: "var(--text-secondary)" }}>
                 Current ranking
               </div>
               <div className="flex flex-wrap gap-1 justify-center">

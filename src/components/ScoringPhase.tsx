@@ -89,14 +89,13 @@ export default function ScoringPhase({ gameState, onNextRound }: ScoringPhasePro
   }, []);
 
   return (
-    <div className="flex flex-col h-full mobile-container overflow-y-auto">
-      <div className="flex-1 px-2 py-2 space-y-4">
-        <div className="clean-card px-6 py-6 text-center space-y-1">
-          <h2 className="title">Round {gameState.round} Results</h2>
-          <p className="caption">See how the Snake and guessers did.</p>
-        </div>
-
+    <div className="flex flex-col h-full mobile-container">
+      <div className="flex-1 overflow-y-auto px-2 py-2 pb-32 space-y-4">
         <div className="clean-card px-6 py-6 space-y-4">
+          <div className="text-center space-y-1 mb-2">
+            <h2 className="title">Round {gameState.round} Results</h2>
+            <p className="caption">See how the Snake and guessers did.</p>
+          </div>
           <div
             className="surface-block px-5 py-4 flex items-center justify-between gap-4"
             style={{
@@ -199,47 +198,17 @@ export default function ScoringPhase({ gameState, onNextRound }: ScoringPhasePro
             );
           })}
         </div>
-      </div>
-
-        <div className="clean-card px-6 py-6 space-y-4">
-          <div className="space-y-2">
-            <h3 className="body font-semibold text-center">Leaderboard</h3>
-            <div className="space-y-2">
-              {[...updatedPlayers]
-                .sort((a, b) => b.score - a.score)
-                .map((player, index) => (
-                  <div
-                    key={player.id}
-                    className="surface-block px-4 py-3 flex items-center justify-between gap-3"
-                    style={{
-                      backgroundColor:
-                        index === 0
-                          ? "rgba(0,122,255,0.16)"
-                          : "var(--background-elevated)",
-                    }}
-                  >
-                    <div className="flex items-center gap-2">
-                      <span className="caption font-semibold">
-                        {index === 0 ? "🏆" : `#${index + 1}`}
-                      </span>
-                      <span className="body">{player.name}</span>
-                    </div>
-                    <span className="body font-semibold">{player.score}</span>
-                  </div>
-                ))}
-            </div>
-          </div>
-
-          <button
-            type="button"
-            onClick={() => onNextRound(updatedPlayers)}
-            className="btn-primary w-full touch-target text-lg font-semibold"
-          >
-            {updatedPlayers.some(player => player.score >= (gameState.winningScore || 10))
-              ? "See Final Results 🏆"
-              : "Next Round →"}
-          </button>
         </div>
+
+        <button
+          type="button"
+          onClick={() => onNextRound(updatedPlayers)}
+          className="btn-primary w-full touch-target text-lg font-semibold mx-auto px-6"
+        >
+          {updatedPlayers.some(player => player.score >= (gameState.winningScore || 10))
+            ? "See Final Results 🏆"
+            : "Next Round →"}
+        </button>
       </div>
     </div>
   );

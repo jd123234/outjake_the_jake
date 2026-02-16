@@ -19,6 +19,73 @@ interface GameBoardProps {
 export default function GameBoard({ players, winningScore = 10, onRestart }: GameBoardProps) {
   const shuffleCards = (cards: Card[]) => [...cards].sort(() => Math.random() - 0.5);
 
+  const calculateScores = (gameStateForScore: GameState): Player[] => {
+    const updatedPlayers = gameStateForScore.players.map((p) => ({ ...p }));
+    const correctAnswers = gameStateForScore.currentCard?.answers || [];
+    const scores: Record<string, number> = {};
+
+    updatedPlayers.forEach((player) => {
+      scores[player.id] = 0;
+    });
+
+    const snakePlayerId = updatedPlayers[gameStateForScore.currentSnakeIndex].id;
+    const snakeAnswerInRankings = gameStateForScore.playerRankings.indexOf(
+      gameStateForScore.snakeAnswer
+    );
+
+    if (snakeAnswerInRankings === 0) {
+      scores[snakePlayerId] = 5;
+    } else if (snakeAnswerInRankings === 1 || snakeAnswerInRankings === 2) {
+      scores[snakePlayerId] = 4;
+    } else if (snakeAnswerInRankings === 3 || snakeAnswerInRankings === 4) {
+      scores[snakePlayerId] = 3;
+    }
+
+    const guessers = updatedPlayers.filter(
+      (_, i) => i !== gameStateForScore.currentSnakeIndex
+    );
+
+    guessers.forEach((player) => {
+      let playerScore = 0;
+
+      gameStateForScore.playerRankings.forEach((rankedAnswer, position) => {
+        const correctPosition = correctAnswers.indexOf(rankedAnswer);
+        if (correctPosition === -1) return;
+
+        if (position === 0 && correctPosition === 0) {
+          playerScore += 1;
+        } else if (
+          (position === 1 || position === 2) &&
+          (correctPosition === 1 || correctPosition === 2)
+        ) {
+          playerScore += 1;
+        } else if (
+          (position === 3 || position === 4) &&
+          (correctPosition === 3 || correctPosition === 4)
+        ) {
+          playerScore += 1;
+        }
+      });
+
+      const doubleDownPosition = gameStateForScore.doubleDowns[player.id];
+      if (doubleDownPosition !== undefined) {
+        const doubleDownAnswer = gameStateForScore.playerRankings[doubleDownPosition];
+        const correctPosition = correctAnswers.indexOf(doubleDownAnswer);
+        if (correctPosition === doubleDownPosition) {
+          playerScore += 3;
+        }
+      }
+
+      scores[player.id] = playerScore;
+    });
+
+    updatedPlayers.forEach((player) => {
+      player.score += scores[player.id];
+    });
+
+    return updatedPlayers;
+  };
+
   const [gameState, setGameState] = useState<GameState>({
     phase: "snake-turn",
     players: players,
@@ -91,10 +158,12 @@ export default function GameBoard({ players, winningScore = 10, onRestart }: Gam
     });
   };
 
-  const handleRevealComplete = () => {
+  const handleRevealComplete = (updatedPlayers?: Player[]) => {
+    const playersWithScores = calculateScores(gameState);
     setGameState({
       ...gameState,
       phase: "scoring",
+      players: playersWithScores,
     });
   };
 
@@ -157,10 +226,20 @@ export default function GameBoard({ players, winningScore = 10, onRestart }: Gam
               className="grid w-full gap-2 -mt-2"
               style={{ gridTemplateColumns: `repeat(${gameState.players.length}, minmax(0, 1fr))` }}
             >
-              {gameState.players.map((p) => (
+              {gameState.players.map((p, index) => (
                 <div key={p.id} className="flex flex-col items-center gap-0.5 min-w-0">
-                  <div className="text-xl font-semibold text-center truncate">{p.name}</div>
-                  <div className="text-3xl font-bold text-[color:var(--accent)]">{p.score}</div>
+                  <div 
+                    className="text-xl font-semibold text-center truncate"
+                    style={{ color: index === gameState.currentSnakeIndex ? "#22c55e" : "inherit" }}
+                  >
+                    {p.name}
+                  </div>
+                  <div 
+                    className="text-3xl font-bold"
+                    style={{ color: index === gameState.currentSnakeIndex ? "#22c55e" : "var(--accent)" }}
+                  >
+                    {p.score}
+                  </div>
                 </div>
               ))}
             </div>
@@ -168,10 +247,20 @@ export default function GameBoard({ players, winningScore = 10, onRestart }: Gam
             <div
               className={`flex flex-wrap items-center justify-center -mt-2 ${gameState.players.length === 3 ? "w-full mx-auto -space-x-2" : "w-full -space-x-2"}`}
             >
-              {gameState.players.map((p) => (
+              {gameState.players.map((p, index) => (
                 <div key={p.id} className="flex flex-col items-center gap-0.5 min-w-10 max-w-16 flex-1">
-                  <div className="text-xl font-semibold text-center truncate">{p.name}</div>
-                  <div className="text-3xl font-bold text-[color:var(--accent)]">{p.score}</div>
+                  <div 
+                    className="text-xl font-semibold text-center truncate"
+                    style={{ color: index === gameState.currentSnakeIndex ? "#22c55e" : "inherit" }}
+                  >
+                    {p.name}
+                  </div>
+                  <div 
+                    className="text-3xl font-bold"
+                    style={{ color: index === gameState.currentSnakeIndex ? "#22c55e" : "var(--accent)" }}
+                  >
+                    {p.score}
+                  </div>
                 </div>
               ))}
             </div>
