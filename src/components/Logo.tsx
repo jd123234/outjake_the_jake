@@ -19,7 +19,7 @@ export default function Logo({
       alt={alt}
       width={size}
       height={size}
-      className={`${className}`}
+      className={className}
       priority
     />
   );

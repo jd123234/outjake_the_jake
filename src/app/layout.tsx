@@ -24,19 +24,21 @@ export const metadata: Metadata = {
     description: "A fun party game where one player is the Snake who creates a fake answer to trick the group!",
     images: [
       {
-        url: "/logo.png",
+        url: "/share-image.png",
         width: 1200,
         height: 630,
-        alt: "Out Snake the Jake - Party Game Logo"
+        alt: "Out Snake the Jake Logo"
       }
     ],
     type: "website"
   },
   twitter: {
-    card: "summary_large_image",
+    card: 'summary_large_image',
     title: "Out Snake the Jake - Party Game",
     description: "A fun party game where one player is the Snake who creates a fake answer to trick the group!",
-    images: ["/logo.png"]
+    images: [
+      "/share-image.png"
+    ]
   }
 };
 
