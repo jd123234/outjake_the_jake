@@ -267,7 +267,7 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
               )}
             </div>
             
-            <div className="caption text-xs leading-tight">
+            <div className="caption text-xs leading-tight mb-3">
               {step === 'ranking' 
                 ? "Drag cards to set Top 5; last card is the Snake."
                 : isMultiPicker
@@ -281,7 +281,7 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
 
       {step === 'ranking' ? (
         /* Ranking Step - Single vertical list */
-        <div className="flex-1 flex flex-col gap-2 overflow-hidden px-2">
+        <div className="flex-1 flex flex-col gap-2 overflow-y-auto px-2 pb-4">
           <div 
             ref={containerRef}
             className="clean-card flex-1 px-4 py-3 flex flex-col gap-3 scroll-container"
@@ -326,13 +326,13 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
                     <span
                       className="caption font-bold text-lg"
                       style={{
-                        color: isSnakeSlot ? "#22c55e" : "var(--text-secondary)",
+                        color: isSnakeSlot ? "#22c55e" : "#000000",
                       }}
                     >
                       {label}
                     </span>
                   </div>
-                  <span className="flex-1 body leading-snug">
+                  <span className="flex-1 body leading-snug text-black">
                     {answer}
                   </span>
                   <div className="touch-target">
@@ -350,7 +350,7 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
         <div className="flex-1 flex flex-col gap-2 overflow-hidden px-2">
           <div className="clean-card flex-1 px-3 py-2 flex flex-col gap-2 overflow-y-auto">
             <div className="body font-semibold text-center mb-2 text-sm">💎 Choose Your Double Down</div>
-            <div className="rounded-lg border border-dashed border-gray-200 p-2 mb-1">
+            <div className="p-2 mb-1 border-0">
               <div className="caption text-xs mb-1 font-semibold" style={{ color: "var(--text-secondary)" }}>
                 Current ranking
               </div>
@@ -361,9 +361,8 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
                   return (
                     <div
                       key={`${label}-${answer}`}
-                      className="flex flex-col items-center px-2 py-1 rounded-md border text-center"
+                      className="flex flex-col items-center px-2 py-1 rounded-md text-center"
                       style={{
-                        borderColor: isSnakeSlot ? "#22c55e" : "#ccc",
                         backgroundColor: isSnakeSlot ? "rgba(34, 197, 94, 0.1)" : "rgba(200, 200, 200, 0.1)",
                       }}
                     >
@@ -384,7 +383,7 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
             {isMultiPicker ? (
               <div className="space-y-1">
                 {rankingPlayers.map((player) => (
-                  <div key={player.id} className="rounded-lg border border-dashed border-gray-200 p-1.5">
+                  <div key={player.id} className="rounded-lg p-1.5">
                     <div className="flex items-center gap-1.5 mb-0.5">
                       <div
                         className="w-5 h-5 rounded-full"
@@ -409,7 +408,7 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
                               flex items-center justify-center rounded-md px-1 py-1 text-xs font-semibold transition-all duration-200
                               ${isSelected
                                 ? "border-2 border-blue-500 bg-blue-50/70 text-blue-700"
-                                : "border border-dashed border-gray-300 text-[color:var(--text-secondary)] hover:border-blue-300"
+                                : "text-[color:var(--text-secondary)] hover:border-blue-300"
                               }
                             `}
                             title={answer}

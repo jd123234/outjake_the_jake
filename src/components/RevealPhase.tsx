@@ -314,10 +314,10 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
                 {/* Snake indicator if this is the snake answer */}
                 
                 {/* Answer text */}
-                <div className="flex-1 body leading-snug">
+                <div className="flex-1 leading-snug text-black" style={{ color: "#000000 !important" }}>
                   {answer}
                   {hasDoubleDown && (
-                    <div className="caption text-xs mt-1 flex flex-wrap gap-1 items-center">
+                    <div className="caption text-xs mt-1 flex flex-wrap gap-1 items-center" style={{ color: "#000000" }}>
                       {Object.entries(gameState.doubleDowns).map(([playerId, doubleDownIndex]) => {
                         if (doubleDownIndex === index) {
                           const player = gameState.players.find(p => p.id === playerId);
@@ -328,7 +328,7 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
                                   className="w-2.5 h-2.5 rounded-full"
                                   style={{ backgroundColor: player.color.toLowerCase() }}
                                 />
-                                <span style={{ color: "var(--text-secondary)" }}>
+                                <span style={{ color: "#000000" }}>
                                   {player.name}
                                 </span>
                               </div>
