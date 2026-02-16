@@ -78,10 +78,6 @@ export default function ScoringPhase({ gameState, onNextRound }: ScoringPhasePro
         scores[player.id] = playerScore;
       });
 
-      updatedPlayers.forEach((player) => {
-        player.score += scores[player.id];
-      });
-
       return { updatedPlayers, scores };
     };
 

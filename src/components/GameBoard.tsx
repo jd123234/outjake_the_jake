@@ -223,7 +223,7 @@ export default function GameBoard({ players, winningScore = 10, onRestart }: Gam
           </div>
           {gameState.players.length >= 4 ? (
             <div
-              className="grid w-full gap-2 -mt-2"
+              className="grid w-full gap-2 mt-1"
               style={{ gridTemplateColumns: `repeat(${gameState.players.length}, minmax(0, 1fr))` }}
             >
               {gameState.players.map((p, index) => (
