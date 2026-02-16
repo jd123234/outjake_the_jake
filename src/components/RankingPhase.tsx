@@ -38,7 +38,6 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
     });
     return selections;
   });
-  const [currentPickerIndex, setCurrentPickerIndex] = useState(0);
   const [timeRemaining, setTimeRemaining] = useState(120); // 2 minutes
   const [shouldAutoComplete, setShouldAutoComplete] = useState(false);
   const dragElementRef = useRef<HTMLDivElement | null>(null);
@@ -71,12 +70,11 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
     }
   }, [shouldAutoComplete, orderedAnswers, gameState.snakeAnswer, onComplete]);
 
-  // Get current snake player (the one NOT ranking)
-  const currentSnake = gameState.players[gameState.currentSnakeIndex];
   const rankingPlayers = gameState.players.filter((_, index) => index !== gameState.currentSnakeIndex);
   const isMultiPicker = rankingPlayers.length > 1;
-  const currentPicker = rankingPlayers[currentPickerIndex] || null;
-  const currentSelection = currentPicker ? doubleDownSelections[currentPicker.id] : null;
+  const hasMissingDoubleDown = isMultiPicker
+    ? rankingPlayers.some((player) => doubleDownSelections[player.id] === null)
+    : Object.values(doubleDownSelections).every((value) => value === null);
 
   // Touch and drag handlers
   const handleTouchStart = (e: React.TouchEvent, index: number) => {
@@ -159,15 +157,8 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
       // Move to double down selection
       setStep('double-down');
     } else {
-      if (isMultiPicker) {
-        if (!currentPicker || currentSelection === null) {
-          return;
-        }
-
-        if (currentPickerIndex < rankingPlayers.length - 1) {
-          setCurrentPickerIndex((prev) => prev + 1);
-          return;
-        }
+      if (hasMissingDoubleDown) {
+        return;
       }
 
       const doubleDowns: Record<string, number> = {};
@@ -183,16 +174,16 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
   };
 
   const handleDoubleDownSelect = (position: number) => {
-    if (!currentPicker) return;
+    const player = rankingPlayers[0];
+    if (!player) return;
     setDoubleDownSelections((prev) => ({
       ...prev,
-      [currentPicker.id]: position === prev[currentPicker.id] ? null : position,
+      [player.id]: position === prev[player.id] ? null : position,
     }));
   };
 
   const handleBackToRanking = () => {
     setStep('ranking');
-    setCurrentPickerIndex(0);
     setDoubleDownSelections((prev) => {
       const reset: Record<string, number | null> = {};
       Object.keys(prev).forEach((playerId) => {
@@ -205,7 +196,7 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
   return (
     <div className="flex flex-col h-full mobile-container">
       {/* Header */}
-      <div className="clean-card mx-2 mt-0 px-4 py-0.5 mb-1">
+      <div className="clean-card mx-2 mt-0 px-4 py-0.5 mb-2">
         {gameState.currentCard && (
           <>
             {gameState.currentCard.category && (
@@ -264,14 +255,12 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
                     type="button"
                     onClick={handleSubmit}
                     className="btn-primary touch-target px-3 py-2 text-sm font-semibold"
-                    disabled={isMultiPicker ? currentSelection === null : Object.values(doubleDownSelections).every((value) => value === null)}
+                    disabled={hasMissingDoubleDown}
                   >
-                    {isMultiPicker
-                      ? currentPickerIndex < rankingPlayers.length - 1
-                        ? "Next Player →"
-                        : "Lock In!"
-                      : Object.values(doubleDownSelections).every((value) => value === null)
-                      ? "Pick One"
+                    {hasMissingDoubleDown
+                      ? isMultiPicker
+                        ? "Pick All"
+                        : "Pick One"
                       : "Lock In!"}
                   </button>
                 </div>
@@ -281,8 +270,8 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
             <div className="caption text-xs leading-tight">
               {step === 'ranking' 
                 ? "Drag cards to set Top 5; last card is the Snake."
-                : isMultiPicker && currentPicker
-                ? `${currentPicker.name}, pick ONE position (1-5) to double down on for +3 bonus points!`
+                : isMultiPicker
+                ? "Each player picks ONE position (1-5) to double down on for +3 bonus points."
                 : "Pick ONE position (1-5) to double down on for +3 bonus points if correct!"
               }
             </div>
@@ -359,52 +348,120 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
       ) : (
         /* Double Down Step */
         <div className="flex-1 flex flex-col gap-2 overflow-hidden px-2">
-          <div className="clean-card flex-1 px-4 py-3 flex flex-col gap-3">
-            <div className="body font-semibold text-center mb-2">💎 Choose Your Double Down</div>
-            <div className="caption text-center mb-3 text-xs" style={{ color: "var(--text-secondary)" }}>
-              {isMultiPicker && currentPicker
-                ? `${currentPicker.name}'s pick (${currentPickerIndex + 1}/${rankingPlayers.length})`
-                : "Select ONE position you're most confident about:"}
-            </div>
-            
-            {orderedAnswers.slice(0, 5).map((answer, index) => {
-              const isSelected = currentSelection === index;
-              
-              return (
-                <button
-                  key={answer}
-                  type="button"
-                  onClick={() => handleDoubleDownSelect(index)}
-                  className={`
-                    flex items-center gap-3 rounded-xl px-4 py-2 touch-target
-                    game-element transition-all duration-200
-                    ${isSelected
-                      ? "border-2 border-blue-500 bg-blue-50/70 shadow-lg"
-                      : "border-2 border-dashed border-gray-300 bg-white/70 hover:border-blue-300"
-                    }
-                  `}
-                >
-                  <div className="touch-target">
-                    <span
-                      className="caption font-bold text-lg"
+          <div className="clean-card flex-1 px-3 py-2 flex flex-col gap-2 overflow-y-auto">
+            <div className="body font-semibold text-center mb-1 text-sm">💎 Choose Your Double Down</div>
+            <div className="rounded-lg border border-dashed border-gray-200 p-2">
+              <div className="caption text-xs mb-1" style={{ color: "var(--text-secondary)" }}>
+                Current ranking
+              </div>
+              <div className="flex flex-wrap gap-1 justify-center">
+                {orderedAnswers.map((answer, index) => {
+                  const isSnakeSlot = index === orderedAnswers.length - 1;
+                  const label = isSnakeSlot ? "🐍" : `#${index + 1}`;
+                  return (
+                    <div
+                      key={`${label}-${answer}`}
+                      className="flex flex-col items-center px-2 py-1 rounded-md border text-center"
                       style={{
-                        color: isSelected ? "#007aff" : "var(--text-secondary)",
+                        borderColor: isSnakeSlot ? "#22c55e" : "#ccc",
+                        backgroundColor: isSnakeSlot ? "rgba(34, 197, 94, 0.1)" : "rgba(200, 200, 200, 0.1)",
                       }}
                     >
-                      #{index + 1}
-                    </span>
+                      <span
+                        className="font-semibold text-xs"
+                        style={{ color: isSnakeSlot ? "#22c55e" : "var(--text-secondary)" }}
+                      >
+                        {label}
+                      </span>
+                      <span className="text-xs leading-tight" style={{ color: "var(--text-primary)" }}>
+                        {answer.length > 12 ? answer.substring(0, 12) + "..." : answer}
+                      </span>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+            {isMultiPicker ? (
+              <div className="space-y-1">
+                {rankingPlayers.map((player) => (
+                  <div key={player.id} className="rounded-lg border border-dashed border-gray-200 p-1.5">
+                    <div className="flex items-center gap-1.5 mb-0.5">
+                      <div
+                        className="w-5 h-5 rounded-full"
+                        style={{ backgroundColor: player.color.toLowerCase() }}
+                      />
+                      <div className="text-xs font-semibold">{player.name}</div>
+                    </div>
+                    <div className="grid grid-cols-5 gap-0.5">
+                      {orderedAnswers.slice(0, 5).map((answer, index) => {
+                        const isSelected = doubleDownSelections[player.id] === index;
+                        return (
+                          <button
+                            key={`${player.id}-${answer}`}
+                            type="button"
+                            onClick={() => {
+                              setDoubleDownSelections((prev) => ({
+                                ...prev,
+                                [player.id]: index === prev[player.id] ? null : index,
+                              }));
+                            }}
+                            className={`
+                              flex items-center justify-center rounded-md px-1 py-1 text-xs font-semibold transition-all duration-200
+                              ${isSelected
+                                ? "border-2 border-blue-500 bg-blue-50/70 text-blue-700"
+                                : "border border-dashed border-gray-300 text-[color:var(--text-secondary)] hover:border-blue-300"
+                              }
+                            `}
+                            title={answer}
+                          >
+                            #{index + 1}
+                          </button>
+                        );
+                      })}
+                    </div>
                   </div>
-                  <span className="flex-1 body leading-snug text-left">
-                    {answer}
-                  </span>
-                  <div className="touch-target">
-                    <span className="text-2xl">
-                      {isSelected ? "💎" : "○"}
+                ))}
+              </div>
+            ) : (
+              orderedAnswers.slice(0, 5).map((answer, index) => {
+                const isSelected = Object.values(doubleDownSelections)[0] === index;
+
+                return (
+                  <button
+                    key={answer}
+                    type="button"
+                    onClick={() => handleDoubleDownSelect(index)}
+                    className={`
+                      flex items-center gap-3 rounded-xl px-4 py-2 touch-target
+                      game-element transition-all duration-200
+                      ${isSelected
+                        ? "border-2 border-blue-500 bg-blue-50/70 shadow-lg"
+                        : "border-2 border-dashed border-gray-300 bg-white/70 hover:border-blue-300"
+                      }
+                    `}
+                  >
+                    <div className="touch-target">
+                      <span
+                        className="caption font-bold text-lg"
+                        style={{
+                          color: isSelected ? "#007aff" : "var(--text-secondary)",
+                        }}
+                      >
+                        #{index + 1}
+                      </span>
+                    </div>
+                    <span className="flex-1 body leading-snug text-left">
+                      {answer}
                     </span>
-                  </div>
-                </button>
-              );
-            })}
+                    <div className="touch-target">
+                      <span className="text-2xl">
+                        {isSelected ? "💎" : "○"}
+                      </span>
+                    </div>
+                  </button>
+                );
+              })
+            )}
           </div>
         </div>
       )}
