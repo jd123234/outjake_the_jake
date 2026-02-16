@@ -40,7 +40,7 @@ const GameSetup: React.FC<GameSetupProps> = ({ onStart }) => {
 
   return (
     <div className="flex flex-col h-full mobile-container">
-      <div className="mx-2 my-4 p-6 space-y-4 flex-1 overflow-y-auto text-center">
+      <div className="mx-2 mt-0 mb-3 px-6 pt-1 pb-6 space-y-4 flex-1 overflow-y-auto text-center">
         <div className="text-center max-w-2xl mx-auto">
           <div className="flex items-center justify-center gap-3 mb-4 relative">
             <div className="w-full">
