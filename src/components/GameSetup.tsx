@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Player, PLAYER_COLORS } from "@/types/game";
-import Logo from "@/components/Logo";
+
 
 interface GameSetupProps {
   onStart: (players: Player[], winningScore?: number) => void;
@@ -41,8 +41,7 @@ const GameSetup: React.FC<GameSetupProps> = ({ onStart }) => {
       <div className="mx-2 my-4 p-6 space-y-4 flex-1 overflow-y-auto text-center">
         <div className="text-center max-w-2xl mx-auto">
           <div className="flex items-center justify-center gap-3 mb-4 relative">
-            <Logo size={50} className="absolute left-0 top-1" />
-            <div>
+            <div className="w-full">
               <h1 className="title-large">Out Snake the Jake</h1>
               <p className="caption">Bluff your way to victory</p>
             </div>
