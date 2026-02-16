@@ -73,7 +73,7 @@ export default function SnakeTurn({ snake, onSubmit, drawCards }: SnakeTurnProps
                 <button
                   key={card.id}
                   type="button"
-                  className="w-full text-left surface-block px-3 py-3 flex flex-col gap-1"
+                  className="w-full text-center surface-block px-3 py-3 flex flex-col gap-1"
                   onClick={() => handleSelectCard(card)}
                 >
                   <span
@@ -97,7 +97,7 @@ export default function SnakeTurn({ snake, onSubmit, drawCards }: SnakeTurnProps
           </div>
         ) : (
           /* Step: write fake answer */
-          <div className="clean-card flex-1 px-4 py-3 overflow-y-auto space-y-3">
+          <div className="clean-card flex-1 px-4 py-3 overflow-y-auto space-y-3 text-center">
             {/* Question & answers */}
             <div className="space-y-2">
               <div className="space-y-1">
@@ -118,7 +118,7 @@ export default function SnakeTurn({ snake, onSubmit, drawCards }: SnakeTurnProps
                 )}
               </div>
               
-              <label className="body font-semibold" htmlFor="snake-answer">
+              <label className="body font-semibold text-center" htmlFor="snake-answer">
                 Your Snake answer
               </label>
               <input
@@ -127,9 +127,10 @@ export default function SnakeTurn({ snake, onSubmit, drawCards }: SnakeTurnProps
                 value={snakeAnswer}
                 onChange={(e) => setSnakeAnswer(e.target.value)}
                 placeholder="Type a believable fake answer"
+                className="text-center"
               />
               <p
-                className="caption"
+                className="caption text-center"
                 style={{ color: "var(--text-secondary)" }}
               >
                 Tip: mirror the tone and length of the real answers.
@@ -146,27 +147,27 @@ export default function SnakeTurn({ snake, onSubmit, drawCards }: SnakeTurnProps
             </div>
 
             {/* Fake answer input */}
-            <div className="space-y-1">
-              <div className="flex gap-3 justify-end">
-                <button
-                  type="button"
-                  onClick={() => {
-                    setSelectedCard(null);
-                    setSnakeAnswer("");
-                  }}
-                  className="btn-text"
-                >
-                  Back
-                </button>
+            <div className="space-y-1 relative">
+              <div className="flex justify-center">
                 <button
                   type="button"
                   onClick={handleSubmit}
                   disabled={!canSubmit}
-                  className="btn-primary flex-1"
+                  className="btn-primary"
                 >
                   Submit & Continue →
                 </button>
               </div>
+              <button
+                type="button"
+                onClick={() => {
+                  setSelectedCard(null);
+                  setSnakeAnswer("");
+                }}
+                className="btn-text absolute left-4 bottom-0"
+              >
+                Back
+              </button>
             </div>
           </div>
         )}

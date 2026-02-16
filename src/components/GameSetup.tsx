@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Player, PLAYER_COLORS } from "@/types/game";
+import Logo from "@/components/Logo";
 
 interface GameSetupProps {
   onStart: (players: Player[], winningScore?: number) => void;
@@ -37,11 +38,11 @@ const GameSetup: React.FC<GameSetupProps> = ({ onStart }) => {
 
   return (
     <div className="flex flex-col h-full mobile-container">
-      <div className="mx-2 my-4 p-6 space-y-6 flex-1 overflow-y-auto">
+      <div className="mx-2 my-4 p-6 space-y-4 flex-1 overflow-y-auto text-center">
         <div className="text-center max-w-2xl mx-auto">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <span className="text-5xl">🐍</span>
-            <div className="text-left">
+          <div className="flex items-center justify-center gap-3 mb-4 relative">
+            <Logo size={50} className="absolute left-0 top-1" />
+            <div>
               <h1 className="title-large">Out Snake the Jake</h1>
               <p className="caption">Bluff your way to victory</p>
             </div>
@@ -50,8 +51,8 @@ const GameSetup: React.FC<GameSetupProps> = ({ onStart }) => {
 
         <div className="space-y-6 max-w-2xl mx-auto">
           <section>
-            <h2 className="title mb-4">How to Play</h2>
-            <div className="space-y-3 body text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+            <h2 className="title mb-2">How to Play</h2>
+            <div className="space-y-1 body text-sm leading-snug" style={{ color: "var(--text-secondary)" }}>
               <p>• One player is the Snake and creates a fake answer.</p>
               <p>• Everyone ranks the answers from #1 to #5.</p>
               <p>• Guess which answer belongs to the Snake.</p>

@@ -124,29 +124,30 @@ export default function GameBoard({ players, winningScore = 10, onRestart }: Gam
   return (
     <div className="w-full h-full flex flex-col bg-[var(--background)] overflow-hidden">
       {/* Header */}
-      <header className="clean-card mx-2 mt-2 mb-2 px-4 py-3 flex items-center justify-between gap-3 flex-shrink-0">
-        <div className="flex items-center gap-3">
-          <Logo size={40} />
-          <div>
-            <div className="flex items-center gap-4">
-              {gameState.players.map((p) => (
-                <div key={p.id} className="flex items-baseline gap-2 px-2 py-1 rounded-md">
-                  <div className="text-sm font-semibold">{p.name}</div>
-                  <div className="text-sm text-[color:var(--text-secondary)]">{p.score}</div>
-                </div>
-              ))}
-            </div>
-            <p className="caption mt-1 text-sm">
-              First to {gameState.winningScore || 10} points wins!
-            </p>
+      <header className="clean-card mx-2 mt-2 mb-2 px-4 py-3 flex items-center justify-center gap-3 flex-shrink-0 relative">
+        <Logo size={80} className="absolute left-4" />
+        <div className="flex-1 flex flex-col items-center gap-2">
+          <p className="caption text-sm ml-4"
+            style={{ color: "var(--text-secondary)" }}
+          >
+            First to {gameState.winningScore || 10} points
+          </p>
+          <div className="flex items-center gap-6 justify-center w-full ml-4 -mt-2">
+            {gameState.players.map((p) => (
+              <div key={p.id} className="flex flex-col items-center gap-0.5 w-24">
+                <div className="text-xl font-semibold text-center truncate">{p.name}</div>
+                <div className="text-3xl font-bold text-[color:var(--accent)]">{p.score}</div>
+              </div>
+            ))}
           </div>
         </div>
         <button
           type="button"
           onClick={onRestart}
-          className="btn-text touch-target px-3 py-2"
+          className="btn-text touch-target px-3 py-2 absolute right-4 flex flex-col items-center"
         >
-          End Game
+          <span>End</span>
+          <span>Game</span>
         </button>
       </header>
 
