@@ -140,34 +140,40 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
       {/* Snake popup */}
       {showSnakePopup && (
         <div className="fixed inset-0 flex items-center justify-center pointer-events-none z-50">
-          <div 
+          <div
             className="text-9xl"
             style={{
-              animation: snakePopupFading ? "fadeOut 1s ease-out forwards" : "shake 0.5s infinite, scaleIn 0.6s ease-out",
+              animation: snakePopupFading
+                ? "fadeOut 1s ease-out forwards"
+                : "shake 0.5s infinite, scaleIn 0.6s ease-out",
               transformOrigin: "center",
             }}
           >
             🐍
-              <div
-                key={`${answer}-${index}`}
-                className={`
-                  flex items-center gap-3 rounded-xl px-4 py-3 touch-target
-                  bg-white/70 border-2 border-gray-200
-                `}
-              >
+          </div>
+        </div>
+      )}
+
+      {/* Confetti */}
+      {showConfetti && (
+        <div className="fixed inset-0 pointer-events-none z-30">
+          {[...Array(20)].map((_, i) => (
             <div
               key={`confetti-${i}`}
               style={{
                 position: "absolute",
                 left: `${Math.random() * 100}%`,
                 top: "-10px",
-                width: `${6 + Math.random() * 6}px`,
-                height: `${6 + Math.random() * 6}px`,
-                backgroundColor: ["#FFD700", "#FF6B6B", "#4ECDC4", "#45B7D1", "#FFA07A"][Math.floor(Math.random() * 5)],
-                borderRadius: Math.random() > 0.5 ? "50%" : "0%",
-                animation: `confettiFall ${1.8 + Math.random() * 0.8}s linear forwards`,
-                animationDelay: `${Math.random() * 0.2}s`,
-                willChange: "transform",
+                width: "10px",
+                height: "10px",
+                backgroundColor: [
+                  "#FFD700",
+                  "#FF6B6B",
+                  "#4ECDC4",
+                ][i % 3],
+                borderRadius: "50%",
+                animation: `confettiFall 2s linear forwards`,
+                animationDelay: `${i * 0.1}s`,
               }}
             />
           ))}
@@ -208,12 +214,8 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
         }
 
         @keyframes confettiFall {
-          0% {
-            transform: translateY(0) rotateZ(0deg);
-            opacity: 1;
-          }
-          100% {
-            transform: translateY(150vh) rotateZ(720deg);
+          to {
+            transform: translateY(150vh);
             opacity: 0;
           }
         }
