@@ -341,14 +341,11 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
         /* Double Down Step */
         <div className="flex-1 flex flex-col gap-2 px-2">
           <div
-            className="clean-card px-2 py-2 flex flex-col gap-1.5"
+            className="clean-card px-3 py-3 flex flex-col gap-2"
           >
             <div className="body font-semibold text-center mb-1 text-xs">💎 Choose Your Double Down</div>
             <div className="p-1 mb-0 border-0">
-              <div
-                className="flex flex-nowrap gap-1 justify-center overflow-x-auto pb-1"
-                style={{ WebkitOverflowScrolling: "touch" }}
-              >
+              <div className="flex flex-wrap gap-1 justify-center pb-1">
                 {orderedAnswers.map((answer, index) => {
                   const isSnakeSlot = index === orderedAnswers.length - 1;
                   const label = isSnakeSlot ? "🐍" : `#${index + 1}`;
@@ -361,7 +358,7 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
                       }}
                     >
                       <span
-                        className="font-semibold text-[11px]"
+                        className="font-semibold text-[13px]"
                         style={{ color: isSnakeSlot ? "#22c55e" : "var(--text-secondary)" }}
                       >
                         {label}
@@ -383,7 +380,7 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
                         className="w-4 h-4 rounded-full"
                         style={{ backgroundColor: player.color.toLowerCase() }}
                       />
-                      <div className="text-[11px] font-semibold">{player.name}</div>
+                      <div className="text-[13px] font-semibold">{player.name}</div>
                     </div>
                     <div className="grid grid-cols-5 gap-0.5">
                       {orderedAnswers.slice(0, 5).map((answer, index) => {
@@ -399,7 +396,7 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
                               }));
                             }}
                             className={`
-                              flex items-center justify-center rounded-md px-1 py-0.5 text-[11px] font-semibold transition-all duration-200
+                              flex items-center justify-center rounded-md px-1 py-0.5 text-[13px] font-semibold transition-all duration-200
                               ${isSelected
                                 ? "border-2 border-blue-500 bg-blue-50/70 text-blue-700"
                                 : "text-[color:var(--text-secondary)] hover:border-blue-300"
@@ -435,7 +432,7 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
                   >
                     <div className="touch-target">
                       <span
-                        className="caption font-bold text-base"
+                        className="caption font-bold text-[18px]"
                         style={{
                           color: isSelected ? "#007aff" : "var(--text-secondary)",
                         }}
