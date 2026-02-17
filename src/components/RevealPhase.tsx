@@ -282,7 +282,7 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
 
       {/* Main reveal list */}
       <div className="flex-1 flex flex-col gap-2 px-2">
-        <div className="clean-card overflow-y-auto px-4 py-3 flex flex-col gap-3 pb-9">
+        <div className="clean-card overflow-y-auto px-4 py-3 flex flex-col gap-3 pb-6">
           {playerRankings.map((answer, index) => {
             const isSnakeAnswer = answer === gameState.snakeAnswer;
             const isRevealed = revealedPositions[index];
