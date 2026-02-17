@@ -148,14 +148,13 @@ const RevealPhase: React.FC<RevealPhaseProps> = ({ gameState, onComplete }) => {
             }}
           >
             🐍
-          </div>
-        </div>
-      )}
-
-      {/* Confetti */}
-      {showConfetti && (
-        <div className="fixed inset-0 pointer-events-none z-30">
-          {[...Array(80)].map((_, i) => (
+              <div
+                key={`${answer}-${index}`}
+                className={`
+                  flex items-center gap-3 rounded-xl px-4 py-3 touch-target
+                  bg-white/70 border-2 border-gray-200
+                `}
+              >
             <div
               key={`confetti-${i}`}
               style={{
