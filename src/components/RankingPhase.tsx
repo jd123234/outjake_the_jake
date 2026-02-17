@@ -372,10 +372,10 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
               </div>
             </div>
             {isMultiPicker ? (
-              <div className="space-y-0.5">
+              <div className="space-y-1">
                 {rankingPlayers.map((player) => (
                   <div key={player.id} className="rounded-lg p-1">
-                    <div className="flex items-center gap-1 mb-0">
+                    <div className="flex items-center gap-1 mb-0.5">
                       <div
                         className="w-4 h-4 rounded-full"
                         style={{ backgroundColor: player.color.toLowerCase() }}
