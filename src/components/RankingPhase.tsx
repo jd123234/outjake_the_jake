@@ -324,7 +324,7 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
                       {label}
                     </span>
                   </div>
-                  <span className="flex-1 body leading-snug text-black">
+                  <span className="flex-1 min-w-0 body leading-snug text-black whitespace-nowrap overflow-x-auto">
                     {answer}
                   </span>
                   <div className="touch-target">
