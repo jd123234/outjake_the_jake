@@ -4,7 +4,7 @@ export interface Card {
   // Optional category label, e.g. "Art", "Video Games"
   category?: string;
   answers: string[];
-  snakePosition: number; // 1-5, where the snake answer should be inserted
+  snakePosition: number; // 1-6, where the snake answer should be inserted
   source?: string; // Optional source citation for the card data
 }
 
