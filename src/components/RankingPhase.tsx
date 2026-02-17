@@ -46,7 +46,7 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
   // Timer countdown effect
   useEffect(() => {
     const timer = setInterval(() => {
-      setTimeRemaining(prev => {
+      setTimeRemaining((prev) => {
         if (prev <= 1) {
           // Time's up - trigger auto-complete
           setShouldAutoComplete(true);
@@ -83,11 +83,11 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
     setTouchStartY(touch.clientY);
     setTouchCurrentY(touch.clientY);
     setDragIndex(index);
-    
+
     // Add haptic feedback class
     const element = e.currentTarget as HTMLElement;
-    element.classList.add('haptic-feedback');
-    setTimeout(() => element.classList.remove('haptic-feedback'), 100);
+    element.classList.add("haptic-feedback");
+    setTimeout(() => element.classList.remove("haptic-feedback"), 100);
   };
 
   const handleTouchMove = (e: React.TouchEvent) => {
@@ -267,14 +267,6 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
               )}
             </div>
             
-            <div className="caption text-xs leading-tight mb-1">
-              {step === 'ranking' 
-                ? "Drag cards to set Top 5; last card is the Snake."
-                : isMultiPicker
-                ? "Each player picks ONE position (1-5) to double down on for +3 bonus points."
-                : "Pick ONE position (1-5) to double down on for +3 bonus points if correct!"
-              }
-            </div>
           </>
         )}
       </div>
@@ -347,32 +339,34 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
         </div>
       ) : (
         /* Double Down Step */
-        <div className="flex-1 flex flex-col gap-2 px-2 min-h-0 overflow-y-auto">
-          <div className="clean-card px-3 py-2 flex flex-col gap-2 pb-2">
-            <div className="body font-semibold text-center mb-2 text-sm">💎 Choose Your Double Down</div>
-            <div className="p-2 mb-1 border-0">
-              <div className="caption text-xs mb-1 font-semibold" style={{ color: "var(--text-secondary)" }}>
-                Current ranking
-              </div>
-              <div className="flex flex-wrap gap-1 justify-center">
+        <div className="flex-1 flex flex-col gap-2 px-2">
+          <div
+            className="clean-card px-2 py-2 flex flex-col gap-1.5"
+          >
+            <div className="body font-semibold text-center mb-1 text-xs">💎 Choose Your Double Down</div>
+            <div className="p-1 mb-0 border-0">
+              <div
+                className="flex flex-nowrap gap-1 justify-center overflow-x-auto pb-1"
+                style={{ WebkitOverflowScrolling: "touch" }}
+              >
                 {orderedAnswers.map((answer, index) => {
                   const isSnakeSlot = index === orderedAnswers.length - 1;
                   const label = isSnakeSlot ? "🐍" : `#${index + 1}`;
                   return (
                     <div
                       key={`${label}-${answer}`}
-                      className="flex flex-col items-center px-2 py-1 rounded-md text-center"
+                      className="flex flex-col items-center px-2 py-0.5 rounded-md text-center flex-shrink-0"
                       style={{
                         backgroundColor: isSnakeSlot ? "rgba(34, 197, 94, 0.1)" : "rgba(200, 200, 200, 0.1)",
                       }}
                     >
                       <span
-                        className="font-semibold text-xs"
+                        className="font-semibold text-[11px]"
                         style={{ color: isSnakeSlot ? "#22c55e" : "var(--text-secondary)" }}
                       >
                         {label}
                       </span>
-                      <span className="text-xs leading-tight" style={{ color: "var(--text-primary)" }}>
+                      <span className="text-[11px] leading-tight" style={{ color: "var(--text-primary)" }}>
                         {answer.length > 12 ? answer.substring(0, 12) + "..." : answer}
                       </span>
                     </div>
@@ -381,15 +375,15 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
               </div>
             </div>
             {isMultiPicker ? (
-              <div className="space-y-1">
+              <div className="space-y-0.5">
                 {rankingPlayers.map((player) => (
-                  <div key={player.id} className="rounded-lg p-1.5">
-                    <div className="flex items-center gap-1.5 mb-0.5">
+                  <div key={player.id} className="rounded-lg p-1">
+                    <div className="flex items-center gap-1 mb-0">
                       <div
-                        className="w-5 h-5 rounded-full"
+                        className="w-4 h-4 rounded-full"
                         style={{ backgroundColor: player.color.toLowerCase() }}
                       />
-                      <div className="text-xs font-semibold">{player.name}</div>
+                      <div className="text-[11px] font-semibold">{player.name}</div>
                     </div>
                     <div className="grid grid-cols-5 gap-0.5">
                       {orderedAnswers.slice(0, 5).map((answer, index) => {
@@ -405,7 +399,7 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
                               }));
                             }}
                             className={`
-                              flex items-center justify-center rounded-md px-1 py-1 text-xs font-semibold transition-all duration-200
+                              flex items-center justify-center rounded-md px-1 py-0.5 text-[11px] font-semibold transition-all duration-200
                               ${isSelected
                                 ? "border-2 border-blue-500 bg-blue-50/70 text-blue-700"
                                 : "text-[color:var(--text-secondary)] hover:border-blue-300"
@@ -431,7 +425,7 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
                     type="button"
                     onClick={() => handleDoubleDownSelect(index)}
                     className={`
-                      flex items-center gap-3 rounded-xl px-4 py-2 touch-target
+                      flex items-center gap-2 rounded-xl px-3 py-1.5 touch-target
                       game-element transition-all duration-200
                       ${isSelected
                         ? "border-2 border-blue-500 bg-blue-50/70 shadow-lg"
@@ -441,7 +435,7 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
                   >
                     <div className="touch-target">
                       <span
-                        className="caption font-bold text-lg"
+                        className="caption font-bold text-base"
                         style={{
                           color: isSelected ? "#007aff" : "var(--text-secondary)",
                         }}
@@ -449,11 +443,11 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
                         #{index + 1}
                       </span>
                     </div>
-                    <span className="flex-1 body leading-snug text-left">
+                    <span className="flex-1 body leading-snug text-left text-sm">
                       {answer}
                     </span>
                     <div className="touch-target">
-                      <span className="text-2xl">
+                      <span className="text-xl">
                         {isSelected ? "💎" : "○"}
                       </span>
                     </div>
