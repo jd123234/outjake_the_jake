@@ -347,11 +347,8 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
         </div>
       ) : (
         /* Double Down Step */
-        <div className="flex-1 flex flex-col gap-2 px-2 min-h-0 overflow-hidden">
-          <div
-            className="clean-card overflow-y-auto px-3 py-2 flex flex-col gap-2 pb-10"
-            style={{ maxHeight: "calc(100vh - 320px)" }}
-          >
+        <div className="flex-1 flex flex-col gap-2 px-2 min-h-0 overflow-y-auto">
+          <div className="clean-card px-3 py-2 flex flex-col gap-2 pb-2">
             <div className="body font-semibold text-center mb-2 text-sm">💎 Choose Your Double Down</div>
             <div className="p-2 mb-1 border-0">
               <div className="caption text-xs mb-1 font-semibold" style={{ color: "var(--text-secondary)" }}>
