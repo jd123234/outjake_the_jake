@@ -147,7 +147,7 @@ export default function SnakeTurn({ snake, onSubmit, drawCards }: SnakeTurnProps
             </div>
 
             {/* Fake answer input */}
-            <div className="space-y-1 relative">
+            <div className="space-y-1">
               <div className="flex justify-center">
                 <button
                   type="button"
@@ -158,16 +158,6 @@ export default function SnakeTurn({ snake, onSubmit, drawCards }: SnakeTurnProps
                   Submit & Continue →
                 </button>
               </div>
-              <button
-                type="button"
-                onClick={() => {
-                  setSelectedCard(null);
-                  setSnakeAnswer("");
-                }}
-                className="btn-text absolute left-4 bottom-0"
-              >
-                Back
-              </button>
             </div>
           </div>
         )}
