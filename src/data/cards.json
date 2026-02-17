@@ -9676,7 +9676,7 @@
   {
     "id": 692,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 1",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -9690,7 +9690,7 @@
   {
     "id": 693,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 1",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -9704,7 +9704,7 @@
   {
     "id": 694,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 1",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -9718,7 +9718,7 @@
   {
     "id": 695,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 1",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -9732,7 +9732,7 @@
   {
     "id": 696,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 1",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -9746,7 +9746,7 @@
   {
     "id": 697,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 1",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -9760,7 +9760,7 @@
   {
     "id": 698,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 1",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -9774,7 +9774,7 @@
   {
     "id": 699,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 1",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -9788,7 +9788,7 @@
   {
     "id": 700,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 1",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -9802,7 +9802,7 @@
   {
     "id": 701,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 1",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -9816,7 +9816,7 @@
   {
     "id": 702,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 2",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -9830,7 +9830,7 @@
   {
     "id": 703,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 2",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -9844,7 +9844,7 @@
   {
     "id": 704,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 2",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -9858,7 +9858,7 @@
   {
     "id": 705,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 2",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -9872,7 +9872,7 @@
   {
     "id": 706,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 2",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -9886,7 +9886,7 @@
   {
     "id": 707,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 2",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -9900,7 +9900,7 @@
   {
     "id": 708,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 2",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -9914,7 +9914,7 @@
   {
     "id": 709,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 2",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -9928,7 +9928,7 @@
   {
     "id": 710,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 2",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -9942,7 +9942,7 @@
   {
     "id": 711,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 2",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -9956,7 +9956,7 @@
   {
     "id": 712,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 3",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -9970,7 +9970,7 @@
   {
     "id": 713,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 3",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -9984,7 +9984,7 @@
   {
     "id": 714,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 3",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -9998,7 +9998,7 @@
   {
     "id": 715,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 3",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -10012,7 +10012,7 @@
   {
     "id": 716,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 3",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -10026,7 +10026,7 @@
   {
     "id": 717,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 3",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -10040,7 +10040,7 @@
   {
     "id": 718,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 3",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -10054,7 +10054,7 @@
   {
     "id": 719,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 3",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -10068,7 +10068,7 @@
   {
     "id": 720,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 3",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -10082,7 +10082,7 @@
   {
     "id": 721,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 3",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -10096,7 +10096,7 @@
   {
     "id": 722,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 4",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -10110,7 +10110,7 @@
   {
     "id": 723,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 4",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -10124,7 +10124,7 @@
   {
     "id": 724,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 4",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -10138,7 +10138,7 @@
   {
     "id": 725,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 4",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -10152,7 +10152,7 @@
   {
     "id": 726,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 4",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -10166,7 +10166,7 @@
   {
     "id": 727,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 4",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -10180,7 +10180,7 @@
   {
     "id": 728,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 4",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -10194,7 +10194,7 @@
   {
     "id": 729,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 4",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -10208,7 +10208,7 @@
   {
     "id": 730,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 4",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -10222,7 +10222,7 @@
   {
     "id": 731,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 4",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -10236,7 +10236,7 @@
   {
     "id": 732,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 5",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -10250,7 +10250,7 @@
   {
     "id": 733,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 5",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -10264,7 +10264,7 @@
   {
     "id": 734,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 5",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -10278,7 +10278,7 @@
   {
     "id": 735,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 5",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -10292,7 +10292,7 @@
   {
     "id": 736,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 5",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -10306,7 +10306,7 @@
   {
     "id": 737,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 5",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -10320,7 +10320,7 @@
   {
     "id": 738,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 5",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -10334,7 +10334,7 @@
   {
     "id": 739,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 5",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -10348,7 +10348,7 @@
   {
     "id": 740,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 5",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -10362,7 +10362,7 @@
   {
     "id": 741,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 5",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -10376,7 +10376,7 @@
   {
     "id": 742,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 6",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -10390,7 +10390,7 @@
   {
     "id": 743,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 6",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -10404,7 +10404,7 @@
   {
     "id": 744,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 6",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -10418,7 +10418,7 @@
   {
     "id": 745,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 6",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -10432,7 +10432,7 @@
   {
     "id": 746,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 6",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -10446,7 +10446,7 @@
   {
     "id": 747,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 6",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -10460,7 +10460,7 @@
   {
     "id": 748,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 6",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -10474,7 +10474,7 @@
   {
     "id": 749,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 6",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -10488,7 +10488,7 @@
   {
     "id": 750,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 6",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -10502,7 +10502,7 @@
   {
     "id": 751,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 6",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -10516,7 +10516,7 @@
   {
     "id": 752,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 7",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -10530,7 +10530,7 @@
   {
     "id": 753,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 7",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -10544,7 +10544,7 @@
   {
     "id": 754,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 7",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -10558,7 +10558,7 @@
   {
     "id": 755,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 7",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -10572,7 +10572,7 @@
   {
     "id": 756,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 7",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -10586,7 +10586,7 @@
   {
     "id": 757,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 7",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -10600,7 +10600,7 @@
   {
     "id": 758,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 7",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -10614,7 +10614,7 @@
   {
     "id": 759,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 7",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -10628,7 +10628,7 @@
   {
     "id": 760,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 7",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -10642,7 +10642,7 @@
   {
     "id": 761,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 7",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -10656,7 +10656,7 @@
   {
     "id": 762,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 8",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -10670,7 +10670,7 @@
   {
     "id": 763,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 8",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -10684,7 +10684,7 @@
   {
     "id": 764,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 8",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -10698,7 +10698,7 @@
   {
     "id": 765,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 8",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -10712,7 +10712,7 @@
   {
     "id": 766,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 8",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -10726,7 +10726,7 @@
   {
     "id": 767,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 8",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -10740,7 +10740,7 @@
   {
     "id": 768,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 8",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -10754,7 +10754,7 @@
   {
     "id": 769,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 8",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -10768,7 +10768,7 @@
   {
     "id": 770,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 8",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -10782,7 +10782,7 @@
   {
     "id": 771,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 8",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -10796,7 +10796,7 @@
   {
     "id": 772,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 9",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -10810,7 +10810,7 @@
   {
     "id": 773,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 9",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -10824,7 +10824,7 @@
   {
     "id": 774,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 9",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -10838,7 +10838,7 @@
   {
     "id": 775,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 9",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -10852,7 +10852,7 @@
   {
     "id": 776,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 9",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -10866,7 +10866,7 @@
   {
     "id": 777,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 9",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -10880,7 +10880,7 @@
   {
     "id": 778,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 9",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -10894,7 +10894,7 @@
   {
     "id": 779,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 9",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -10908,7 +10908,7 @@
   {
     "id": 780,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 9",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -10922,7 +10922,7 @@
   {
     "id": 781,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 9",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -10936,7 +10936,7 @@
   {
     "id": 782,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 10",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -10950,7 +10950,7 @@
   {
     "id": 783,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 10",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -10964,7 +10964,7 @@
   {
     "id": 784,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 10",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -10978,7 +10978,7 @@
   {
     "id": 785,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 10",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -10992,7 +10992,7 @@
   {
     "id": 786,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 10",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -11006,7 +11006,7 @@
   {
     "id": 787,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 10",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -11020,7 +11020,7 @@
   {
     "id": 788,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 10",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -11034,7 +11034,7 @@
   {
     "id": 789,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 10",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -11048,7 +11048,7 @@
   {
     "id": 790,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 10",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -11062,7 +11062,7 @@
   {
     "id": 791,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 10",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -11076,7 +11076,7 @@
   {
     "id": 792,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 11",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -11090,7 +11090,7 @@
   {
     "id": 793,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 11",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -11104,7 +11104,7 @@
   {
     "id": 794,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 11",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -11118,7 +11118,7 @@
   {
     "id": 795,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 11",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -11132,7 +11132,7 @@
   {
     "id": 796,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 11",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -11146,7 +11146,7 @@
   {
     "id": 797,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 11",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -11160,7 +11160,7 @@
   {
     "id": 798,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 11",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -11174,7 +11174,7 @@
   {
     "id": 799,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 11",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -11188,7 +11188,7 @@
   {
     "id": 800,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 11",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -11202,7 +11202,7 @@
   {
     "id": 801,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 11",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -11216,7 +11216,7 @@
   {
     "id": 802,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 12",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -11230,7 +11230,7 @@
   {
     "id": 803,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 12",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -11244,7 +11244,7 @@
   {
     "id": 804,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 12",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -11258,7 +11258,7 @@
   {
     "id": 805,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 12",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -11272,7 +11272,7 @@
   {
     "id": 806,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 12",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -11286,7 +11286,7 @@
   {
     "id": 807,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 12",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -11300,7 +11300,7 @@
   {
     "id": 808,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 12",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -11314,7 +11314,7 @@
   {
     "id": 809,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 12",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -11328,7 +11328,7 @@
   {
     "id": 810,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 12",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -11342,7 +11342,7 @@
   {
     "id": 811,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 12",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -11356,7 +11356,7 @@
   {
     "id": 812,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 13",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -11370,7 +11370,7 @@
   {
     "id": 813,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 13",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -11384,7 +11384,7 @@
   {
     "id": 814,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 13",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -11398,7 +11398,7 @@
   {
     "id": 815,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 13",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -11412,7 +11412,7 @@
   {
     "id": 816,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 13",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -11426,7 +11426,7 @@
   {
     "id": 817,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 13",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -11440,7 +11440,7 @@
   {
     "id": 818,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 13",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -11454,7 +11454,7 @@
   {
     "id": 819,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 13",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -11468,7 +11468,7 @@
   {
     "id": 820,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 13",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -11482,7 +11482,7 @@
   {
     "id": 821,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 13",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -11496,7 +11496,7 @@
   {
     "id": 822,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 14",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -11510,7 +11510,7 @@
   {
     "id": 823,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 14",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -11524,7 +11524,7 @@
   {
     "id": 824,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 14",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -11538,7 +11538,7 @@
   {
     "id": 825,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 14",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -11552,7 +11552,7 @@
   {
     "id": 826,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 14",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -11566,7 +11566,7 @@
   {
     "id": 827,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 14",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -11580,7 +11580,7 @@
   {
     "id": 828,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 14",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -11594,7 +11594,7 @@
   {
     "id": 829,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 14",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -11608,7 +11608,7 @@
   {
     "id": 830,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 14",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -11622,7 +11622,7 @@
   {
     "id": 831,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 14",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -11636,7 +11636,7 @@
   {
     "id": 832,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 15",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -11650,7 +11650,7 @@
   {
     "id": 833,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 15",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -11664,7 +11664,7 @@
   {
     "id": 834,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 15",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -11678,7 +11678,7 @@
   {
     "id": 835,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 15",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -11692,7 +11692,7 @@
   {
     "id": 836,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 15",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -11706,7 +11706,7 @@
   {
     "id": 837,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 15",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -11720,7 +11720,7 @@
   {
     "id": 838,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 15",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -11734,7 +11734,7 @@
   {
     "id": 839,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 15",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -11748,7 +11748,7 @@
   {
     "id": 840,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 15",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -11762,7 +11762,7 @@
   {
     "id": 841,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 15",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -11776,7 +11776,7 @@
   {
     "id": 842,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 16",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -11790,7 +11790,7 @@
   {
     "id": 843,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 16",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -11804,7 +11804,7 @@
   {
     "id": 844,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 16",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -11818,7 +11818,7 @@
   {
     "id": 845,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 16",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -11832,7 +11832,7 @@
   {
     "id": 846,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 16",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -11846,7 +11846,7 @@
   {
     "id": 847,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 16",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -11860,7 +11860,7 @@
   {
     "id": 848,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 16",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -11874,7 +11874,7 @@
   {
     "id": 849,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 16",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -11888,7 +11888,7 @@
   {
     "id": 850,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 16",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -11902,7 +11902,7 @@
   {
     "id": 851,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 16",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -11916,7 +11916,7 @@
   {
     "id": 852,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 17",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -11930,7 +11930,7 @@
   {
     "id": 853,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 17",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -11944,7 +11944,7 @@
   {
     "id": 854,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 17",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -11958,7 +11958,7 @@
   {
     "id": 855,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 17",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -11972,7 +11972,7 @@
   {
     "id": 856,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 17",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -11986,7 +11986,7 @@
   {
     "id": 857,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 17",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -12000,7 +12000,7 @@
   {
     "id": 858,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 17",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -12014,7 +12014,7 @@
   {
     "id": 859,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 17",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -12028,7 +12028,7 @@
   {
     "id": 860,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 17",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -12042,7 +12042,7 @@
   {
     "id": 861,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 17",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -12056,7 +12056,7 @@
   {
     "id": 862,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 18",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -12070,7 +12070,7 @@
   {
     "id": 863,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 18",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -12084,7 +12084,7 @@
   {
     "id": 864,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 18",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -12098,7 +12098,7 @@
   {
     "id": 865,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 18",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -12112,7 +12112,7 @@
   {
     "id": 866,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 18",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -12126,7 +12126,7 @@
   {
     "id": 867,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 18",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -12140,7 +12140,7 @@
   {
     "id": 868,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 18",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -12154,7 +12154,7 @@
   {
     "id": 869,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 18",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -12168,7 +12168,7 @@
   {
     "id": 870,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 18",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -12182,7 +12182,7 @@
   {
     "id": 871,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 18",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -12196,7 +12196,7 @@
   {
     "id": 872,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 19",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -12210,7 +12210,7 @@
   {
     "id": 873,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 19",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -12224,7 +12224,7 @@
   {
     "id": 874,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 19",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -12238,7 +12238,7 @@
   {
     "id": 875,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 19",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -12252,7 +12252,7 @@
   {
     "id": 876,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 19",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -12266,7 +12266,7 @@
   {
     "id": 877,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 19",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -12280,7 +12280,7 @@
   {
     "id": 878,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 19",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -12294,7 +12294,7 @@
   {
     "id": 879,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 19",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -12308,7 +12308,7 @@
   {
     "id": 880,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 19",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -12322,7 +12322,7 @@
   {
     "id": 881,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 19",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -12336,7 +12336,7 @@
   {
     "id": 882,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 20",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -12350,7 +12350,7 @@
   {
     "id": 883,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 20",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -12364,7 +12364,7 @@
   {
     "id": 884,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 20",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -12378,7 +12378,7 @@
   {
     "id": 885,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 20",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -12392,7 +12392,7 @@
   {
     "id": 886,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 20",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -12406,7 +12406,7 @@
   {
     "id": 887,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 20",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -12420,7 +12420,7 @@
   {
     "id": 888,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 20",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -12434,7 +12434,7 @@
   {
     "id": 889,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 20",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -12448,7 +12448,7 @@
   {
     "id": 890,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 20",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -12462,7 +12462,7 @@
   {
     "id": 891,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 20",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -12476,7 +12476,7 @@
   {
     "id": 892,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 21",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -12490,7 +12490,7 @@
   {
     "id": 893,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 21",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -12504,7 +12504,7 @@
   {
     "id": 894,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 21",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -12518,7 +12518,7 @@
   {
     "id": 895,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 21",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -12532,7 +12532,7 @@
   {
     "id": 896,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 21",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -12546,7 +12546,7 @@
   {
     "id": 897,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 21",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -12560,7 +12560,7 @@
   {
     "id": 898,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 21",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -12574,7 +12574,7 @@
   {
     "id": 899,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 21",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -12588,7 +12588,7 @@
   {
     "id": 900,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 21",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -12602,7 +12602,7 @@
   {
     "id": 901,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 21",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -12616,7 +12616,7 @@
   {
     "id": 902,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 22",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -12630,7 +12630,7 @@
   {
     "id": 903,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 22",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -12644,7 +12644,7 @@
   {
     "id": 904,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 22",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -12658,7 +12658,7 @@
   {
     "id": 905,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 22",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -12672,7 +12672,7 @@
   {
     "id": 906,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 22",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -12686,7 +12686,7 @@
   {
     "id": 907,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 22",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -12700,7 +12700,7 @@
   {
     "id": 908,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 22",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -12714,7 +12714,7 @@
   {
     "id": 909,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 22",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -12728,7 +12728,7 @@
   {
     "id": 910,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 22",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -12742,7 +12742,7 @@
   {
     "id": 911,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 22",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -12756,7 +12756,7 @@
   {
     "id": 912,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 23",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -12770,7 +12770,7 @@
   {
     "id": 913,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 23",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -12784,7 +12784,7 @@
   {
     "id": 914,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 23",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -12798,7 +12798,7 @@
   {
     "id": 915,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 23",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -12812,7 +12812,7 @@
   {
     "id": 916,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 23",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -12826,7 +12826,7 @@
   {
     "id": 917,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 23",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -12840,7 +12840,7 @@
   {
     "id": 918,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 23",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -12854,7 +12854,7 @@
   {
     "id": 919,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 23",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -12868,7 +12868,7 @@
   {
     "id": 920,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 23",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -12882,7 +12882,7 @@
   {
     "id": 921,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 23",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -12896,7 +12896,7 @@
   {
     "id": 922,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 24",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -12910,7 +12910,7 @@
   {
     "id": 923,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 24",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -12924,7 +12924,7 @@
   {
     "id": 924,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 24",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -12938,7 +12938,7 @@
   {
     "id": 925,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 24",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -12952,7 +12952,7 @@
   {
     "id": 926,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 24",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -12966,7 +12966,7 @@
   {
     "id": 927,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 24",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -12980,7 +12980,7 @@
   {
     "id": 928,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 24",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -12994,7 +12994,7 @@
   {
     "id": 929,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 24",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -13008,7 +13008,7 @@
   {
     "id": 930,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 24",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -13022,7 +13022,7 @@
   {
     "id": 931,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 24",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -13036,7 +13036,7 @@
   {
     "id": 932,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 25",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -13050,7 +13050,7 @@
   {
     "id": 933,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 25",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -13064,7 +13064,7 @@
   {
     "id": 934,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 25",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -13078,7 +13078,7 @@
   {
     "id": 935,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 25",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -13092,7 +13092,7 @@
   {
     "id": 936,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 25",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -13106,7 +13106,7 @@
   {
     "id": 937,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 25",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -13120,7 +13120,7 @@
   {
     "id": 938,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 25",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -13134,7 +13134,7 @@
   {
     "id": 939,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 25",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -13148,7 +13148,7 @@
   {
     "id": 940,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 25",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -13162,7 +13162,7 @@
   {
     "id": 941,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 25",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -13176,7 +13176,7 @@
   {
     "id": 942,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 26",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -13190,7 +13190,7 @@
   {
     "id": 943,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 26",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -13204,7 +13204,7 @@
   {
     "id": 944,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 26",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -13218,7 +13218,7 @@
   {
     "id": 945,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 26",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -13232,7 +13232,7 @@
   {
     "id": 946,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 26",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -13246,7 +13246,7 @@
   {
     "id": 947,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 26",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -13260,7 +13260,7 @@
   {
     "id": 948,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 26",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -13274,7 +13274,7 @@
   {
     "id": 949,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 26",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -13288,7 +13288,7 @@
   {
     "id": 950,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 26",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -13302,7 +13302,7 @@
   {
     "id": 951,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 26",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -13316,7 +13316,7 @@
   {
     "id": 952,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 27",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -13330,7 +13330,7 @@
   {
     "id": 953,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 27",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -13344,7 +13344,7 @@
   {
     "id": 954,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 27",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -13358,7 +13358,7 @@
   {
     "id": 955,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 27",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -13372,7 +13372,7 @@
   {
     "id": 956,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 27",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -13386,7 +13386,7 @@
   {
     "id": 957,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 27",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -13400,7 +13400,7 @@
   {
     "id": 958,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 27",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -13414,7 +13414,7 @@
   {
     "id": 959,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 27",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -13428,7 +13428,7 @@
   {
     "id": 960,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 27",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -13442,7 +13442,7 @@
   {
     "id": 961,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 27",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -13456,7 +13456,7 @@
   {
     "id": 962,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 28",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -13470,7 +13470,7 @@
   {
     "id": 963,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 28",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -13484,7 +13484,7 @@
   {
     "id": 964,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 28",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -13498,7 +13498,7 @@
   {
     "id": 965,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 28",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -13512,7 +13512,7 @@
   {
     "id": 966,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 28",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -13526,7 +13526,7 @@
   {
     "id": 967,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 28",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -13540,7 +13540,7 @@
   {
     "id": 968,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 28",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -13554,7 +13554,7 @@
   {
     "id": 969,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 28",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -13568,7 +13568,7 @@
   {
     "id": 970,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 28",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -13582,7 +13582,7 @@
   {
     "id": 971,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 28",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -13596,7 +13596,7 @@
   {
     "id": 972,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 29",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -13610,7 +13610,7 @@
   {
     "id": 973,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 29",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -13624,7 +13624,7 @@
   {
     "id": 974,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 29",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -13638,7 +13638,7 @@
   {
     "id": 975,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 29",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -13652,7 +13652,7 @@
   {
     "id": 976,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 29",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -13666,7 +13666,7 @@
   {
     "id": 977,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 29",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -13680,7 +13680,7 @@
   {
     "id": 978,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 29",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -13694,7 +13694,7 @@
   {
     "id": 979,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 29",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -13708,7 +13708,7 @@
   {
     "id": 980,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 29",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -13722,7 +13722,7 @@
   {
     "id": 981,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 29",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -13736,7 +13736,7 @@
   {
     "id": 982,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 30",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -13750,7 +13750,7 @@
   {
     "id": 983,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 30",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -13764,7 +13764,7 @@
   {
     "id": 984,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 30",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -13778,7 +13778,7 @@
   {
     "id": 985,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 30",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -13792,7 +13792,7 @@
   {
     "id": 986,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 30",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
@@ -13806,7 +13806,7 @@
   {
     "id": 987,
     "category": "Sports",
-    "question": "Most Watched Annual Sports Events (U.S.) | List 30",
+    "question": "Most Watched Annual Sports Events (U.S.) |",
     "answers": [
       "Super Bowl",
       "NBA Finals",
@@ -13820,7 +13820,7 @@
   {
     "id": 988,
     "category": "Science",
-    "question": "Most Common Noble Gases | List 30",
+    "question": "Most Common Noble Gases |",
     "answers": [
       "Helium",
       "Neon",
@@ -13834,7 +13834,7 @@
   {
     "id": 989,
     "category": "Science",
-    "question": "Most Common Acidic Household Items (Examples) | List 30",
+    "question": "Most Common Acidic Household Items (Examples) |",
     "answers": [
       "Vinegar",
       "Lemon Juice",
@@ -13848,7 +13848,7 @@
   {
     "id": 990,
     "category": "Food",
-    "question": "Most Popular Cheese Types (U.S.) | List 30",
+    "question": "Most Popular Cheese Types (U.S.) |",
     "answers": [
       "Cheddar",
       "Mozzarella",
@@ -13862,7 +13862,7 @@
   {
     "id": 991,
     "category": "Food",
-    "question": "Most Popular Chicken Dishes (U.S.) | List 30",
+    "question": "Most Popular Chicken Dishes (U.S.) |",
     "answers": [
       "Fried Chicken",
       "Chicken Wings",
@@ -13876,7 +13876,7 @@
   {
     "id": 992,
     "category": "Food",
-    "question": "Most Popular Soups (U.S.) | List 31",
+    "question": "Most Popular Soups (U.S.) |",
     "answers": [
       "Chicken Noodle",
       "Tomato",
@@ -13890,7 +13890,7 @@
   {
     "id": 993,
     "category": "Technology",
-    "question": "Most Popular Video Formats | List 31",
+    "question": "Most Popular Video Formats |",
     "answers": [
       "MP4",
       "MOV",
@@ -13904,7 +13904,7 @@
   {
     "id": 994,
     "category": "Technology",
-    "question": "Most Popular Audio Formats | List 31",
+    "question": "Most Popular Audio Formats |",
     "answers": [
       "MP3",
       "AAC",
@@ -13918,7 +13918,7 @@
   {
     "id": 995,
     "category": "Culture",
-    "question": "Most Read Children\u2019s Book Characters | List 31",
+    "question": "Most Read Children\u2019s Book Characters |",
     "answers": [
       "Winnie the Pooh",
       "Curious George",
@@ -13932,7 +13932,7 @@
   {
     "id": 996,
     "category": "Cars",
-    "question": "Most Iconic Car Brands (Global Awareness) | List 31",
+    "question": "Most Iconic Car Brands (Global Awareness) |",
     "answers": [
       "Toyota",
       "Ford",
