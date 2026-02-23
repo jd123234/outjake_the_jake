@@ -12,8 +12,8 @@ export default function GameOver({ players, onRestart }: GameOverProps) {
   const winner = sortedPlayers[0];
 
   return (
-    <section className="min-h-[70vh] flex items-center justify-center p-4">
-      <div className="clean-card max-w-xl w-full px-6 py-8 md:px-8 md:py-10 space-y-6">
+    <section className="h-full overflow-y-auto p-4 pb-6">
+      <div className="clean-card max-w-xl w-full mx-auto px-6 py-8 md:px-8 md:py-10 space-y-6">
         <div className="text-center space-y-2">
           <div className="text-5xl">🏆</div>
           <h1 className="title">Game over</h1>
