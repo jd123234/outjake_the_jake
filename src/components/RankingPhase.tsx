@@ -169,7 +169,8 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
       });
 
       // Pass the complete ordered array (6 elements: 5 top + 1 snake)
-      onComplete(orderedAnswers, orderedAnswers[5], doubleDowns);
+      // Use the actual snake answer from gameState, not hardcoded position
+      onComplete(orderedAnswers, gameState.snakeAnswer, doubleDowns);
     }
   };
 
@@ -279,8 +280,10 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
             className="clean-card overflow-y-auto px-4 py-3 flex flex-col gap-3 scroll-container pb-6"
           >
             {orderedAnswers.map((answer, index) => {
-              const isSnakeSlot = index === orderedAnswers.length - 1;
-              const label = isSnakeSlot ? "Snake" : `#${index + 1}`;
+              const isSnakeSlot = answer === gameState.snakeAnswer;
+              // For non-snake slots, calculate the ranking position
+              const nonSnakeIndex = orderedAnswers.slice(0, index).filter(a => a !== gameState.snakeAnswer).length;
+              const label = isSnakeSlot ? "Snake" : `#${nonSnakeIndex + 1}`;
               const isDragging = dragIndex === index;
               const isDragOver = dragOverIndex === index;
 
@@ -347,8 +350,10 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
             <div className="p-1 mb-0 border-0">
               <div className="flex flex-wrap gap-1 justify-center pb-1">
                 {orderedAnswers.map((answer, index) => {
-                  const isSnakeSlot = index === orderedAnswers.length - 1;
-                  const label = isSnakeSlot ? "🐍" : `#${index + 1}`;
+                  const isSnakeSlot = answer === gameState.snakeAnswer;
+                  // For non-snake slots, calculate the ranking position
+                  const nonSnakeIndex = orderedAnswers.slice(0, index).filter(a => a !== gameState.snakeAnswer).length;
+                  const label = isSnakeSlot ? "🐍" : `#${nonSnakeIndex + 1}`;
                   return (
                     <div
                       key={`${label}-${answer}`}
@@ -383,7 +388,7 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
                       <div className="text-[13px] font-semibold">{player.name}</div>
                     </div>
                     <div className="grid grid-cols-5 gap-0.5">
-                      {orderedAnswers.slice(0, 5).map((answer, index) => {
+                      {orderedAnswers.filter(a => a !== gameState.snakeAnswer).map((answer, index) => {
                         const isSelected = doubleDownSelections[player.id] === index;
                         return (
                           <button
@@ -413,7 +418,7 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
                 ))}
               </div>
             ) : (
-              orderedAnswers.slice(0, 5).map((answer, index) => {
+              orderedAnswers.filter(a => a !== gameState.snakeAnswer).map((answer, index) => {
                 const isSelected = Object.values(doubleDownSelections)[0] === index;
 
                 return (

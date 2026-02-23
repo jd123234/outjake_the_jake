@@ -245,12 +245,12 @@ export default function GameBoard({ players, winningScore = 10, onRestart }: Gam
             </div>
           ) : (
             <div
-              className={`flex flex-wrap items-center justify-center -mt-2 ${gameState.players.length === 3 ? "w-full mx-auto -space-x-2" : "w-full -space-x-2"}`}
+              className="flex items-center justify-center gap-4 -mt-2 w-full"
             >
               {gameState.players.map((p, index) => (
-                <div key={p.id} className="flex flex-col items-center gap-0.5 min-w-10 max-w-16 flex-1">
+                <div key={p.id} className="flex flex-col items-center gap-0.5 flex-1 min-w-0">
                   <div 
-                    className="text-xl font-semibold text-center truncate"
+                    className="text-xl font-semibold text-center truncate w-full px-1"
                     style={{ color: index === gameState.currentSnakeIndex ? "#22c55e" : "inherit" }}
                   >
                     {p.name}
