@@ -2,7 +2,6 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import { GameState } from "@/types/game";
-import Timer from "./Timer";
 
 interface RankingPhaseProps {
   gameState: GameState;
@@ -43,8 +42,10 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
   const dragElementRef = useRef<HTMLDivElement | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
 
-  // Timer countdown effect
+  // Timer countdown effect (ranking step only)
   useEffect(() => {
+    if (step !== 'ranking') return;
+
     const timer = setInterval(() => {
       setTimeRemaining((prev) => {
         if (prev <= 1) {
@@ -57,18 +58,18 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
     }, 1000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [step]);
 
   // Handle auto-complete in a separate effect
   useEffect(() => {
-    if (shouldAutoComplete) {
+    if (shouldAutoComplete && step === 'ranking') {
       // Auto-complete with current rankings and no double-down
       const rankings = [...orderedAnswers];
       const snakeChoice = gameState.snakeAnswer;
       const doubleDowns: Record<string, number> = {};
       onComplete(rankings, snakeChoice, doubleDowns);
     }
-  }, [shouldAutoComplete, orderedAnswers, gameState.snakeAnswer, onComplete]);
+  }, [shouldAutoComplete, step, orderedAnswers, gameState.snakeAnswer, onComplete]);
 
   const rankingPlayers = gameState.players.filter((_, index) => index !== gameState.currentSnakeIndex);
   const isMultiPicker = rankingPlayers.length > 1;
@@ -223,16 +224,20 @@ const RankingPhase: React.FC<RankingPhaseProps> = ({ gameState, onComplete }) =>
             {/* Timer and Submit Button Row */}
             <div className="flex items-center justify-between mt-0.5 mb-1">
               <div className="flex items-center gap-2">
-                <span className="text-xl" aria-hidden>⏱</span>
-                <div
-                  className="body font-bold text-lg"
-                  style={{
-                    color: timeRemaining <= 30 ? "var(--danger)" : "var(--accent)",
-                    animation: timeRemaining <= 30 ? "pulse 1s infinite" : "none",
-                  }}
-                >
-                  {Math.floor(timeRemaining / 60)}:{(timeRemaining % 60).toString().padStart(2, "0")}
-                </div>
+                {step === 'ranking' && (
+                  <>
+                    <span className="text-xl" aria-hidden>⏱</span>
+                    <div
+                      className="body font-bold text-lg"
+                      style={{
+                        color: timeRemaining <= 30 ? "var(--danger)" : "var(--accent)",
+                        animation: timeRemaining <= 30 ? "pulse 1s infinite" : "none",
+                      }}
+                    >
+                      {Math.floor(timeRemaining / 60)}:{(timeRemaining % 60).toString().padStart(2, "0")}
+                    </div>
+                  </>
+                )}
               </div>
               
               {step === 'ranking' ? (
